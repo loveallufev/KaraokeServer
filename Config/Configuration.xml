@@ -1,11 +1,10 @@
 <?xml version="1.0" standalone="yes"?>
 <configuration>
     <connection>
-        <host>localhost</host>
-        <username>root</username>
-        <password>root</password>
-        <database>karaoke</database>
-        <port>8889</port>
+        <host>instance1.cuokcm6jg2jf.ap-southeast-1.rds.amazonaws.com</host>
+        <username>admin_karaoke</username>
+        <password>Ilufev177154#</password>
+        <database>loveallu_karaoke</database>
     </connection>
     <mod_rewrite>on</mod_rewrite>
     <luckyvoice>
@@ -13,6 +12,6 @@
         <password>ductrunglk89</password>
     </luckyvoice>
     <cache>
-        <lastsongid>-1</lastsongid>
+        <lastsongid>34</lastsongid>
     </cache>
 </configuration>
