@@ -5,7 +5,7 @@
 require_once SERVER_ROOT . '/Lib/' . 'XmlHelper.php';
 
 
-class Model_Song extends Core_Model{
+class Model_Song{
     public $title;
     public $singer;
     public $category;
@@ -19,7 +19,7 @@ class Model_Song extends Core_Model{
     // this field will contain information of lyric (starting time, ending time...)
     public $karaoke;
 
-    public function __construct($title, $singer, $author, $lyric="", $category=""){
+    public function __construct($title, $singer, $author, $lyric=null, $category=null){
         $this->title = $title;
         $this->singer = $singer;
         $this->author = $author;

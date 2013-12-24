@@ -113,18 +113,23 @@ class Controller_Song extends Core_Controller {
             }
         }
 
+        header('Content-Type: application/json; charset=UTF-8');
+        header('Cache-Control: no-cache, must-revalidate');
+
         $id = $param['id'];
         $song = Model_Song::getSongByID($id);
 
+
         // Find in our database first
         if (isset($song)){
-            echo json_encode(array('status' => 'OK' , 'song'=>$song));
+
+            //$song = new Model_Song("Title", "Singer", "Author");
+            echo json_encode(array('status' => 'OK' , 'song' => $song));
             return;
         }
 
         if (isset($param['id'])){
-            header('Content-Type: application/json; charset=UTF-8');
-            header('Cache-Control: no-cache, must-revalidate');
+
 
             // Get the first character of id, this is the prefix of zing song or lucky voice song
             $songAssistant = Model_SongFactory::getAssistant($id[0]);
@@ -132,7 +137,7 @@ class Controller_Song extends Core_Controller {
             $id = substr($id, 1);
             $result = $songAssistant->getInfo($id);
             if (isset($result))
-                echo json_encode(array('status' => 'OK' , 'song'=>$result));
+                echo json_encode(array('status' => 'OK' , 'song'=> $result));
             else
                 echo json_encode(array('status' => 'FAILED' , 'message'=> 'Invalid song ID'));
         }

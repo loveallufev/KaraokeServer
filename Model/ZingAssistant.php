@@ -167,7 +167,6 @@ class Model_ZingAssistant {
         $url = sprintf(ZING_DOMAIN . ZING_SONG_URL,  $id);
 
         $id = Model_SongConstants::$ZING_PREFIX . $id;
-
         $html = Lib_Utility::SendRequest($url);
         $html = str_replace('&', '&amp;', $html);
         $xml = simplexml_load_string($html);

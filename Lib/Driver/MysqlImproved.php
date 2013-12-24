@@ -56,7 +56,7 @@ class Lib_Driver_MysqlImproved extends Lib_Database{
             );
 
             if (empty($this->connection->connect_error)){
-                //$this->connection->query("SET NAMES utf8");
+                $this->connection->query("SET NAMES utf8");
                 return TRUE;
             }
 
