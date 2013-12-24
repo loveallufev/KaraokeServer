@@ -224,15 +224,15 @@ class Controller_Song extends Core_Controller {
         header('Content-Type: application/json; charset=UTF-8');
         header('Cache-Control: no-cache, must-revalidate');
 
-        $zingAss = Model_SongFactory::getAssistant(Model_SongConstants::$ZING_PREFIX);
+        //$zingAss = Model_SongFactory::getAssistant(Model_SongConstants::$ZING_PREFIX);
 
         if (isset($link)){
             $link = str_replace('|','/', $link);
 
-            echo json_encode(array('status' => 'OK', 'message' => 'Fix link successfully', 'link' => $zingAss->fixlinkAction($link,$id)));
+            echo json_encode(array('status' => 'OK', 'message' => 'Fix link successfully', 'link' => Model_Song::fixlinkAction($link,$id)));
         }
         else {
-            echo json_encode(array('status' => 'FAIL', 'message' => 'Missing parameter:link', 'link' => $zingAss->fixlinkAction($link, $id)));
+            echo json_encode(array('status' => 'FAIL', 'message' => 'Missing parameter:link', 'link' => $link));
         }
     }
 
