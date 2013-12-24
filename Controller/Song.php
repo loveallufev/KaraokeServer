@@ -260,8 +260,10 @@ class Controller_Song extends Core_Controller {
             }
         }
         echo "Caching songs finish!" . "<br/>";
+        echo "Lastsong ID: " . $lastSongID . "<br/>";
         $cacheConfig->cache->lastsongid = $lastSongID;
         $cacheConfig->asXml(SERVER_ROOT . '/Config/' . 'Configuration.xml');
+        echo "Write to database OK";
     }
 
 
