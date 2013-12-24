@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<configuration>
+    <connection>
+        <host>localhost</host>
+        <!--username>loveallu_admin</username>
+        <password>Ilufev177154#</password>
+        <database>loveallu_karaoke</database>-->
+        <username>root</username>
+        <database>karaoke</database>
+        <password>root</password>
+        <port>8889</port>
+    </connection>
+    <mod_rewrite>on</mod_rewrite>
+    <luckyvoice>
+        <email>ductrungkhtn@gmail.com</email>
+        <password>ductrunglk89</password>
+    </luckyvoice>
+    <cache>
+        <lastsongid>-1</lastsongid>
+    </cache>
+</configuration>
