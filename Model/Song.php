@@ -187,8 +187,8 @@ class Model_Song{
             }
         }
 
-        // use prefix 'z' for zing's songs
-        $filename = Model_SongConstants::$ZING_PREFIX . basename($link);
+
+        $filename =  basename($link);
         $pos = strrpos($filename, '.');
         if ($pos){
             $filename = substr($filename,0, $pos );
@@ -213,6 +213,7 @@ class Model_Song{
         curl_exec($ch);
         curl_close($ch);
         fclose($fp);
+        chmod(SERVER_ROOT . DS . 'temps/' . $filename, 0755);
 
         return BASE_URL . DS . 'temps/' . $filename;
     }

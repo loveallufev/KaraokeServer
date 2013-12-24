@@ -199,7 +199,8 @@ class Controller_Song extends Core_Controller {
         else
             $id = "";
 
-        if (!isset($param['link'])){
+        $link = Lib_Utility::get_post_var("link");
+        if (!isset($link)){
             echo json_encode(array('status' => 'FAILED', 'message' => "Missing broken link"));
             return;
         }
@@ -227,7 +228,8 @@ class Controller_Song extends Core_Controller {
         //$zingAss = Model_SongFactory::getAssistant(Model_SongConstants::$ZING_PREFIX);
 
         if (isset($link)){
-            $link = str_replace('|','/', $link);
+            //$link = str_replace('|','/', $link);
+            //$link = str_replace('%7C', '/', $link);
 
             echo json_encode(array('status' => 'OK', 'message' => 'Fix link successfully', 'link' => Model_Song::fixlinkAction($link,$id)));
         }
