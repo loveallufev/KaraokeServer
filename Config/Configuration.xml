@@ -1,14 +1,10 @@
 <?xml version="1.0" standalone="yes"?>
 <configuration>
     <connection>
-        <host>localhost</host>
-        <!--username>loveallu_admin</username>
+        <host>instance1.cuokcm6jg2jf.ap-southeast-1.rds.amazonaws.com</host>
+        <username>admin_karaoke</username>
         <password>Ilufev177154#</password>
-        <database>loveallu_karaoke</database>-->
-        <username>root</username>
-        <database>karaoke</database>
-        <password>root</password>
-        <port>8889</port>
+        <database>loveallu_karaoke</database>
     </connection>
     <mod_rewrite>on</mod_rewrite>
     <luckyvoice>
