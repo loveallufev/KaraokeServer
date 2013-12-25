@@ -188,6 +188,7 @@ class Model_ZingAssistant {
 
         //$response = Lib_Utility::post_request($song->lyricURL, $header, array(), 'GET');
         $response = Lib_Utility::SendRequest($song->lyricURL);
+        var_dump($response);
         if ($response != null){
             $song->karaoke = $response;
         }
