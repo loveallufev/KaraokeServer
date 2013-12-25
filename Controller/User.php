@@ -74,8 +74,6 @@ class Controller_User extends Core_Controller{
         //echo "testaction";
         echo "Language:" . $t->predict("anh ba hung") . "<br/>";
         echo "Language:" . $t->predict("proud of you") . "<br/>";
-
-
     }
 
 } 
