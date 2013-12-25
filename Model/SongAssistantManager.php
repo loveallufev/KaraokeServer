@@ -39,6 +39,7 @@ class Model_SongAssistantManager {
                 if (isset($module['config'])) $assistant->config = $module['config'];
                 $assistant->lang = $lang;
                 $assistant->prefix = $module['prefix'];
+                var_dump($assistant);die;
                 return $assistant;
             }
         }

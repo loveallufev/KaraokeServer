@@ -31,7 +31,6 @@ class Controller_Song extends Core_Controller {
         $lang = $t->predict($tmp);
 
         echo "Lang:" . $lang . "<br/>";
-        die;
 
         $result = null;
 
