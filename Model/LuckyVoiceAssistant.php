@@ -185,31 +185,29 @@ class Model_LuckyVoiceAssistant {
             $song->ID = $id;
 
             // Process lyric and transform it to xml
-            $lyric = array();
+            $song->karaoke = new Model_LyricKaraoke();
+
 
             foreach($result['play']['media']['lyrics'] as $para){
 
-                foreach ($para as $sentence){
-                    /*
-                     $s = array();
-                    foreach ($sentence as $word){
-                        $obj = new StdClass();
-                        $obj->content = $word['0'];
-                        $obj->start = $word['1'];
-                        $obj->end = $word['2'];
-                        $obj->gender = $word['3'];
-                        array_push($s, $obj);
+                foreach ($para as $s){
+                    $sentence = new Model_Sentence();
+
+                    foreach ($s as $w){
+                        $obj = new Model_Word();
+                        $obj->content = $w['0'];
+                        $obj->start = $w['1'];
+                        $obj->end = $w['2'];
+                        $obj->gender = $w['3'];
+                        array_push($sentence->words, $obj);
                     }
-                    */
-                    //if (sizeof($s) > 0)
-                        array_push($lyric, $sentence);
+                    array_push($song->karaoke->sentences, $sentence);
                 }
             }
 
-            $song->karaoke = $lyric;
+            return $song;
         }
         else {
-
             return null;
         }
 
