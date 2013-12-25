@@ -24,7 +24,6 @@ class Model_LuckyVoiceAssistant {
         Model_LuckyVoiceAssistant::checkValidToken();
 
         $header = array(
-            'Host: api.luckyvoice.com',
             'Origin: http://www.luckyvoice.com',
             'Accept-Encoding: gzip, deflate',
             'Cookie: __utma=168234556.1276105559.1387395470.1387395470.1387395470.1; __utmb=168234556.4.10.1387395470; __utmc=168234556; __utmz=168234556.1387395470.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); sessionid=' . LuckyVoiceSetting::$config->api_token->sessionid,
