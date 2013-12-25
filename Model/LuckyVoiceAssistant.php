@@ -32,13 +32,13 @@ class Model_LuckyVoiceAssistant {
             'Accept: application/json, text/javascript, */*; q=0.01',
             'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.73.11 (KHTML, like Gecko) Version/7.0.1 Safari/537.73.11',
             'Authorization: Bearer ' . LuckyVoiceSetting::$config->api_token->token,
-            'Referer: http://www.luckyvoice.com/',
             'Accept-Language: en-us'
         );
 
         $url = 'http://api.luckyvoice.com/song/search?' . 'q=' . $songName . '&max_results=30' ;
 
         $response = Lib_Utility::post_request($url, $header, array(), 'GET');
+        var_dump($response);
 
         $songList = array();
 
