@@ -53,7 +53,7 @@ class Model_LuckyVoiceAssistant {
                     $singer = $r['artist_name'];
                     $id = $r['id'];
 
-                    $song = new Model_Song($title, $singer, "", "", "");
+                    $song = new Model_Song($title, $singer, "");
                     $song->ID = Model_SongConstants::$LUCKYVOICE_PREFIX . $id;
                     array_push($songList, $song);
                 }
@@ -323,7 +323,6 @@ class Model_LuckyVoiceAssistant {
 
         $response = Lib_Utility::post_request('http://www.luckyvoice.com/--api-token', $header, array());
         $result = $response;
-        var_dump( $result['header']);
         $pos = strpos($result['header'], 'sessionid', 0);
         if (!$pos){
             Model_LuckyVoiceAssistant::loginLuckyAction();
