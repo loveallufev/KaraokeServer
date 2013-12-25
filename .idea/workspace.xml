@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/SongAssistantManager.php" afterPath="$PROJECT_DIR$/Model/SongAssistantManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/LuckyVoiceAssistant.php" afterPath="$PROJECT_DIR$/Model/LuckyVoiceAssistant.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="f82865ad-9fcc-4c86-b07c-8dbefa202b76" name="Failed commit: Default" comment="flexible assistants choosing&#10;" />
     <ignored path="KaraokeServer.iws" />
@@ -26,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LuckyVoiceAssistant.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="LuckyVoiceAssistant.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Model/LuckyVoiceAssistant.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="42" selection-start="2077" selection-end="2077" vertical-scroll-proportion="-5.38" vertical-offset="421" max-vertical-offset="5250">
+            <state line="212" column="49" selection-start="8641" selection-end="8641" vertical-scroll-proportion="0.69196427" vertical-offset="2640" max-vertical-offset="5265">
               <folding />
             </state>
           </provider>
@@ -103,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SongAssistantManager.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SongAssistantManager.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/SongAssistantManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="31" selection-start="784" selection-end="784" vertical-scroll-proportion="0.42194092" vertical-offset="0" max-vertical-offset="1395">
+            <state line="35" column="40" selection-start="1033" selection-end="1033" vertical-scroll-proportion="-4.625" vertical-offset="339" max-vertical-offset="1380">
               <folding />
             </state>
           </provider>
@@ -166,11 +167,11 @@
         <option value="$PROJECT_DIR$/Model/BasicSong.php" />
         <option value="$PROJECT_DIR$/Model/Song.php" />
         <option value="$PROJECT_DIR$/Model/ZingAssistant.php" />
-        <option value="$PROJECT_DIR$/Model/LuckyVoiceAssistant.php" />
         <option value="$PROJECT_DIR$/Controller/User.php" />
         <option value="$PROJECT_DIR$/Config/Configuration.xml" />
         <option value="$PROJECT_DIR$/Controller/Song.php" />
         <option value="$PROJECT_DIR$/Model/SongAssistantManager.php" />
+        <option value="$PROJECT_DIR$/Model/LuckyVoiceAssistant.php" />
       </list>
     </option>
   </component>
@@ -499,12 +500,16 @@
       <created>1388009247114</created>
       <updated>1388009247114</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Fix bug can not search&#10;">
+      <created>1388009514178</created>
+      <updated>1388009514178</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="22" width="1387" height="878" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -549,7 +554,8 @@
     <MESSAGE value="fix cant get karaoke from zing&#10;" />
     <MESSAGE value="flexible assistants choosing" />
     <MESSAGE value="flexible assistants choosing&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="flexible assistants choosing&#10;" />
+    <MESSAGE value="Fix bug can not search&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix bug can not search&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -841,13 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/LuckyVoiceAssistant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="42" selection-start="2077" selection-end="2077" vertical-scroll-proportion="-5.38" vertical-offset="421" max-vertical-offset="5250">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/Driver/Mysql.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="5" selection-start="1479" selection-end="1479" vertical-scroll-proportion="-25.0" vertical-offset="240" max-vertical-offset="975">
@@ -885,7 +884,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/SongAssistantManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="31" selection-start="784" selection-end="784" vertical-scroll-proportion="0.42194092" vertical-offset="0" max-vertical-offset="1395">
+        <state line="35" column="40" selection-start="1033" selection-end="1033" vertical-scroll-proportion="-4.625" vertical-offset="339" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/LuckyVoiceAssistant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="212" column="49" selection-start="8641" selection-end="8641" vertical-scroll-proportion="0.69196427" vertical-offset="2640" max-vertical-offset="5265">
           <folding />
         </state>
       </provider>

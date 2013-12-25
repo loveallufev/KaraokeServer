@@ -189,7 +189,7 @@ class Model_LuckyVoiceAssistant extends  Model_AbstractAssistant {
             $song->ID = $id;
 
             // Process lyric and transform it to xml
-            $song->karaoke = new Model_LyricKaraoke();
+            $karaoke = new Model_LyricKaraoke();
 
 
             foreach($result['play']['media']['lyrics'] as $para){
@@ -205,11 +205,12 @@ class Model_LuckyVoiceAssistant extends  Model_AbstractAssistant {
                         $obj->gender = $w['3'];
                         array_push($sentence->words, $obj);
                     }
-                    array_push($song->karaoke->sentences, $sentence);
+                    array_push($karaoke->sentences, $sentence);
                 }
             }
 
-            return $song;
+            // put it into string
+            $song->karaoke = json_encode($karaoke);
         }
         else {
             return null;
