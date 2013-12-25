@@ -15,6 +15,9 @@ class Model_SongAssistantManager {
         if (Model_SongAssistantManager::$wasInit)
             return;
 
+        var_dump(Core::$config['modules']);
+        die;
+
         if (isset(Core::$config['modules'])){
 
             if (isset(Core::$config['modules']['assistants']))
