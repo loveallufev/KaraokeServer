@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/SongAssistantManager.php" afterPath="$PROJECT_DIR$/Model/SongAssistantManager.php" />
+    </list>
+    <list id="f82865ad-9fcc-4c86-b07c-8dbefa202b76" name="Failed commit: Default" comment="flexible assistants choosing&#10;" />
+    <ignored path="KaraokeServer.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="KaraokeServer" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="LuckyVoiceAssistant.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/LuckyVoiceAssistant.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="42" selection-start="2077" selection-end="2077" vertical-scroll-proportion="-5.38" vertical-offset="421" max-vertical-offset="5250">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Song.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controller/Song.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="0" selection-start="997" selection-end="997" vertical-scroll-proportion="-11.875" vertical-offset="180" max-vertical-offset="4125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Config/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mysql.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lib/Driver/Mysql.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="5" selection-start="1479" selection-end="1479" vertical-scroll-proportion="-25.0" vertical-offset="240" max-vertical-offset="975">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicSong.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/BasicSong.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="21" selection-start="215" selection-end="215" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="225">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZingAssistant.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/ZingAssistant.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="171" column="27" selection-start="6504" selection-end="6504" vertical-scroll-proportion="-2.78" vertical-offset="2351" max-vertical-offset="4095">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Configuration.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Config/Configuration.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="21" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Song.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/Song.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="41" selection-start="106" selection-end="106" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="3525">
+              <folding>
+                <marker date="1388000996000" expanded="true" signature="991:1162" placeholder="INSERT INTO ..." />
+                <marker date="1388000996000" expanded="true" signature="2121:2153" placeholder="SELECT * FRO..song..." />
+                <marker date="1388000996000" expanded="true" signature="2579:2619" placeholder="SELECT * FRO..song..." />
+                <marker date="1388000996000" expanded="true" signature="6616:6673" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SongAssistantManager.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Model/SongAssistantManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="31" selection-start="784" selection-end="784" vertical-scroll-proportion="0.42194092" vertical-offset="0" max-vertical-offset="1395">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utility.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lib/Utility.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="212" column="34" selection-start="6204" selection-end="6204" vertical-scroll-proportion="0.0" vertical-offset="3180" max-vertical-offset="3330">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Trung" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Config/LukyVoice.xml" />
+        <option value="$PROJECT_DIR$/Lib/XmlHelper.php" />
+        <option value="$PROJECT_DIR$/Config/LuckyVoiceSetting.php" />
+        <option value="$PROJECT_DIR$/Model/Model_ZingSong.php" />
+        <option value="$PROJECT_DIR$/Model/Model_SongConstants.php" />
+        <option value="$PROJECT_DIR$/Model/SongConstants.php" />
+        <option value="$PROJECT_DIR$/Model/ZingSong.php" />
+        <option value="$PROJECT_DIR$/Controller/ZingFactory.php" />
+        <option value="$PROJECT_DIR$/Model/SongFactory.php" />
+        <option value="$PROJECT_DIR$/Model/Word.php" />
+        <option value="$PROJECT_DIR$/Model/AsyncSavingSong.php" />
+        <option value="$PROJECT_DIR$/Model/User.php" />
+        <option value="$PROJECT_DIR$/Lib/LanguageDetector/build.php" />
+        <option value="$PROJECT_DIR$/Lib/LanguageDetector/classifier.php" />
+        <option value="$PROJECT_DIR$/Lib/LanguageDetector/LanguageDetector.php" />
+        <option value="$PROJECT_DIR$/Lib/Driver/MysqlImproved.php" />
+        <option value="$PROJECT_DIR$/Config/LuckyVoice.xml" />
+        <option value="$PROJECT_DIR$/Lib/Utility.php" />
+        <option value="$PROJECT_DIR$/Model/Sentence.php" />
+        <option value="$PROJECT_DIR$/Model/LyricKaraoke.php" />
+        <option value="$PROJECT_DIR$/Model/Model_AssistantManager.php" />
+        <option value="$PROJECT_DIR$/Model/Model_AbstractAssistant.php" />
+        <option value="$PROJECT_DIR$/Model/Model_SongAssistantManager.php" />
+        <option value="$PROJECT_DIR$/Model/AbstractAssistant.php" />
+        <option value="$PROJECT_DIR$/Model/BasicSong.php" />
+        <option value="$PROJECT_DIR$/Model/Song.php" />
+        <option value="$PROJECT_DIR$/Model/ZingAssistant.php" />
+        <option value="$PROJECT_DIR$/Model/LuckyVoiceAssistant.php" />
+        <option value="$PROJECT_DIR$/Controller/User.php" />
+        <option value="$PROJECT_DIR$/Config/Configuration.xml" />
+        <option value="$PROJECT_DIR$/Controller/Song.php" />
+        <option value="$PROJECT_DIR$/Model/SongAssistantManager.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <option name="servers">
+      <server host="busassistant" name="Amazon" />
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="49" />
+    <option name="y" value="22" />
+    <option name="width" value="1387" />
+    <option name="height" value="878" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="reference.settings.deploy.options" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="116" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="133" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="136" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="930" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="127" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="129" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="132" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="927" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Lib/LanguageDetector/etc/data" />
+      <recent name="$PROJECT_DIR$/Lib/LanguageDetector" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Lib/LanguageDetector/etc/classifiers" />
+      <recent name="$PROJECT_DIR$/Model" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="a6ba65b2-2683-4e6f-9119-f88fa9329e29" server_name="amazon">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="" />
+      <created>1387753525181</created>
+      <updated>1387753525181</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add lucky voice">
+      <created>1387910758993</created>
+      <updated>1387910758993</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix error can not encode the data which was retrieved from database&#10;">
+      <created>1387917237212</created>
+      <updated>1387917237212</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix error can not encode the data which was retrieved from database&#10;">
+      <created>1387919757990</created>
+      <updated>1387919757990</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix feature fixing link">
+      <created>1387920896492</created>
+      <updated>1387920896492</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix feature fixing link&#10;">
+      <created>1387922419033</created>
+      <updated>1387922419033</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix feature fixing link&#10;">
+      <created>1387922682714</created>
+      <updated>1387922682714</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix cant get karaoke from zing&#10;">
+      <created>1387936930095</created>
+      <updated>1387936930095</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix cant get karaoke from zing&#10;">
+      <created>1387981881905</created>
+      <updated>1387981881905</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix cant get karaoke from zing&#10;">
+      <created>1387982201781</created>
+      <updated>1387982201781</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix cant get karaoke from zing&#10;">
+      <created>1387982922568</created>
+      <updated>1387982922568</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix cant get karaoke from zing&#10;">
+      <created>1387983789509</created>
+      <updated>1387983789509</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix cant get karaoke from zing&#10;">
+      <created>1387985074321</created>
+      <updated>1387985074321</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix cant get karaoke from zing&#10;">
+      <created>1387985506309</created>
+      <updated>1387985506309</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix cant get karaoke from zing&#10;">
+      <created>1387990780617</created>
+      <updated>1387990780617</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix cant get karaoke from zing&#10;">
+      <created>1387992213804</created>
+      <updated>1387992213804</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix cant get karaoke from zing&#10;">
+      <created>1387992459364</created>
+      <updated>1387992459365</updated>
+    </task>
+    <task id="LOCAL-00017" summary="flexible assistants choosing">
+      <created>1388001336190</created>
+      <updated>1388001336190</updated>
+    </task>
+    <task id="LOCAL-00018" summary="flexible assistants choosing&#10;">
+      <created>1388002351329</created>
+      <updated>1388002351329</updated>
+    </task>
+    <task id="LOCAL-00019" summary="flexible assistants choosing&#10;">
+      <created>1388002432340</created>
+      <updated>1388002432340</updated>
+    </task>
+    <task id="LOCAL-00020" summary="flexible assistants choosing&#10;">
+      <created>1388008268066</created>
+      <updated>1388008268066</updated>
+    </task>
+    <task id="LOCAL-00021" summary="flexible assistants choosing&#10;">
+      <created>1388008382252</created>
+      <updated>1388008382252</updated>
+    </task>
+    <task id="LOCAL-00022" summary="flexible assistants choosing&#10;">
+      <created>1388008493350</created>
+      <updated>1388008493350</updated>
+    </task>
+    <task id="LOCAL-00023" summary="flexible assistants choosing&#10;">
+      <created>1388008600744</created>
+      <updated>1388008600744</updated>
+    </task>
+    <task id="LOCAL-00024" summary="flexible assistants choosing&#10;">
+      <created>1388008743461</created>
+      <updated>1388008743461</updated>
+    </task>
+    <task id="LOCAL-00025" summary="flexible assistants choosing&#10;">
+      <created>1388009247114</created>
+      <updated>1388009247114</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="49" y="22" width="1387" height="878" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26840147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <confirmMoveToFailedCommit value="2" />
+    <MESSAGE value="add lucky voice" />
+    <MESSAGE value="fix error can not encode the data which was retrieved from database&#10;" />
+    <MESSAGE value="fix feature fixing link" />
+    <MESSAGE value="fix feature fixing link&#10;" />
+    <MESSAGE value="fix cant get karaoke from zing&#10;" />
+    <MESSAGE value="flexible assistants choosing" />
+    <MESSAGE value="flexible assistants choosing&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="flexible assistants choosing&#10;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Model/Song.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="198" column="33" selection-start="5764" selection-end="5764" vertical-scroll-proportion="0.0" vertical-offset="2970" max-vertical-offset="3555">
+          <folding>
+            <marker date="1388000996000" expanded="true" signature="991:1162" placeholder="INSERT INTO ..." />
+            <marker date="1388000996000" expanded="true" signature="2121:2153" placeholder="SELECT * FRO..song..." />
+            <marker date="1388000996000" expanded="true" signature="2579:2619" placeholder="SELECT * FRO..song..." />
+            <marker date="1388000996000" expanded="true" signature="6616:6673" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/LanguageDetector/classifier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="51" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="2325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Utility.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="198" column="48" selection-start="5785" selection-end="5821" vertical-scroll-proportion="0.0" vertical-offset="2970" max-vertical-offset="3165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/LuckyVoiceAssistant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="33" selection-start="5591" selection-end="5591" vertical-scroll-proportion="0.0" vertical-offset="1965" max-vertical-offset="5775">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/ZingAssistant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="51" selection-start="6788" selection-end="6788" vertical-scroll-proportion="0.0" vertical-offset="2625" max-vertical-offset="4695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Song.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="193" column="42" selection-start="6457" selection-end="6457" vertical-scroll-proportion="0.0" vertical-offset="2820" max-vertical-offset="4185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Driver/MysqlImproved.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="16" selection-start="1384" selection-end="1444" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="2520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/Configuration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="16" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Song.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="198" column="33" selection-start="5764" selection-end="5764" vertical-scroll-proportion="0.0" vertical-offset="2640" max-vertical-offset="3555">
+          <folding>
+            <marker date="1388000996000" expanded="true" signature="991:1162" placeholder="INSERT INTO ..." />
+            <marker date="1388000996000" expanded="true" signature="2121:2153" placeholder="SELECT * FRO..song..." />
+            <marker date="1388000996000" expanded="true" signature="2579:2619" placeholder="SELECT * FRO..song..." />
+            <marker date="1388000996000" expanded="true" signature="6616:6673" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/LanguageDetector/classifier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="51" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="2325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Utility.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="198" column="48" selection-start="5785" selection-end="5821" vertical-scroll-proportion="0.0" vertical-offset="2970" max-vertical-offset="3165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps.log">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.14266305" vertical-offset="0" max-vertical-offset="736" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="222" selection-end="275" vertical-scroll-proportion="-0.625" vertical-offset="75" max-vertical-offset="570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="30" selection-start="742" selection-end="752" vertical-scroll-proportion="0.29867256" vertical-offset="255" max-vertical-offset="765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.7455752" vertical-offset="1693" max-vertical-offset="2145" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1946902" vertical-offset="540" max-vertical-offset="1740" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/SongConstants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="27" selection-start="150" selection-end="150" vertical-scroll-proportion="0.13274336" vertical-offset="0" max-vertical-offset="452" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/SongFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="44" selection-start="369" selection-end="394" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="270" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/XmlHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="44" selection-start="2005" selection-end="2005" vertical-scroll-proportion="1.891593" vertical-offset="75" max-vertical-offset="1110" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/LanguageDetector/build.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="13" selection-end="79" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="465" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="499" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/LanguageDetector/example.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="40" selection-start="698" selection-end="698" vertical-scroll-proportion="0.3586498" vertical-offset="0" max-vertical-offset="711" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/LanguageDetector/etc/data/vietnamese.raw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/LanguageDetector/etc/data/english.raw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="77" selection-start="0" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/LanguageDetector/etc/data/german.raw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/LanguageDetector/etc/classifiers/full-backup.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/LanguageDetector/etc/data/dutch.raw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="89789" selection-start="89789" selection-end="89789" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="44" selection-start="3933" selection-end="3933" vertical-scroll-proportion="-21.916666" vertical-offset="1124" max-vertical-offset="1860" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/LanguageDetector/LanguageDetector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="53" selection-start="812" selection-end="812" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="735" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/LanguageDetector/classifier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="51" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="2325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="499" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="21" selection-start="246" selection-end="246" vertical-scroll-proportion="0.35211268" vertical-offset="0" max-vertical-offset="1545" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/LuckyVoiceSetting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="87" selection-start="428" selection-end="488" vertical-scroll-proportion="0.49778762" vertical-offset="0" max-vertical-offset="452" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/LuckyVoice.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.37815127" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Driver/MysqlImproved.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="16" selection-start="1384" selection-end="1444" vertical-scroll-proportion="3.125" vertical-offset="870" max-vertical-offset="2445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Utility.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="212" column="34" selection-start="6204" selection-end="6204" vertical-scroll-proportion="0.0" vertical-offset="3180" max-vertical-offset="3330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/PasswordHash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-6.964602" vertical-offset="3148" max-vertical-offset="3600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/LyricKaraoke.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="32" selection-start="154" selection-end="154" vertical-scroll-proportion="0.08438819" vertical-offset="0" max-vertical-offset="711">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Sentence.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="28" selection-start="146" selection-end="146" vertical-scroll-proportion="0.13215859" vertical-offset="0" max-vertical-offset="454">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Word.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="1" selection-start="193" selection-end="193" vertical-scroll-proportion="0.26431718" vertical-offset="0" max-vertical-offset="454">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/AbstractAssistant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="35" selection-start="210" selection-end="210" vertical-scroll-proportion="0.14726508" vertical-offset="0" max-vertical-offset="713">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/BasicSong.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="21" selection-start="215" selection-end="215" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Song.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="41" selection-start="106" selection-end="106" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="3525">
+          <folding>
+            <marker date="1388000996000" expanded="true" signature="991:1162" placeholder="INSERT INTO ..." />
+            <marker date="1388000996000" expanded="true" signature="2121:2153" placeholder="SELECT * FRO..song..." />
+            <marker date="1388000996000" expanded="true" signature="2579:2619" placeholder="SELECT * FRO..song..." />
+            <marker date="1388000996000" expanded="true" signature="6616:6673" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/ZingAssistant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="27" selection-start="6504" selection-end="6504" vertical-scroll-proportion="-2.78" vertical-offset="2351" max-vertical-offset="4095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/LuckyVoiceAssistant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="42" selection-start="2077" selection-end="2077" vertical-scroll-proportion="-5.38" vertical-offset="421" max-vertical-offset="5250">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Driver/Mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="5" selection-start="1479" selection-end="1479" vertical-scroll-proportion="-25.0" vertical-offset="240" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="24" selection-start="877" selection-end="877" vertical-scroll-proportion="0.5274262" vertical-offset="0" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Song.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="997" selection-end="997" vertical-scroll-proportion="-11.875" vertical-offset="180" max-vertical-offset="4125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/Configuration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="21" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/SongAssistantManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="31" selection-start="784" selection-end="784" vertical-scroll-proportion="0.42194092" vertical-offset="0" max-vertical-offset="1395">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

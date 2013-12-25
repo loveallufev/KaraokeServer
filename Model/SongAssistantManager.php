@@ -15,9 +15,6 @@ class Model_SongAssistantManager {
         if (Model_SongAssistantManager::$wasInit)
             return;
 
-        var_dump(Core::$config['modules']);
-        die;
-
         if (isset(Core::$config['modules'])){
 
             if (isset(Core::$config['modules']['assistants']))
@@ -26,6 +23,7 @@ class Model_SongAssistantManager {
                 Model_SongAssistantManager::$default = Core::$config['modules']['default'];
 
             Model_SongAssistantManager::$wasInit = true;
+            echo "Init OK";die;
         }
         else
             echo "Need config modules first!";
