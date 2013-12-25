@@ -40,7 +40,8 @@ class Model_Song{
         $model->getDB()->connection->query("SET NAMES utf8");
 
         $query = sprintf("INSERT INTO song (customID, title, singer, author, category, beatURL, lyricURL, lyric, alias, karaoke ) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')",
-            $this->ID, mysql_real_escape_string($this->title), $this->singer, $this->author, $this->category, $this->beatURL, $this->lyricURL, mysql_real_escape_string($this->lyric), $alias , mysql_real_escape_string(json_encode($this->karaoke)));
+            $this->ID, Lib_Utility::escapeCharacter($this->title), Lib_Utility::escapeCharacter($this->singer), Lib_Utility::escapeCharacter($this->author), Lib_Utility::escapeCharacter($this->category), Lib_Utility::escapeCharacter($this->beatURL), Lib_Utility::escapeCharacter($this->lyricURL), Lib_Utility::escapeCharacter($this->lyric), $alias , Lib_Utility::escapeCharacter(json_encode($this->karaoke)));
+
         $model->getDB()->prepare($query);
         if (!$model->getDB()->query()){
             if ($model->getDB()->connection->errno == 1062 /*DUPLICATE ENTRY ERROR*/){

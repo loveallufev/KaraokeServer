@@ -208,4 +208,10 @@ class Lib_Utility {
         return true;
     }
 
+    public static function escapeCharacter($s){
+        $t1 = array('\'', '\"');
+        $t2 = array('\\\'', '\\\"');
+        return str_replace($t1,$t2, $s );
+    }
+
 }
