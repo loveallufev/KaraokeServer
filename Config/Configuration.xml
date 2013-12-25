@@ -30,7 +30,7 @@
                 <active>1</active>
                 <prefix>Z</prefix>
             </zing>
-        </assistants>>
+        </assistants>
         <default>luckyvoice</default>
     </modules>
     <cache>

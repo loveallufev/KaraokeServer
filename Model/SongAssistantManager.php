@@ -29,7 +29,7 @@ class Model_SongAssistantManager {
     }
 
     public static function getSongAssistantByLanguage($lang){
-        echo "In function";die;
+
         if (!Model_SongAssistantManager::$wasInit)
             Model_SongAssistantManager::Init();
 
@@ -39,7 +39,7 @@ class Model_SongAssistantManager {
                 if (isset($module['config'])) $assistant->config = $module['config'];
                 $assistant->lang = $lang;
                 $assistant->prefix = $module['prefix'];
-                var_dump($assistant);die;
+
                 return $assistant;
             }
         }
