@@ -42,6 +42,7 @@ class Controller_User extends Core_Controller{
 
     }
 
+
     // POST: username=xxx&password=yyy
     public function loginAction($param){
         $username = Lib_Utility::get_post_var('username');
