@@ -33,6 +33,7 @@ class Model_SongAssistantManager {
         if (!Model_SongAssistantManager::$wasInit)
             Model_SongAssistantManager::Init();
 
+        var_dump(Model_SongAssistantManager::$assistants);
         foreach (Model_SongAssistantManager::$assistants as $module){
             if ($module['language'] == $lang && intval($module['active'])){
                 $assistant =  new $module['class'];
