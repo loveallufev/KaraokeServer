@@ -107,7 +107,7 @@ class Model_Song{
         $folder = dirname($path);
         if (!is_dir($folder))
         {
-            mkdir($folder, 0755, true);
+            mkdir($folder, 0777, true);
         }
 
         $ch = curl_init($this->beatURL);

@@ -289,7 +289,7 @@ class Model_ZingAssistant {
         $folder = dirname($path);
         if (!is_dir($folder))
         {
-            mkdir($folder, 0755, true);
+            mkdir($folder, 0777, true);
         }
 
         if (file_exists($path)){
