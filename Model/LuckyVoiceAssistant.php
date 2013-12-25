@@ -279,7 +279,6 @@ class Model_LuckyVoiceAssistant {
         }
 
         else if ($result['code'] == '302'){
-            echo $result['header'] . '<br/>';
             $start = strpos($result['header'], 'sessionid', 0) + strlen('sessionid') + 1;
             $end = strpos($result['header'], ';', $start);
             $sessionid = substr($result['header'], $start  , $end - $start );
