@@ -177,18 +177,18 @@ class Model_ZingAssistant {
         $song->lyricURL = (string)$xml->lyric;
         $song->ID = $id;
         $header = array(
-            'Host: stc.star.zdn.vn',
             'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0',
             'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
             'Accept-Language: vi-vn,vi;q=0.8,en-us;q=0.5,en;q=0.3',
             'Accept-Encoding: gzip, deflate',
+            'DNT: 1',
             'Connection: Close'
         );
 
 
-        //$response = Lib_Utility::post_request($song->lyricURL, $header, array(), 'GET');
-        $response = Lib_Utility::SendRequest($song->lyricURL);
-        var_dump($response);
+        //$response = Lib_Utility::post_request(str_replace(' ', '%20',$song->lyricURL), $header, array(), 'GET');
+        $response = Lib_Utility::SendRequest(str_replace(' ', '%20',$song->lyricURL));
+
         if ($response != null){
             $song->karaoke = $response;
         }

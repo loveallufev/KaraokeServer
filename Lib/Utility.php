@@ -19,8 +19,11 @@ class Lib_Utility {
         }
     }
 
-    public static function SendRequest( $url, $method = 'GET', $data = array(), $headers = array('Content-type: application/x-www-form-urlencoded', 'Accept-charset: UTF-8, *, q=0;',
-        'User-agent: firefox') )
+    public static function SendRequest( $url, $method = 'GET', $data = array(),
+                                        $headers = array(
+                                            'Content-type: application/x-www-form-urlencoded',
+                                            'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0'
+                                        ) )
     {
         $context = stream_context_create(array
         (
@@ -73,8 +76,10 @@ class Lib_Utility {
             foreach ($header as $v){
                 $request .= $v . "\r\n";
             }
+
             $request .= "Content-length: ". strlen($data) ."\r\n\r\n";
-            $request .= $data . "\r\n\r\n";
+            $request .= $data . "\r\n";
+
             fputs($fp, $request);
 
             $result = '';
