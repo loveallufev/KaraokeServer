@@ -30,9 +30,12 @@ class Controller_Song extends Core_Controller {
         $tmp = str_replace('+', ' ', $songName);
         $lang = $t->predict($tmp);
 
+        echo "Lang:" . $lang . "<br/>";
+
         $result = null;
 
         $songAssistant = Model_SongAssistantManager::getSongAssistantByLanguage($lang);
+        var_dump($songAssistant);
 
         //$result = (new Model_ZingSong())->searchByName($songName);
         header('Content-Type: application/json; charset=UTF-8');
