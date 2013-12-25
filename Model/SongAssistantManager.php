@@ -23,7 +23,6 @@ class Model_SongAssistantManager {
                 Model_SongAssistantManager::$default = Core::$config['modules']['default'];
 
             Model_SongAssistantManager::$wasInit = true;
-            echo "Init OK";die;
         }
         else
             echo "Need config modules first!";
