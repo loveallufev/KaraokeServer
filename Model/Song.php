@@ -5,16 +5,11 @@
 require_once SERVER_ROOT . '/Lib/' . 'XmlHelper.php';
 
 
-class Model_Song{
-    public $title;
-    public $singer;
-    public $category;
-    public $author;
+class Model_Song extends Model_BasicSong{
     public $lyric;
     public $otherInfo;
     public $beatURL;
     public $lyricURL;
-    public $ID;
     public $linkToSong;
     // this field will contain information of lyric (starting time, ending time...)
     public $karaoke;
@@ -148,21 +143,23 @@ class Model_Song{
         $folder = dirname($path);
         if (!is_dir($folder))
         {
-            mkdir($folder, 0755, true);
+            mkdir($folder, 0777, true);
         }
 
-        $ch = curl_init($beatURL);
-        $fp = fopen($path, 'wb');
-        curl_setopt($ch, CURLOPT_FILE, $fp);
-        curl_setopt($ch, CURLOPT_HEADER, 0);
-        curl_exec($ch);
-        curl_close($ch);
-        fclose($fp);
+        if (!file_exists($path)){
+            $ch = curl_init($beatURL);
+            $fp = fopen($path, 'wb');
+            curl_setopt($ch, CURLOPT_FILE, $fp);
+            curl_setopt($ch, CURLOPT_HEADER, 0);
+            curl_exec($ch);
+            curl_close($ch);
+            fclose($fp);
+        }
 
         /* END OF SAVING BEAT */
 
 
-        /* SAVE LYRIC */
+        /* SAVE LYRIC
         $filename = $ID . '.sub';
 
         $path = SERVER_ROOT . DS . 'songs/' . $ID . DS . $filename ;
@@ -175,7 +172,7 @@ class Model_Song{
         curl_close($ch);
         fclose($fp);
 
-        /* END OF SAVING LYRIC */
+        END OF SAVING LYRIC */
 
     }
 
@@ -200,7 +197,7 @@ class Model_Song{
         $folder = dirname($path);
         if (!is_dir($folder))
         {
-            mkdir($folder, 0755, true);
+            mkdir($folder, 0777, true);
         }
 
         if (file_exists($path)){

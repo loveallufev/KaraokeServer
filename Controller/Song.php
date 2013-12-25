@@ -30,29 +30,23 @@ class Controller_Song extends Core_Controller {
         $tmp = str_replace('+', ' ', $songName);
         $lang = $t->predict($tmp);
 
-        $songAssitant = null;
         $result = null;
 
-        if ($lang == 'vi'){
-            $songAssitant = Model_SongFactory::getAssistant(Model_SongConstants::$ZING_PREFIX);
-            $result = $songAssitant->searchByName($songName);
-        }
-        else {
-
-            $songAssitant = Model_SongFactory::getAssistant(Model_SongConstants::$LUCKYVOICE_PREFIX);
-            $result = $songAssitant->searchByName($songName);
-        }
-
-        //$result = array_merge($result2, $result);
-
-
-        Model_Song::saveSearchHistory($songName, $username);
+        $songAssistant = Model_SongAssistantManager::getSongAssistantByLanguage($lang);
 
         //$result = (new Model_ZingSong())->searchByName($songName);
         header('Content-Type: application/json; charset=UTF-8');
         header('Cache-Control: no-cache, must-revalidate');
 
-        echo json_encode(array('status' => 'OK', 'query' => $songName ,'song_list' => $result));
+        if (isset($songAssistant)){
+            $result = $songAssistant->searchByName($songName);
+            echo json_encode(array('status' => 'OK', 'query' => $songName ,'song_list' => $result));
+            Model_Song::saveSearchHistory($songName, $username);
+            return;
+        }
+
+
+        echo json_encode(array('status' => 'FAILED', 'message' => 'Can not get song assistant'));
     }
 
     // /song/hotkaraoke?lang=xxx POST: token
@@ -77,13 +71,7 @@ class Controller_Song extends Core_Controller {
             $lang = $param['lang'];
         }
 
-        if ($lang == 'vi'){
-            $songAssistant = Model_SongFactory::getAssistant(Model_SongConstants::$ZING_PREFIX);
-
-        }
-        else {
-            $songAssistant = Model_SongFactory::getAssistant(Model_SongConstants::$LUCKYVOICE_PREFIX);
-        }
+        $songAssistant = Model_SongAssistantManager::getSongAssistantByLanguage($lang);
 
         $result = $songAssistant->getHotKaraoke();
         //$result = Model_Song::getHotKaraoke();
@@ -132,14 +120,20 @@ class Controller_Song extends Core_Controller {
 
 
             // Get the first character of id, this is the prefix of zing song or lucky voice song
-            $songAssistant = Model_SongFactory::getAssistant($id[0]);
+            $songAssistant = Model_SongAssistantManager::getSongAssistantByPrefix($id[0]);
 
             $id = substr($id, 1);
-            $result = $songAssistant->getInfo($id);
-            if (isset($result))
-                echo json_encode(array('status' => 'OK' , 'song'=> $result));
-            else
-                echo json_encode(array('status' => 'FAILED' , 'message'=> 'Invalid song ID'));
+            if (isset($songAssistant)){
+                $result = $songAssistant->getInfo($id);
+                if (isset($result))
+                    echo json_encode(array('status' => 'OK' , 'song'=> $result));
+                else
+                    echo json_encode(array('status' => 'FAILED' , 'message'=> 'Invalid song ID'));
+
+                return;
+            }
+
+            echo json_encode(array('status' => 'FAILED' , 'message'=> 'Something wrong in server'));
         }
     }
 
@@ -172,22 +166,22 @@ class Controller_Song extends Core_Controller {
 
         $t = new Lib_LanguageDetector_LanguageDetector();
         $lang = $t->predict($s);
-        $songAssistant = null;
-        if ($lang == 'vi'){
-            $songAssistant = new Model_ZingAssistant();
-        }else{
-            $songAssistant = new Model_LuckyVoiceAssistant();
-        }
 
-        $result = $songAssistant->getSuggestionByKeyword($s);
+        $songAssistant = Model_SongAssistantManager::getSongAssistantByLanguage($lang);
 
         header('Content-Type: application/json; charset=UTF-8');
         header('Cache-Control: no-cache, must-revalidate');
 
-        if (isset($result))
-            echo json_encode(array('status' => 'OK' , 'songs'=>$result));
-        else
-            echo json_encode(array('status' => 'OK' , 'songs'=> array()));
+        if (isset($songAssistant)){
+            $result = $songAssistant->getSuggestionByKeyword($s);
+
+            if (isset($result))
+                echo json_encode(array('status' => 'OK' , 'songs'=>$result));
+            else
+                echo json_encode(array('status' => 'OK' , 'songs'=> array()));
+        }else{
+            echo json_encode(array('status' => 'FAILED' , 'message'=> 'Can not get song assistant'));
+        }
     }
 
     // /song/fixlink?link=xxxx&id=yyyy    POST: token=xxx&r=yyyy

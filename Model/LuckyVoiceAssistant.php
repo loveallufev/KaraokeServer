@@ -8,20 +8,14 @@
 
 require_once SERVER_ROOT . '/Config/' . 'LuckyVoiceSetting.php';
 
-class Model_LuckyVoiceAssistant {
-
-
-    public static function getInstance(){
-        if (LuckyVoiceSetting::$config->login->expires)
-        return new Model_LuckyVoiceAssistant();
-    }
-
-
+class Model_LuckyVoiceAssistant extends  Model_AbstractAssistant {
 
     // SEARCH SONG BY NAME
-    public static function searchByName($songName){
+    public function searchByName($songName){
         $songName = strtolower($songName);
-        Model_LuckyVoiceAssistant::checkValidToken();
+
+        if (!Model_LuckyVoiceAssistant::checkValidToken())
+            $this->getLuckyToken();
 
         $header = array(
             'Origin: http://www.luckyvoice.com',
@@ -37,7 +31,6 @@ class Model_LuckyVoiceAssistant {
         $url = 'http://api.luckyvoice.com/song/search?' . 'q=' . $songName . '&max_results=30' ;
 
         $response = Lib_Utility::post_request($url, $header, array(), 'GET');
-        var_dump($response);
 
         $songList = array();
 
@@ -51,9 +44,14 @@ class Model_LuckyVoiceAssistant {
                     $title = $r['title'];
                     $singer = $r['artist_name'];
                     $id = $r['id'];
-
+                    /*
                     $song = new Model_Song($title, $singer, "");
                     $song->ID = Model_SongConstants::$LUCKYVOICE_PREFIX . $id;
+                    */
+                    $song = new Model_BasicSong();
+                    $song->title = $title;
+                    $song->ID = $this->prefix . $id;
+                    $song->singer = $singer;
                     array_push($songList, $song);
                 }
             }
@@ -62,9 +60,10 @@ class Model_LuckyVoiceAssistant {
         return $songList;
     }
 
-    public static function getSuggestionByKeyword($songName){
+    public function getSuggestionByKeyword($songName){
         $songName = strtolower($songName);
-        Model_LuckyVoiceAssistant::checkValidToken();
+        if (!Model_LuckyVoiceAssistant::checkValidToken())
+            $this->getLuckyToken();
 
 
         $header = array(
@@ -94,8 +93,10 @@ class Model_LuckyVoiceAssistant {
         return null;
     }
 
-    public static  function getHotKaraoke(){
-        Model_LuckyVoiceAssistant::checkValidToken();
+    public  function getHotKaraoke(){
+
+        if (!Model_LuckyVoiceAssistant::checkValidToken())
+            $this->getLuckyToken();
 
         $url = 'http://api.luckyvoice.com/user/me/playlists?include_featured=true&per_page=50';
 
@@ -126,9 +127,12 @@ class Model_LuckyVoiceAssistant {
 
                     $title = $song['title'];
                     $singer = $song['artist_name'];
-                    $id = Model_SongConstants::$LUCKYVOICE_PREFIX . $song['id'];
-                    $s = new Model_Song($title, $singer, "");
-                    $s->ID = $id;
+                    $id = $song['id'];
+
+                    $song = new Model_BasicSong();
+                    $song->title = $title;
+                    $song->ID = $this->prefix . $id;
+                    $song->singer = $singer;
                     array_push($songList, $s);
                 }
             }
@@ -141,10 +145,11 @@ class Model_LuckyVoiceAssistant {
 
 
 
-    public static function getInfo($id){
+    public function getInfo($id){
         $song = null;
 
-        Model_LuckyVoiceAssistant::checkValidToken();
+        if (!Model_LuckyVoiceAssistant::checkValidToken())
+            $this->getLuckyToken();
 
         //song_id=5752&medium=lyrics&is_broadcastable=true&resolution%3Ax=1264&resolution%3Ay=806
 
@@ -175,7 +180,7 @@ class Model_LuckyVoiceAssistant {
         if ($response['code'] == '201'){
 
             $result = json_decode($response['content'], true);
-            $id = Model_SongConstants::$LUCKYVOICE_PREFIX . $result['play']['song']['id'];
+            $id = $this->prefix . $result['play']['song']['id'];
             $title = $result['play']['song']['title'];
             $singer = $result['play']['song']['artist_name'];
             $beatURL = $result['play']['media']['audio:full'];
@@ -221,9 +226,6 @@ class Model_LuckyVoiceAssistant {
         return $song;
     }
 
-    public static function provideMediaFileAction($link){
-    }
-
 
     private static function checkValidToken(){
         $expires_token = new DateTime(LuckyVoiceSetting::$config->api_token->expires);
@@ -236,14 +238,16 @@ class Model_LuckyVoiceAssistant {
         $delta = ($expires_token - $now)/60;
 
         if ($delta < 60){
-            Model_LuckyVoiceAssistant::getLuckyToken();
+            return false;
         }
+
+        return true;
     }
 
     /***************  LOGIN AND GET TOKEN   ****************/
 
 
-    public static function loginLuckyAction(){
+    private function loginLuckyAction(){
 
         $url = "http://www.luckyvoice.com/login?next=http%3A%2F%2Fwww.luckyvoice.com%2F";
         $header = array(
@@ -262,8 +266,8 @@ class Model_LuckyVoiceAssistant {
         );
 
         $data = array(
-            'email' => Core::$config['luckyvoice']['email'],
-            'password' => Core::$config['luckyvoice']['password']
+            'email' => $this->config['email'],
+            'password' => $this->config['password']
         );
 
         $response = Lib_Utility::post_request('http://www.luckyvoice.com/login', $header, $data);
@@ -288,19 +292,19 @@ class Model_LuckyVoiceAssistant {
             LuckyVoiceSetting::$config->login->expires = $expiredDate;
             LuckyVoiceSetting::updateConfig();
 
-            Model_LuckyVoiceAssistant::getLuckyToken();
+            $this->getLuckyToken();
         }
 
     }
 
-    public static function getLuckyToken(){
+    private function getLuckyToken(){
 
         $expires_login = new DateTime(LuckyVoiceSetting::$config->login->expires);
         $expires_login->setTimezone(new DateTimeZone('UTC'));
         $now = gmdate("Y-m-d\TH:i:s\Z");
         if ($now >= $expires_login){
             echo "Expired ! Need to login again ! ";
-            Model_LuckyVoiceAssistant::loginLuckyAction();
+            $this->loginLuckyAction();
         }
 
         /* GET TOKEN */
@@ -322,7 +326,7 @@ class Model_LuckyVoiceAssistant {
         $result = $response;
         $pos = strpos($result['header'], 'sessionid', 0);
         if (!$pos){
-            Model_LuckyVoiceAssistant::loginLuckyAction();
+            $this->loginLuckyAction();
             return;
         }
         $start = $pos + strlen('sessionid') + 1;
@@ -343,33 +347,4 @@ class Model_LuckyVoiceAssistant {
     }
 
     /***************  END OF LOGIN AND GET TOKEN  ***********/
-
-
-
-    public static function fixlinkAction($link){
-
-        // use prefix 'z' for zing's songs
-        $filename = Model_SongConstants::$LUCKYVOICE_PREFIX . basename($link);
-        $pos = strrpos($filename, '.');
-        if ($pos){
-            $filename = substr($filename,0, $pos );
-        }
-        $filename = $filename . '.mp3';
-
-        $path = SERVER_ROOT . DS . 'songs/' . $filename ;
-
-        if (file_exists($path)){
-            return BASE_URL . DS . 'songs/' . $filename;
-        }
-
-        $ch = curl_init($link);
-        $fp = fopen($path, 'wb');
-        curl_setopt($ch, CURLOPT_FILE, $fp);
-        curl_setopt($ch, CURLOPT_HEADER, 0);
-        curl_exec($ch);
-        curl_close($ch);
-        fclose($fp);
-
-        return BASE_URL . DS . 'songs/' . $filename;
-    }
 } 

@@ -1,12 +1,12 @@
 <?xml version="1.0" standalone="yes"?>
 <configuration>
     <login>
-        <sessionid>58yf2f9cfp134qsadokhigpbkbh7jhqh</sessionid>
-        <expires>Wed, 24-Dec-2014 19:58:27 GMT</expires>
+        <sessionid>f45boemu9n4sqqa2s6aw6j5ztsyie2hd</sessionid>
+        <expires>Thu, 25-Dec-2014 21:52:50 GMT</expires>
     </login>
     <api_token>
-        <sessionid>58yf2f9cfp134qsadokhigpbkbh7jhqh</sessionid>
-        <token>5c859ef7fd384f469996ddd910960d2a</token>
-        <expires>2013-12-25T01:39:41.751162+00:00</expires>
+        <sessionid>f45boemu9n4sqqa2s6aw6j5ztsyie2hd</sessionid>
+        <token>252aa73dbc5b43b3ae54c0155a3feaee</token>
+        <expires>2013-12-26T03:34:05.201018+00:00</expires>
     </api_token>
 </configuration>

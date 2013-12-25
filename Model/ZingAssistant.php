@@ -13,13 +13,9 @@ define('ZING_SONG_URL', '/includes/fnGetSongInfo.php?id=%s');
 define('ZING_SEARCH_URL', '/star/search/%s.html?t=0&q=%s&x=66&y=9');
 define('ZING_KARAOKE_HOT_URL', '/star/phongthu/index.html?alpha=all&sort=lanthu');
 
-class Model_ZingAssistant {
+class Model_ZingAssistant extends  Model_AbstractAssistant{
 
-    public static function getInstance(){
-        return new Model_ZingAssistant();
-    }
-
-    public static function searchByName($songName){
+    public function searchByName($songName){
         $songName = strtolower($songName);
         $songNameBreak = explode(" ",$songName);
         $url = sprintf(ZING_DOMAIN . ZING_SEARCH_URL, implode("-", $songNameBreak), implode("+", $songNameBreak));
@@ -64,9 +60,12 @@ class Model_ZingAssistant {
             $ID = substr($tmp, $start + 1, $end - $start - 1);
             $i += 2;
 
-            $song = new Model_Song($title, $singer, "", "", $category);
-            $song->ID = Model_SongConstants::$ZING_PREFIX . $ID;
+            $song = new Model_BasicSong();
+            $song->title = $title;
+            $song->ID = $this->prefix . $ID;
+            $song->singer = $singer;
             $song->author = $author;
+            $song->category = $category;
 
             /* Get beat link and lyric link
             $url = sprintf(ZING_DOMAIN . ZING_SONG_URL,  $ID);
@@ -85,7 +84,7 @@ class Model_ZingAssistant {
         return $songList;
     }
 
-    public static  function getHotKaraoke(){
+    public  function getHotKaraoke(){
         $url = ZING_DOMAIN . ZING_KARAOKE_HOT_URL;
 
         $html = Lib_Utility::SendRequest($url);
@@ -139,9 +138,13 @@ class Model_ZingAssistant {
                 /*
                  * Skip: <td thu am>
                  */
-                $song = new Model_Song($title, $singer, "", "", $category);
-                $song->ID = Model_SongConstants::$ZING_PREFIX . $ID;
+
+                $song = new Model_BasicSong();
+                $song->title = $title;
+                $song->ID = $this->prefix . $ID;
+                $song->singer = $singer;
                 $song->author = $author;
+                $song->category = $category;
 
                 /* Get beat link and lyric link
                 $url = sprintf(ZING_DOMAIN . ZING_SONG_URL,  $ID);
@@ -163,10 +166,10 @@ class Model_ZingAssistant {
         return $songList;
     }
 
-    public static function getInfo($id){
+    public function getInfo($id){
         $url = sprintf(ZING_DOMAIN . ZING_SONG_URL,  $id);
 
-        $id = Model_SongConstants::$ZING_PREFIX . $id;
+        $id = $this->prefix . $id;
         $html = Lib_Utility::SendRequest($url);
         $html = str_replace('&', '&amp;', $html);
         $xml = simplexml_load_string($html);
@@ -206,7 +209,7 @@ class Model_ZingAssistant {
     }
 
 
-    public static function getSuggestionByKeyword($songName){
+    public function getSuggestionByKeyword($songName){
         return null;
     }
 
@@ -266,44 +269,5 @@ class Model_ZingAssistant {
 
 // don't forget to send the data too
         echo $data;
-    }
-
-    public static function fixlinkAction($link, $id=""){
-
-        if ($id != ""){
-            // /home/../songs/L1923/L1923.mp3
-            if (file_exists(SERVER_ROOT . DS . 'songs/' . $id . DS . $id . ".mp3")){
-                return BASE_URL . DS . 'songs/' . $id . DS . $id . ".mp3";
-            }
-        }
-
-        // use prefix 'z' for zing's songs
-        $filename = Model_SongConstants::$ZING_PREFIX . basename($link);
-        $pos = strrpos($filename, '.');
-        if ($pos){
-            $filename = substr($filename,0, $pos );
-        }
-        $filename = $filename . '.mp3';
-
-        $path = SERVER_ROOT . DS . 'temps/' . $filename ;
-        $folder = dirname($path);
-        if (!is_dir($folder))
-        {
-            mkdir($folder, 0777, true);
-        }
-
-        if (file_exists($path)){
-            return BASE_URL . DS . 'temps/' . $filename;
-        }
-
-        $ch = curl_init($link);
-        $fp = fopen($path, 'wb');
-        curl_setopt($ch, CURLOPT_FILE, $fp);
-        curl_setopt($ch, CURLOPT_HEADER, 0);
-        curl_exec($ch);
-        curl_close($ch);
-        fclose($fp);
-
-        return BASE_URL . DS . 'temps/' . $filename;
     }
 } 

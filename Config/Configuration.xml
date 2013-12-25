@@ -12,7 +12,28 @@
         <email>ductrungkhtn@gmail.com</email>
         <password>ductrunglk89</password>
     </luckyvoice>
+    <modules>
+        <assistants>
+            <luckyvoice>
+                <config>
+                    <email>ductrungkhtn@gmail.com</email>
+                    <password>ductrunglk89</password>
+                </config>
+                <prefix>L</prefix>
+                <language>en</language>
+                <class>Model_LuckyVoiceAssistant</class>
+                <active>1</active>
+            </luckyvoice>
+            <zing>
+                <language>vi</language>
+                <class>Model_ZingAssistant</class>
+                <active>1</active>
+                <prefix>Z</prefix>
+            </zing>
+        </assistants>>
+        <default>luckyvoice</default>
+    </modules>
     <cache>
-        <lastsongid>36</lastsongid>
+        <lastsongid>-1</lastsongid>
     </cache>
 </configuration>
