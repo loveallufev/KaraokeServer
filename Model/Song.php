@@ -86,7 +86,7 @@ class Model_Song extends Model_BasicSong{
         $song = new Model_Song($qresult->title, $qresult->singer, $qresult->author, $qresult->lyric, $qresult->category);
         $song->lyricURL = $qresult->lyricURL;
         $song->beatURL = $qresult->beatURL;
-        $song->karaoke = json_decode($qresult->karaoke);
+        $song->karaoke = $qresult->karaoke;
         $song->ID = $qresult->customID;
 
         return $song;

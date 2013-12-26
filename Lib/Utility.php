@@ -209,8 +209,9 @@ class Lib_Utility {
     }
 
     public static function escapeCharacter($s){
-        $t1 = array('\'', '\"');
-        $t2 = array('\\\'', '\\\"');
+        $t1 = array( "'", '"');
+        $t2 = array("'", '\"');
+        $s = str_replace("\\", "\\\\", $s);
         return str_replace($t1,$t2, $s );
     }
 
