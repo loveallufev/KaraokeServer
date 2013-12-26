@@ -244,7 +244,14 @@ class Controller_Song extends Core_Controller {
         $folder = dirname($path);
         if (!is_dir($folder))
         {
+            $oldmask = umask(0);
             mkdir($folder, 0777, true);
+            umask($oldmask);
+        }else {
+            if (!is_writable($folder)){
+                umask(0);
+                chmod($folder, 0777);
+            }
         }
         $fp = fopen($path, 'a') or die("can't open file");
         $now = new DateTime();
