@@ -133,7 +133,7 @@ class Model_Song extends Model_BasicSong{
 
     }
 
-    public static function cacheSong($ID, $beatURL, $lyricURL){
+    public static function cacheSong($ID, $beatURL){
 
         /* SAVE BEAT */
         $filename = $ID . '.mp3';

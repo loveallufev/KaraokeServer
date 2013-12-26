@@ -236,7 +236,6 @@ class Controller_Song extends Core_Controller {
 
     public function cacheAction($param){
 
-        echo "CACHING SONGS!" . "<br/>";
         $lastSongID = null;
 
 
@@ -266,7 +265,10 @@ class Controller_Song extends Core_Controller {
         } else {
             $lastSongID = intval($cacheConfig->cache->lastsongid);
         }
+
+        echo $now->format('Y-m-d H:i:s') . "<br/>";
         echo "Last song ID:" . $lastSongID . "<br/>";
+
 
         fwrite($fp,$now->format('Y-m-d H:i:s') . "\n");
 
@@ -276,7 +278,7 @@ class Controller_Song extends Core_Controller {
             foreach($songs as $song){
                 echo "Cache song " . $song['customID'] . "<br/>";
                 try{
-                    Model_Song::cacheSong($song['customID'], $song['lyricURL'], $song['beatURL']);
+                    Model_Song::cacheSong($song['customID'], $song['beatURL']);
                     $lastSongID = intval($song['id']);
                     $log =  "Save song " . $song['customID'] . ' - Title: ' . $song['title'] . "\n";
                     fwrite($fp, $log . "\n");
