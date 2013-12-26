@@ -133,7 +133,7 @@ class Model_LuckyVoiceAssistant extends  Model_AbstractAssistant {
                     $song->title = $title;
                     $song->ID = $this->prefix . $id;
                     $song->singer = $singer;
-                    array_push($songList, $s);
+                    array_push($songList, $song);
                 }
             }
 
