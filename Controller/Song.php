@@ -266,6 +266,7 @@ class Controller_Song extends Core_Controller {
                 }
                 catch (Exception $e){
                     echo $e->getMessage();
+                    fwrite($fp, "Error: " . $e->getMessage());
                 }
             }
         }
