@@ -245,7 +245,10 @@ class Controller_Song extends Core_Controller {
             mkdir($folder, 0777, true);
         }
         $fp = fopen($path, 'a') or die("can't open file");
-        fwrite($fp,(new DateTime('now', new DateTimeZone('UTC')))->format('Y-m-d H:i:s') . '\n');
+        echo "Open file";
+        $now = new DateTime();
+        $now->setTimezone(new DateTimeZone('UTC'));
+        fwrite($fp,$now->format('Y-m-d H:i:s') . '\n');
 
 
         $cacheConfig = simplexml_load_file(SERVER_ROOT . '/Config/' . 'Configuration.xml');
