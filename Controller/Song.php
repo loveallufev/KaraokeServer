@@ -234,9 +234,12 @@ class Controller_Song extends Core_Controller {
         }
     }
 
-    public function cacheAction(){
+    public function cacheAction($param){
 
         echo "CACHING SONGS!" . "<br/>";
+        $lastSongID = null;
+
+
 
         $path = SERVER_ROOT . '/Logs/cache';
         $folder = dirname($path);
@@ -247,13 +250,25 @@ class Controller_Song extends Core_Controller {
         $fp = fopen($path, 'a') or die("can't open file");
         $now = new DateTime();
         $now->setTimezone(new DateTimeZone('UTC'));
-        fwrite($fp,$now->format('Y-m-d H:i:s') . "\n");
+
 
 
         $cacheConfig = simplexml_load_file(SERVER_ROOT . '/Config/' . 'Configuration.xml');
 
-        $lastSongID = intval($cacheConfig->cache->lastsongid);
+        if (isset($param['id'])){
+            try{
+                $lastSongID = intval($param['id']);
+            }
+            catch (Exception $e){
+                echo "Wrong ID";
+                die;
+            }
+        } else {
+            $lastSongID = intval($cacheConfig->cache->lastsongid);
+        }
         echo "Last song ID:" . $lastSongID . "<br/>";
+
+        fwrite($fp,$now->format('Y-m-d H:i:s') . "\n");
 
         $songs = Model_Song::getNewerSong($lastSongID);
 
