@@ -245,10 +245,9 @@ class Controller_Song extends Core_Controller {
             mkdir($folder, 0777, true);
         }
         $fp = fopen($path, 'a') or die("can't open file");
-        echo "Open file";
         $now = new DateTime();
         $now->setTimezone(new DateTimeZone('UTC'));
-        fwrite($fp,$now->format('Y-m-d H:i:s') . '\n');
+        fwrite($fp,$now->format('Y-m-d H:i:s') . "\n");
 
 
         $cacheConfig = simplexml_load_file(SERVER_ROOT . '/Config/' . 'Configuration.xml');
@@ -257,7 +256,6 @@ class Controller_Song extends Core_Controller {
         echo "Last song ID:" . $lastSongID . "<br/>";
 
         $songs = Model_Song::getNewerSong($lastSongID);
-        var_dump($songs);
 
         if (isset($songs)){
             foreach($songs as $song){
@@ -265,8 +263,8 @@ class Controller_Song extends Core_Controller {
                 try{
                     Model_Song::cacheSong($song['customID'], $song['lyricURL'], $song['beatURL']);
                     $lastSongID = intval($song['id']);
-                    $log =  "Save song " . $song['customID'] . ' - Title: ' . $song['title'] . "<br/>";
-                    fwrite($fp, $log . '\n');
+                    $log =  "Save song " . $song['customID'] . ' - Title: ' . $song['title'] . "\n";
+                    fwrite($fp, $log . "\n");
                 }
                 catch (Exception $e){
                     echo $e->getMessage();
@@ -279,7 +277,7 @@ class Controller_Song extends Core_Controller {
         $cacheConfig->cache->lastsongid = $lastSongID;
         $cacheConfig->asXml(SERVER_ROOT . '/Config/' . 'Configuration.xml');
         echo "Write to database OK";
-        fwrite($fp, "Finish with lastsongid=" . $lastSongID . '\n\n');
+        fwrite($fp, "Finish with lastsongid=" . $lastSongID . "\n\n");
         fclose($fp);
     }
 
