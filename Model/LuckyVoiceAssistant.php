@@ -122,7 +122,7 @@ class Model_LuckyVoiceAssistant extends  Model_AbstractAssistant {
                 foreach ($playlist['songs'] as $song){
                     // Only get 50 first songs
                     $count += 1;
-                    if ($count > 50)
+                    if ($count > 100)
                         break;
 
                     $title = $song['title'];

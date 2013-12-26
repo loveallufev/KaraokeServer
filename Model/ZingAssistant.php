@@ -191,9 +191,57 @@ class Model_ZingAssistant extends  Model_AbstractAssistant{
 
         //$response = Lib_Utility::post_request(str_replace(' ', '%20',$song->lyricURL), $header, array(), 'GET');
         $response = Lib_Utility::SendRequest(str_replace(' ', '%20',$song->lyricURL));
+        $karaokexml = simplexml_load_string($response);
+
+        $karaoke = new Model_LyricKaraoke();
+
+        foreach($karaokexml->param as $sentense_raw){
+            $sentence = new Model_Sentence();
+
+            // 1 = one singer, 2 = second singer, 3 = both
+            $gender = (string)$sentense_raw['s'] == 'm' ? 1 : ((string)$sentense_raw['s'] == 'f' ? 2 : 3);
+
+            foreach($sentense_raw->i as $word){
+                $content = (string)$word;
+                if (strpos($content, '*') !== false) continue;
+                $starttime = str_replace(' ', '', (string)$word['va']);
+                $starttime = explode(':', $starttime);
+
+
+                $minute = intval($starttime[0]);
+                $sec = intval($starttime[1]);
+                $milisec = intval($starttime[2]);
+
+                $starttime = ($minute*60 + $sec)*1000 + $milisec;
+
+                $w = new Model_Word();
+                $w->content = $content;
+                $w->start = $starttime;
+                $w->gender = $gender;
+
+                array_push($sentence->words, $w);
+            }
+
+            array_push($karaoke->sentences, $sentence);
+        }
+
+        $factor = array(0.1, 0.2,0.3, 0.4);
+
+        foreach($karaoke->sentences as $sentence){
+            $sum = 0;
+            $index = 0;
+            for ($i = 1; $i < sizeof($sentence->words); $i+=1){
+                $sentence->words[$i-1]->end = $sentence->words[$i]->start - 5;
+                if ($i >= sizeof($sentence->words) - sizeof($factor)){
+                    $sum += (int)(($sentence->words[$i-1]->end - $sentence->words[$i-1]->start)*$factor[$index]);
+                    $index++;
+                }
+            }
+            $sentence->words[$i-1]->end = $sentence->words[$i-1]->start + $sum;
+        }
 
         if ($response != null){
-            $song->karaoke = $response;
+            $song->karaoke = json_encode($karaoke);
         }
 
         /* WRITE INFORMATION OF THIS SONG TO DATABASE */
