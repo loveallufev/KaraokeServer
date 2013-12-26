@@ -293,10 +293,10 @@ class Controller_Song extends Core_Controller {
                     }
                     else {
                         if ($result == 0){
-                            fwrite($fp, "Song has been cached \n");
+                            fwrite($fp, "Song " . $song['customID'] . ' - Title: ' . $song['title'] . " has been cached \n");
                         }
                         else
-                            fwrite($fp, "Song " . $song['customID'] . "couldn't been cached!\n");
+                            fwrite($fp, "Song " . $song['customID'] . ' - Title: ' . $song['title'] . "couldn't be cached!\n");
                     }
                 }
                 catch (Exception $e){
