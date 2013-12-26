@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/LuckyVoiceAssistant.php" afterPath="$PROJECT_DIR$/Model/LuckyVoiceAssistant.php" />
+    <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="transform karaoke of zing to json">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/LuckyVoice.xml" afterPath="$PROJECT_DIR$/Config/LuckyVoice.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Utility.php" afterPath="$PROJECT_DIR$/Lib/Utility.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="f82865ad-9fcc-4c86-b07c-8dbefa202b76" name="Failed commit: Default" comment="flexible assistants choosing&#10;" />
@@ -27,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LuckyVoiceAssistant.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LuckyVoiceAssistant.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/LuckyVoiceAssistant.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="212" column="49" selection-start="8641" selection-end="8641" vertical-scroll-proportion="0.69196427" vertical-offset="2640" max-vertical-offset="5265">
+            <state line="212" column="40" selection-start="8625" selection-end="8636" vertical-scroll-proportion="-19.375" vertical-offset="2640" max-vertical-offset="5265">
               <folding />
             </state>
           </provider>
@@ -39,7 +40,7 @@
       <file leaf-file-name="Song.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/Song.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="997" selection-end="997" vertical-scroll-proportion="-11.875" vertical-offset="180" max-vertical-offset="4125">
+            <state line="109" column="33" selection-start="3688" selection-end="3688" vertical-scroll-proportion="-5.04" vertical-offset="1383" max-vertical-offset="4875">
               <folding />
             </state>
           </provider>
@@ -72,15 +73,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZingAssistant.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/ZingAssistant.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="27" selection-start="6504" selection-end="6504" vertical-scroll-proportion="-2.78" vertical-offset="2351" max-vertical-offset="4095">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Configuration.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Config/Configuration.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,12 +85,12 @@
       <file leaf-file-name="Song.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/Song.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="41" selection-start="106" selection-end="106" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="3525">
+            <state line="68" column="38" selection-start="2463" selection-end="2474" vertical-scroll-proportion="-10.625" vertical-offset="765" max-vertical-offset="3795">
               <folding>
-                <marker date="1388000996000" expanded="true" signature="991:1162" placeholder="INSERT INTO ..." />
-                <marker date="1388000996000" expanded="true" signature="2121:2153" placeholder="SELECT * FRO..song..." />
-                <marker date="1388000996000" expanded="true" signature="2579:2619" placeholder="SELECT * FRO..song..." />
-                <marker date="1388000996000" expanded="true" signature="6616:6673" placeholder="INSERT INTO ..." />
+                <marker date="1388095837000" expanded="true" signature="991:1162" placeholder="INSERT INTO ..." />
+                <marker date="1388095837000" expanded="true" signature="2121:2153" placeholder="SELECT * FRO..song..." />
+                <marker date="1388095837000" expanded="true" signature="2579:2619" placeholder="SELECT * FRO..song..." />
+                <marker date="1388095837000" expanded="true" signature="7058:7115" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -113,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utility.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Utility.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lib/Utility.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="212" column="34" selection-start="6204" selection-end="6204" vertical-scroll-proportion="0.0" vertical-offset="3180" max-vertical-offset="3330">
+            <state line="196" column="0" selection-start="5773" selection-end="5773" vertical-scroll-proportion="0.44126076" vertical-offset="2557" max-vertical-offset="3270">
               <folding />
             </state>
           </provider>
@@ -157,7 +149,6 @@
         <option value="$PROJECT_DIR$/Lib/LanguageDetector/LanguageDetector.php" />
         <option value="$PROJECT_DIR$/Lib/Driver/MysqlImproved.php" />
         <option value="$PROJECT_DIR$/Config/LuckyVoice.xml" />
-        <option value="$PROJECT_DIR$/Lib/Utility.php" />
         <option value="$PROJECT_DIR$/Model/Sentence.php" />
         <option value="$PROJECT_DIR$/Model/LyricKaraoke.php" />
         <option value="$PROJECT_DIR$/Model/Model_AssistantManager.php" />
@@ -165,13 +156,14 @@
         <option value="$PROJECT_DIR$/Model/Model_SongAssistantManager.php" />
         <option value="$PROJECT_DIR$/Model/AbstractAssistant.php" />
         <option value="$PROJECT_DIR$/Model/BasicSong.php" />
-        <option value="$PROJECT_DIR$/Model/Song.php" />
-        <option value="$PROJECT_DIR$/Model/ZingAssistant.php" />
         <option value="$PROJECT_DIR$/Controller/User.php" />
         <option value="$PROJECT_DIR$/Config/Configuration.xml" />
-        <option value="$PROJECT_DIR$/Controller/Song.php" />
         <option value="$PROJECT_DIR$/Model/SongAssistantManager.php" />
+        <option value="$PROJECT_DIR$/Model/ZingAssistant.php" />
         <option value="$PROJECT_DIR$/Model/LuckyVoiceAssistant.php" />
+        <option value="$PROJECT_DIR$/Controller/Song.php" />
+        <option value="$PROJECT_DIR$/Model/Song.php" />
+        <option value="$PROJECT_DIR$/Lib/Utility.php" />
       </list>
     </option>
   </component>
@@ -504,7 +496,75 @@
       <created>1388009514178</created>
       <updated>1388009514178</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Fix bug can not search&#10;">
+      <created>1388010291164</created>
+      <updated>1388010291164</updated>
+    </task>
+    <task id="LOCAL-00028" summary="transform karaoke of zing to json">
+      <created>1388019193874</created>
+      <updated>1388019193874</updated>
+    </task>
+    <task id="LOCAL-00029" summary="fix error gethot karaoke in english">
+      <created>1388020944647</created>
+      <updated>1388020944647</updated>
+    </task>
+    <task id="LOCAL-00030" summary="transform karaoke of zing to json">
+      <created>1388087725567</created>
+      <updated>1388087725567</updated>
+    </task>
+    <task id="LOCAL-00031" summary="transform karaoke of zing to json">
+      <created>1388087876348</created>
+      <updated>1388087876349</updated>
+    </task>
+    <task id="LOCAL-00032" summary="transform karaoke of zing to json">
+      <created>1388088150310</created>
+      <updated>1388088150310</updated>
+    </task>
+    <task id="LOCAL-00033" summary="transform karaoke of zing to json">
+      <created>1388088267534</created>
+      <updated>1388088267534</updated>
+    </task>
+    <task id="LOCAL-00034" summary="transform karaoke of zing to json">
+      <created>1388088535624</created>
+      <updated>1388088535624</updated>
+    </task>
+    <task id="LOCAL-00035" summary="transform karaoke of zing to json">
+      <created>1388088786715</created>
+      <updated>1388088786715</updated>
+    </task>
+    <task id="LOCAL-00036" summary="transform karaoke of zing to json">
+      <created>1388089008870</created>
+      <updated>1388089008870</updated>
+    </task>
+    <task id="LOCAL-00037" summary="transform karaoke of zing to json">
+      <created>1388089377063</created>
+      <updated>1388089377063</updated>
+    </task>
+    <task id="LOCAL-00038" summary="transform karaoke of zing to json">
+      <created>1388089643630</created>
+      <updated>1388089643630</updated>
+    </task>
+    <task id="LOCAL-00039" summary="transform karaoke of zing to json">
+      <created>1388090207045</created>
+      <updated>1388090207045</updated>
+    </task>
+    <task id="LOCAL-00040" summary="transform karaoke of zing to json">
+      <created>1388090447373</created>
+      <updated>1388090447373</updated>
+    </task>
+    <task id="LOCAL-00041" summary="transform karaoke of zing to json">
+      <created>1388090714548</created>
+      <updated>1388090714548</updated>
+    </task>
+    <task id="LOCAL-00042" summary="transform karaoke of zing to json">
+      <created>1388095363147</created>
+      <updated>1388095363147</updated>
+    </task>
+    <task id="LOCAL-00043" summary="transform karaoke of zing to json">
+      <created>1388097235726</created>
+      <updated>1388097235726</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -555,7 +615,9 @@
     <MESSAGE value="flexible assistants choosing" />
     <MESSAGE value="flexible assistants choosing&#10;" />
     <MESSAGE value="Fix bug can not search&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix bug can not search&#10;" />
+    <MESSAGE value="fix error gethot karaoke in english" />
+    <MESSAGE value="transform karaoke of zing to json" />
+    <option name="LAST_COMMIT_MESSAGE" value="transform karaoke of zing to json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -567,10 +629,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="198" column="33" selection-start="5764" selection-end="5764" vertical-scroll-proportion="0.0" vertical-offset="2970" max-vertical-offset="3555">
           <folding>
-            <marker date="1388000996000" expanded="true" signature="991:1162" placeholder="INSERT INTO ..." />
-            <marker date="1388000996000" expanded="true" signature="2121:2153" placeholder="SELECT * FRO..song..." />
-            <marker date="1388000996000" expanded="true" signature="2579:2619" placeholder="SELECT * FRO..song..." />
-            <marker date="1388000996000" expanded="true" signature="6616:6673" placeholder="INSERT INTO ..." />
+            <marker date="1388095837000" expanded="true" signature="991:1162" placeholder="INSERT INTO ..." />
+            <marker date="1388095837000" expanded="true" signature="2121:2153" placeholder="SELECT * FRO..song..." />
+            <marker date="1388095837000" expanded="true" signature="2579:2619" placeholder="SELECT * FRO..song..." />
+            <marker date="1388095837000" expanded="true" signature="7058:7115" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -628,10 +690,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="198" column="33" selection-start="5764" selection-end="5764" vertical-scroll-proportion="0.0" vertical-offset="2640" max-vertical-offset="3555">
           <folding>
-            <marker date="1388000996000" expanded="true" signature="991:1162" placeholder="INSERT INTO ..." />
-            <marker date="1388000996000" expanded="true" signature="2121:2153" placeholder="SELECT * FRO..song..." />
-            <marker date="1388000996000" expanded="true" signature="2579:2619" placeholder="SELECT * FRO..song..." />
-            <marker date="1388000996000" expanded="true" signature="6616:6673" placeholder="INSERT INTO ..." />
+            <marker date="1388095837000" expanded="true" signature="991:1162" placeholder="INSERT INTO ..." />
+            <marker date="1388095837000" expanded="true" signature="2121:2153" placeholder="SELECT * FRO..song..." />
+            <marker date="1388095837000" expanded="true" signature="2579:2619" placeholder="SELECT * FRO..song..." />
+            <marker date="1388095837000" expanded="true" signature="7058:7115" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -760,28 +822,9 @@
         <state line="10" column="21" selection-start="246" selection-end="246" vertical-scroll-proportion="0.35211268" vertical-offset="0" max-vertical-offset="1545" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Config/LuckyVoiceSetting.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="87" selection-start="428" selection-end="488" vertical-scroll-proportion="0.49778762" vertical-offset="0" max-vertical-offset="452" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/LuckyVoice.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.37815127" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/Driver/MysqlImproved.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="16" selection-start="1384" selection-end="1444" vertical-scroll-proportion="3.125" vertical-offset="870" max-vertical-offset="2445">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Utility.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="212" column="34" selection-start="6204" selection-end="6204" vertical-scroll-proportion="0.0" vertical-offset="3180" max-vertical-offset="3330">
           <folding />
         </state>
       </provider>
@@ -821,32 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/BasicSong.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="21" selection-start="215" selection-end="215" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Song.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="41" selection-start="106" selection-end="106" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="3525">
-          <folding>
-            <marker date="1388000996000" expanded="true" signature="991:1162" placeholder="INSERT INTO ..." />
-            <marker date="1388000996000" expanded="true" signature="2121:2153" placeholder="SELECT * FRO..song..." />
-            <marker date="1388000996000" expanded="true" signature="2579:2619" placeholder="SELECT * FRO..song..." />
-            <marker date="1388000996000" expanded="true" signature="6616:6673" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/ZingAssistant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="27" selection-start="6504" selection-end="6504" vertical-scroll-proportion="-2.78" vertical-offset="2351" max-vertical-offset="4095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/Driver/Mysql.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="5" selection-start="1479" selection-end="1479" vertical-scroll-proportion="-25.0" vertical-offset="240" max-vertical-offset="975">
@@ -861,23 +878,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Song.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="997" selection-end="997" vertical-scroll-proportion="-11.875" vertical-offset="180" max-vertical-offset="4125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Config/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/Configuration.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="21" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
           <folding />
         </state>
       </provider>
@@ -889,9 +892,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Config/LuckyVoiceSetting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="57" selection-start="284" selection-end="303" vertical-scroll-proportion="0.21097046" vertical-offset="0" max-vertical-offset="711">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/LuckyVoice.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.24489796" vertical-offset="0" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/ZingAssistant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="205" column="62" selection-start="8029" selection-end="8029" vertical-scroll-proportion="0.989781" vertical-offset="2322" max-vertical-offset="4815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/BasicSong.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="21" selection-start="215" selection-end="215" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/Configuration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="21" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Song.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="33" selection-start="3688" selection-end="3688" vertical-scroll-proportion="-5.04" vertical-offset="1383" max-vertical-offset="4875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Model/LuckyVoiceAssistant.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="212" column="49" selection-start="8641" selection-end="8641" vertical-scroll-proportion="0.69196427" vertical-offset="2640" max-vertical-offset="5265">
+        <state line="212" column="40" selection-start="8625" selection-end="8636" vertical-scroll-proportion="-19.375" vertical-offset="2640" max-vertical-offset="5265">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Song.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="38" selection-start="2463" selection-end="2474" vertical-scroll-proportion="-10.625" vertical-offset="765" max-vertical-offset="3795">
+          <folding>
+            <marker date="1388095837000" expanded="true" signature="991:1162" placeholder="INSERT INTO ..." />
+            <marker date="1388095837000" expanded="true" signature="2121:2153" placeholder="SELECT * FRO..song..." />
+            <marker date="1388095837000" expanded="true" signature="2579:2619" placeholder="SELECT * FRO..song..." />
+            <marker date="1388095837000" expanded="true" signature="7058:7115" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Utility.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="196" column="0" selection-start="5773" selection-end="5773" vertical-scroll-proportion="0.44126076" vertical-offset="2557" max-vertical-offset="3270">
           <folding />
         </state>
       </provider>
