@@ -285,10 +285,11 @@ class Controller_Song extends Core_Controller {
             foreach($songs as $song){
                 echo "Cache song " . $song['customID'] . "<br/>";
                 try{
-                    Model_Song::cacheSong($song['customID'], $song['beatURL']);
                     $lastSongID = intval($song['id']);
-                    $log =  "Save song " . $song['customID'] . ' - Title: ' . $song['title'] . "\n";
-                    fwrite($fp, $log . "\n");
+                    if (Model_Song::cacheSong($song['customID'], $song['beatURL'])){
+                        $log =  "Save song " . $song['customID'] . ' - Title: ' . $song['title'] . "\n";
+                        fwrite($fp, $log);
+                    }
                 }
                 catch (Exception $e){
                     echo $e->getMessage();

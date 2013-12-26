@@ -161,7 +161,11 @@ class Model_Song extends Model_BasicSong{
             curl_exec($ch);
             curl_close($ch);
             fclose($fp);
+            return true;
         }
+        echo "File exist! . <br/>";
+
+        return false;
 
         /* END OF SAVING BEAT */
 
