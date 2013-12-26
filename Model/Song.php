@@ -152,20 +152,27 @@ class Model_Song extends Model_BasicSong{
                 chmod($folder, 0777);
             }
         }
-
-        if (!file_exists($path)){
-            $ch = curl_init($beatURL);
-            $fp = fopen($path, 'wb');
-            curl_setopt($ch, CURLOPT_FILE, $fp);
-            curl_setopt($ch, CURLOPT_HEADER, 0);
-            curl_exec($ch);
-            curl_close($ch);
-            fclose($fp);
-            return true;
+        try {
+            if (!file_exists($path)){
+                $ch = curl_init($beatURL);
+                $fp = fopen($path, 'wb');
+                curl_setopt($ch, CURLOPT_FILE, $fp);
+                curl_setopt($ch, CURLOPT_HEADER, 0);
+                curl_exec($ch);
+                curl_close($ch);
+                fclose($fp);
+                // save ok
+                return 1;
+            }
+            else {
+                // file exist
+                return 0;
+            }
+        }catch (Exception $e){
+            return -1;
         }
-        echo "File exist! . <br/>";
 
-        return false;
+
 
         /* END OF SAVING BEAT */
 

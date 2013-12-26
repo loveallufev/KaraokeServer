@@ -286,9 +286,17 @@ class Controller_Song extends Core_Controller {
                 echo "Cache song " . $song['customID'] . "<br/>";
                 try{
                     $lastSongID = intval($song['id']);
-                    if (Model_Song::cacheSong($song['customID'], $song['beatURL'])){
+                    $result = Model_Song::cacheSong($song['customID'], $song['beatURL']);
+                    if ($result == 1){
                         $log =  "Save song " . $song['customID'] . ' - Title: ' . $song['title'] . "\n";
                         fwrite($fp, $log);
+                    }
+                    else {
+                        if ($result == 0){
+                            fwrite($fp, "Song has been cached \n");
+                        }
+                        else
+                            fwrite($fp, "Song " . $song['customID'] . "couldn't been cached!\n");
                     }
                 }
                 catch (Exception $e){
