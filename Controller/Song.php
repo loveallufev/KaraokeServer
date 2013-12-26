@@ -254,6 +254,7 @@ class Controller_Song extends Core_Controller {
         echo "Last song ID:" . $lastSongID . "<br/>";
 
         $songs = Model_Song::getNewerSong($lastSongID);
+        var_dump($songs);
 
         if (isset($songs)){
             foreach($songs as $song){
@@ -276,6 +277,7 @@ class Controller_Song extends Core_Controller {
         $cacheConfig->asXml(SERVER_ROOT . '/Config/' . 'Configuration.xml');
         echo "Write to database OK";
         fwrite($fp, "Finish with lastsongid=" . $lastSongID . '\n\n');
+        fclose($fp);
     }
 
 
