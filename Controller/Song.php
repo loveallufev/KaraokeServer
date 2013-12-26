@@ -237,6 +237,17 @@ class Controller_Song extends Core_Controller {
     public function cacheAction(){
 
         echo "CACHING SONGS!" . "<br/>";
+
+        $path = SERVER_ROOT . '/Logs/cache';
+        $folder = dirname($path);
+        if (!is_dir($folder))
+        {
+            mkdir($folder, 0777, true);
+        }
+        $fp = fopen($path, 'a') or die("can't open file");
+        fwrite($fp,(new DateTime('now', 'UTC'))->format('Y-m-d H:i:s') . '\n');
+
+
         $cacheConfig = simplexml_load_file(SERVER_ROOT . '/Config/' . 'Configuration.xml');
 
         $lastSongID = intval($cacheConfig->cache->lastsongid);
@@ -250,7 +261,8 @@ class Controller_Song extends Core_Controller {
                 try{
                     Model_Song::cacheSong($song['customID'], $song['lyricURL'], $song['beatURL']);
                     $lastSongID = intval($song['id']);
-                    echo "Save song " . $song['customID'] . "<br/>";
+                    $log =  "Save song " . $song['customID'] . ' - Title: ' . $song['title'] . "<br/>";
+                    fwrite($fp, $log . '\n');
                 }
                 catch (Exception $e){
                     echo $e->getMessage();
@@ -262,6 +274,7 @@ class Controller_Song extends Core_Controller {
         $cacheConfig->cache->lastsongid = $lastSongID;
         $cacheConfig->asXml(SERVER_ROOT . '/Config/' . 'Configuration.xml');
         echo "Write to database OK";
+        fwrite($fp, "Finish with lastsongid=" . $lastSongID . '\n\n');
     }
 
 
