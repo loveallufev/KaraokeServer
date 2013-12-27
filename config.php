@@ -9,6 +9,14 @@ if (!defined('SERVER_ROOT')){
     define('DS', DIRECTORY_SEPARATOR);
     define('SERVER_ROOT', realpath(dirname(__FILE__)));
 }
+
+define('CODE_ERROR_SERVER', 400);
+define('CODE_SUCCESS', 200);
+define('CODE_ERROR_INVALID', 401); // invalid parameter, like username
+define('CODE_ERROR_DUPLICATE', 402);    // duplicated parameter, such as username
+define('CODE_ERROR_MISSING', 403);  // missing parameter
+define('CODE_ERROR_FAILED', 404);   // operation failed, such as authentication failed
+
 require_once SERVER_ROOT . '/Lib/' . 'XmlHelper.php';
 /*
  * @param int $pattern

@@ -48,7 +48,7 @@ class Controller_User extends Core_Controller{
         $username = Lib_Utility::get_post_var('username');
         $password = Lib_Utility::get_post_var('password');
         if (!isset($username) || !isset($password)){
-            echo json_encode(array('status' => 'FAILED', 'message' => 'Missing username or password'));
+            echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING, 'message' => 'Missing username or password'));
             return;
         }
 
@@ -60,7 +60,7 @@ class Controller_User extends Core_Controller{
         if (!preg_match('/^[a-zA-Z0-9_]{1,60}$/', $username))
         {
             //Lib_Utility::fail('Invalid username');
-            echo json_encode(array('status' => 'FAILED', 'message' => 'Invalid username'));
+            echo json_encode(array('status' => 'FAILED', 'code' => -4, 'message' => 'Invalid username'));
             return;
         }
 

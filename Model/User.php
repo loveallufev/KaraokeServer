@@ -30,14 +30,14 @@ class Model_User extends  Core_Model{
         if (!$model->getDB()->query()){
             if ($model->getDB()->connection->errno == 1062 /*DUPLICATE ENTRY ERROR*/){
                 //Lib_Utility::fail('This username is already taken');
-                $result =  array('status' => 'FAIL', 'message'=>'This username is already taken');
+                $result =  array('status' => 'FAIL', 'code' => CODE_ERROR_DUPLICATE ,'message'=>'This username is already taken');
             }
             else{
-                $result =  array('status' => 'FAIL', 'message'=>$model->getDB()->connection->error);
+                $result =  array('status' => 'FAIL', 'code' => CODE_ERROR_SERVER , 'message'=>$model->getDB()->connection->error);
             }
         }
         else
-            $result =  array('status' => 'OK', 'message' => 'Create new account successfully');
+            $result =  array('status' => 'OK', 'code' => CODE_SUCCESS ,'message' => 'Create new account successfully');
 
         $model->getDB()->disconnect();
         return $result;
@@ -51,7 +51,7 @@ class Model_User extends  Core_Model{
         $model->getDB()->prepare($query);
 
         if (!$model->getDB()->query()){
-            return array('status' => 'FAIL', 'message'=>$model->getDB()->connection->error);
+            return array('status' => 'FAIL', 'code' => CODE_ERROR_SERVER , 'message'=>$model->getDB()->connection->error);
         }
 
         $qresult = $model->getDB()->fetch();
@@ -74,7 +74,7 @@ class Model_User extends  Core_Model{
             $query = sprintf("INSERT INTO authentication(username, token) VALUES ('%s', '%s')", $username, $token);
             $model->getDB()->prepare($query);
 
-            $r = array ('status' => 'OK', 'message' => 'Authentication succeeded', 'token' => $token);
+            $r = array ('status' => 'OK', 'code' =>  CODE_SUCCESS ,'message' => 'Authentication succeeded', 'token' => $token);
 
             $result = null;
             if (!$model->getDB()->query()){
@@ -82,7 +82,7 @@ class Model_User extends  Core_Model{
                 Lib_Utility::fail('Can not insert token into database', $model->getDB()->connection->error);
             }
         } else {
-            $r = array('status' => 'FAIL', 'message' =>  'Authentication failed');
+            $r = array('status' => 'FAIL','code' => CODE_ERROR_FAILED ,'message' =>  'Authentication failed');
         }
 
         unset($hasher);
@@ -109,7 +109,7 @@ class Model_User extends  Core_Model{
         $model->getDB()->prepare($query);
 
         if (!$model->getDB()->query()){
-            echo  array('status' => 'FAIL', 'message'=>$model->getDB()->connection->error);
+            echo  array('status' => 'FAIL', 'code' => CODE_ERROR_SERVER ,'message'=>$model->getDB()->connection->error);
             return null;
         }
 
