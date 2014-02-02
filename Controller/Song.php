@@ -42,6 +42,10 @@ class Controller_Song extends Core_Controller {
 
         if (isset($songAssistant)){
             $result = $songAssistant->searchByName($songName);
+            if ($lang == "en" && sizeof($result) == 0){
+                $songAssistant = Model_SongAssistantManager::getSongAssistantByLanguage("vi");
+                $result = $songAssistant->searchByName($songName);
+            }
             echo json_encode(array('status' => 'OK', 'query' => $songName ,'song_list' => $result));
             Model_Song::saveSearchHistory($songName, $username);
             return;

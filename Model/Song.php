@@ -203,7 +203,6 @@ class Model_Song extends Model_BasicSong{
             }
         }
 
-
         $filename =  basename($link);
         $pos = strrpos($filename, '.');
         if ($pos){
