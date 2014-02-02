@@ -99,6 +99,25 @@ class Model_User extends  Core_Model{
         return $r;
     }
 
+    public static function usernameExist($username){
+
+        $model = new Core_Model();
+        $model->getDB()->connect();
+
+        $query = sprintf("SELECT password FROM user WHERE username='%s'", $username);
+        $model->getDB()->prepare($query);
+
+        if (!$model->getDB()->query()){
+            return array('status' => 'FAIL', 'code' => CODE_ERROR_SERVER , 'message'=>$model->getDB()->connection->error);
+        }
+
+        $qresult = $model->getDB()->fetch();
+        if (isset($qresult)){
+            return true;
+        }
+        return false;
+    }
+
     public static function checkAuthenticatedToken($token){
 
         $model = new Core_Model();

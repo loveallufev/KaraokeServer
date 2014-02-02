@@ -60,7 +60,7 @@ class Controller_User extends Core_Controller{
         if (!preg_match('/^[a-zA-Z0-9_]{1,60}$/', $username))
         {
             //Lib_Utility::fail('Invalid username');
-            echo json_encode(array('status' => 'FAILED', 'code' => -4, 'message' => 'Invalid username'));
+            echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_INVALID, 'message' => 'Invalid username'));
             return;
         }
 
@@ -75,6 +75,31 @@ class Controller_User extends Core_Controller{
         //echo "testaction";
         echo "Language:" . $t->predict("anh ba hung") . "<br/>";
         echo "Language:" . $t->predict("proud of you") . "<br/>";
+    }
+
+    // only use this function for login with a social network
+    public function createAndLoginAction($param){
+        $username = Lib_Utility::get_post_var('username');
+        $password = Lib_Utility::get_post_var('password');
+
+        header('Content-Type: application/json; charset=UTF-8');
+        header('Cache-Control: no-cache, must-revalidate');
+
+        if (substr($username,0,2) == "fb"){
+            if (Model_User::usernameExist($username)){
+                Controller_User::loginAction($param);
+            }else{
+                Model_User::createNewUser($username, $password);
+                Controller_User::loginAction($param);
+            }
+        }
+        else{
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'code' => CODE_ERROR_INVALID,
+                'message' => 'Invalid username. This login method is used only for social network\'s accounts'
+            ));
+        }
     }
 
 } 
