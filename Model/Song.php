@@ -225,7 +225,7 @@ class Model_Song extends Model_BasicSong{
                 }
             }
 
-            return  array('status' => 'OK', 'code' => CODE_SUCCESS, BASE_URL . '/upload/' . $newName);
+            return  array('status' => 'OK', 'code' => CODE_SUCCESS, 'message' => "Save record successfully", 'link' => BASE_URL . '/upload/' . $newName);
         }
     }
 
