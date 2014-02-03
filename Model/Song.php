@@ -70,7 +70,7 @@ class Model_Song extends Model_BasicSong{
         $model = new Core_Model();
         $model->getDB()->connect();
 
-        $query = sprintf("SELECT * FROM song WHERE customID = '%s'", $id);
+        $query = sprintf("SELECT * FROM song WHERE customID = '%s'", mysql_real_escape_string($id));
 
         $model->getDB()->prepare($query);
         if (!$model->getDB()->query()){
@@ -194,6 +194,41 @@ class Model_Song extends Model_BasicSong{
 
     }
 
+    public static function saveRecord($file, $username, $songid, $isMixed) {
+        $newName = time() . $file["name"];
+
+        // save file
+        if (file_exists("upload/" . $newName))
+        {
+            echo array('status' => 'OK', 'code' => CODE_ERROR_FAILED, 'message' => $file["name"] . " already exists. ");
+        }
+        else
+        {
+            move_uploaded_file($file["tmp_name"], "upload/" . $newName);
+
+
+            // insert into database
+            $model = new Core_Model();
+            $model->getDB()->connect();
+
+            $query = sprintf("INSERT INTO record (username, url, songid, ismixed)" .
+                " VALUES ('%s' , '%s', '%s' , %d)",
+                $username, BASE_URL . '/upload/' . $newName, mysql_real_escape_string($songid), $isMixed
+            );
+
+            $model->getDB()->prepare($query);
+            if (!$model->getDB()->query()){
+                if ($model->getDB()->connection->errno == 1062 /*DUPLICATE ENTRY ERROR*/){
+                    return array('message' => "Duplicate record" , 'status' => "FAILED", 'code' => CODE_ERROR_DUPLICATE);
+                }else{
+                    return  array('status' => 'FAILED', 'code' => CODE_ERROR_FAILED ,'message' => $model->getDB()->connection->error);
+                }
+            }
+
+            return  array('status' => 'OK', 'code' => CODE_SUCCESS, BASE_URL . '/upload/' . $newName);
+        }
+    }
+
     public static function fixlinkAction($link, $id=""){
 
         if ($id != ""){
@@ -237,11 +272,11 @@ class Model_Song extends Model_BasicSong{
         $model = new Core_Model();
         $model->getDB()->connect();
 
-        $query = sprintf("INSERT INTO history(username, keyword) VALUES('%s', '%s')", $username, $keyword);
+        $query = sprintf("INSERT INTO history(username, keyword) VALUES('%s', '%s')", $username, mysql_real_escape_string($keyword));
 
         $model->getDB()->prepare($query);
         if (!$model->getDB()->query()){
-            return array('status' => 'FAIL', 'message'=>$model->getDB()->connection->error);
+            return array('status' => 'FAILED', 'message'=>$model->getDB()->connection->error);
         }
     }
 }

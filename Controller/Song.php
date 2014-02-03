@@ -6,19 +6,19 @@ class Controller_Song extends Core_Controller {
     // /song/search?s={0}   POST with token=xxx&r=xxx
     public function searchAction($param){
         if (!isset($param['s'])){
-            echo json_encode(array('status' => 'FAILED', 'message' => "Missing keyword"));
+            echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING, 'message' => "Missing keyword"));
             return;
         }
 
         $token = Lib_Utility::get_post_var('token');
 
         if (!isset($token)){
-            echo json_encode(array('status' => 'FAILED', 'message' => "Missing token"));
+            echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING, 'message' => "Missing token"));
             return;
         }else {
             $username = Model_User::checkAuthenticatedToken($token);
             if (!isset($username)){
-                echo json_encode(array('status' => 'FAILED', 'message' => "Invalid token"));
+                echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_INVALID , 'message' => "Invalid token"));
                 return;
             }
         }
@@ -46,13 +46,13 @@ class Controller_Song extends Core_Controller {
                 $songAssistant = Model_SongAssistantManager::getSongAssistantByLanguage("vi");
                 $result = $songAssistant->searchByName($songName);
             }
-            echo json_encode(array('status' => 'OK', 'query' => $songName ,'song_list' => $result));
+            echo json_encode(array('status' => 'OK', 'code' => CODE_SUCCESS, 'query' => $songName ,'song_list' => $result));
             Model_Song::saveSearchHistory($songName, $username);
             return;
         }
 
 
-        echo json_encode(array('status' => 'FAILED', 'message' => 'Can not get song assistant'));
+        echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_FAILED ,'message' => 'Can not get song assistant'));
     }
 
     // /song/hotkaraoke?lang=xxx POST: token
@@ -61,12 +61,12 @@ class Controller_Song extends Core_Controller {
         $token = Lib_Utility::get_post_var('token');
 
         if (!isset($token)){
-            echo json_encode(array('status' => 'FAILED', 'message' => "Missing token"));
+            echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING, 'message' => "Missing token"));
             return;
         }else {
             $username = Model_User::checkAuthenticatedToken($token);
             if (!isset($username)){
-                echo json_encode(array('status' => 'FAILED', 'message' => "Invalid token"));
+                echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_INVALID , 'message' => "Invalid token"));
                 return;
             }
         }
@@ -83,26 +83,26 @@ class Controller_Song extends Core_Controller {
         //$result = Model_Song::getHotKaraoke();
         header('Content-Type: application/json; charset=UTF-8');
         header('Cache-Control: no-cache, must-revalidate');
-        echo json_encode(array('status' => 'OK', 'song_list' => $result));
+        echo json_encode(array('status' => 'OK', 'code' => CODE_SUCCESS, 'song_list' => $result));
     }
 
     // /song/getInfo?id=xxxx    POST: token=xxx&r=yyyy
     public function getInfoAction($param){
 
         if (!isset($param['id'])){
-            echo json_encode(array('status' => 'FAILED', 'message' => "Missing song ID"));
+            echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING , 'message' => "Missing song ID"));
             return;
         }
 
         $token = Lib_Utility::get_post_var('token');
 
         if (!isset($token)){
-            echo json_encode(array('status' => 'FAILED', 'message' => "Missing token"));
+            echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING , 'message' => "Missing token"));
             return;
         }else {
             $username = Model_User::checkAuthenticatedToken($token);
             if (!isset($username)){
-                echo json_encode(array('status' => 'FAILED', 'message' => "Invalid token"));
+                echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_INVALID ,'message' => "Invalid token"));
                 return;
             }
         }
@@ -118,7 +118,7 @@ class Controller_Song extends Core_Controller {
         if (isset($song)){
 
             //$song = new Model_Song("Title", "Singer", "Author");
-            echo json_encode(array('status' => 'OK' , 'song' => $song));
+            echo json_encode(array('status' => 'OK' , 'code' => CODE_SUCCESS, 'song' => $song));
             return;
         }
 
@@ -132,14 +132,14 @@ class Controller_Song extends Core_Controller {
             if (isset($songAssistant)){
                 $result = $songAssistant->getInfo($id);
                 if (isset($result))
-                    echo json_encode(array('status' => 'OK' , 'song'=> $result));
+                    echo json_encode(array('status' => 'OK' , 'code' => CODE_SUCCESS, 'song'=> $result));
                 else
-                    echo json_encode(array('status' => 'FAILED' , 'message'=> 'Invalid song ID'));
+                    echo json_encode(array('status' => 'FAILED' , 'code' => CODE_ERROR_INVALID, 'message'=> 'Invalid song ID'));
 
                 return;
             }
 
-            echo json_encode(array('status' => 'FAILED' , 'message'=> 'Something wrong in server'));
+            echo json_encode(array('status' => 'FAILED' , 'code' => CODE_ERROR_FAILED,'message'=> 'Something wrong in server'));
         }
     }
 
@@ -147,26 +147,26 @@ class Controller_Song extends Core_Controller {
     public function suggestAction($param){
 
         if (!isset($param['s'])){
-            echo json_encode(array('status' => 'FAILED', 'message' => "Missing keyword"));
+            echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING, 'message' => "Missing keyword"));
             return;
         }
 
         $token = Lib_Utility::get_post_var('token');
 
         if (!isset($token)){
-            echo json_encode(array('status' => 'FAILED', 'message' => "Missing token"));
+            echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING , 'message' => "Missing token"));
             return;
         }else {
             $username = Model_User::checkAuthenticatedToken($token);
             if (!isset($username)){
-                echo json_encode(array('status' => 'FAILED', 'message' => "Invalid token"));
+                echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_INVALID ,'message' => "Invalid token"));
                 return;
             }
         }
 
         $s = str_replace('%20', ' ' , $param['s']);
         if (strlen($s) <3){
-            return json_encode(array('status' => 'OK', 'results' => array()));
+            return json_encode(array('status' => 'OK', 'code' => CODE_SUCCESS, 'results' => array()));
         }
 
 
@@ -182,11 +182,64 @@ class Controller_Song extends Core_Controller {
             $result = $songAssistant->getSuggestionByKeyword($s);
 
             if (isset($result))
-                echo json_encode(array('status' => 'OK' , 'songs'=>$result));
+                echo json_encode(array('status' => 'OK' , 'code' => CODE_SUCCESS, 'songs'=>$result));
             else
-                echo json_encode(array('status' => 'OK' , 'songs'=> array()));
+                echo json_encode(array('status' => 'OK' , 'code' => CODE_SUCCESS, 'songs'=> array()));
         }else{
-            echo json_encode(array('status' => 'FAILED' , 'message'=> 'Can not get song assistant'));
+            echo json_encode(array('status' => 'FAILED' , 'code' => CODE_ERROR_FAILED ,'message'=> 'Can not get song assistant'));
+        }
+    }
+
+    public function saverecordAction($param){
+
+
+        $token = Lib_Utility::get_post_var('token');
+        if (!isset($token)){
+            echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING , 'message' => "Missing token"));
+            return;
+        }else {
+            $username = Model_User::checkAuthenticatedToken($token);
+            if (!isset($username)){
+                echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_INVALID ,'message' => "Invalid token"));
+                return;
+            }
+        }
+
+        // check random number here
+
+        header('Content-Type: application/json; charset=UTF-8');
+        header('Cache-Control: no-cache, must-revalidate');
+
+        $allowedExts = array("wav", "mp3");
+        $temp = explode(".", $_FILES["file"]["name"]);
+        $extension = end($temp);
+
+        if (in_array($extension, $allowedExts)
+            && ($_FILES["file"]["type"] == "audio/wav" || $_FILES["file"]["type"] == "audio/mp3")
+        )
+        {
+            if ($_FILES["file"]["error"] > 0)
+            {
+                echo json_encode(array(
+                    'status' => 'FAILED',
+                    'code' => CODE_ERROR_FAILED,
+                    'message' =>  $_FILES["file"]["error"]
+                ));
+            }
+            else
+            {
+                $isMixed = Lib_Utility::get_post_var('ismixed');
+                $songid = Lib_Utility::get_post_var("songid");
+                echo json_encode(Model_Song::saveRecord($_FILES["file"], $username, $songid, $isMixed));
+            }
+        }
+        else
+        {
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'code' => CODE_ERROR_INVALID,
+                'message' =>  'Invalid file type'
+            ));
         }
     }
 
@@ -201,19 +254,19 @@ class Controller_Song extends Core_Controller {
 
         $link = Lib_Utility::get_post_var("link");
         if (!isset($link)){
-            echo json_encode(array('status' => 'FAILED', 'message' => "Missing broken link"));
+            echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING ,'message' => "Missing broken link"));
             return;
         }
 
         $token = Lib_Utility::get_post_var('token');
 
         if (!isset($token)){
-            echo json_encode(array('status' => 'FAILED', 'message' => "Missing token"));
+            echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING ,'message' => "Missing token"));
             return;
         }else {
             $username = Model_User::checkAuthenticatedToken($token);
             if (!isset($username)){
-                echo json_encode(array('status' => 'FAILED', 'message' => "Invalid token"));
+                echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_INVALID , 'message' => "Invalid token"));
                 return;
             }
         }
@@ -231,10 +284,20 @@ class Controller_Song extends Core_Controller {
             //$link = str_replace('|','/', $link);
             //$link = str_replace('%7C', '/', $link);
 
-            echo json_encode(array('status' => 'OK', 'message' => 'Fix link successfully', 'link' => Model_Song::fixlinkAction($link,$id)));
+            echo json_encode(array(
+                'status' => 'OK',
+                'code' => CODE_SUCCESS ,
+                'message' => 'Fix link successfully',
+                'link' => Model_Song::fixlinkAction($link,$id)
+            ));
         }
         else {
-            echo json_encode(array('status' => 'FAIL', 'message' => 'Missing parameter:link', 'link' => $link));
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'code' => CODE_ERROR_MISSING ,
+                'message' => 'Missing parameter:link',
+                'link' => $link
+            ));
         }
     }
 

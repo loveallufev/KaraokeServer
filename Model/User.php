@@ -12,6 +12,8 @@ class Model_User extends  Core_Model{
             Lib_Utility::fail('The supplied password is too long');
         }
 
+        $username = mysql_real_escape_string($username);
+
         $model = new Core_Model();
         $model->getDB()->connect();
 
@@ -46,6 +48,7 @@ class Model_User extends  Core_Model{
     public static function login($username, $password, $return_json = true){
         $model = new Core_Model();
         $model->getDB()->connect();
+        $username = mysql_real_escape_string($username);
 
         $query = sprintf("SELECT password FROM user WHERE username='%s'", $username);
         $model->getDB()->prepare($query);
@@ -104,7 +107,7 @@ class Model_User extends  Core_Model{
         $model = new Core_Model();
         $model->getDB()->connect();
 
-        $query = sprintf("SELECT password FROM user WHERE username='%s'", $username);
+        $query = sprintf("SELECT password FROM user WHERE username='%s'", mysql_real_escape_string($username));
         $model->getDB()->prepare($query);
 
         if (!$model->getDB()->query()){
@@ -123,7 +126,7 @@ class Model_User extends  Core_Model{
         $model = new Core_Model();
         $model->getDB()->connect();
 
-        $query = sprintf("SELECT * FROM authentication WHERE token='%s'", $token);
+        $query = sprintf("SELECT * FROM authentication WHERE token='%s'", mysql_real_escape_string($token));
 
         $model->getDB()->prepare($query);
 
