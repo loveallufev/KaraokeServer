@@ -238,7 +238,7 @@ class Controller_Song extends Core_Controller {
             echo json_encode(array(
                 'status' => 'FAILED',
                 'code' => CODE_ERROR_INVALID,
-                'message' =>  'Invalid file type'
+                'message' =>  'Invalid file type. Your file type is ' . $_FILES["file"]["type"] . '. Require audio format'
             ));
         }
     }
