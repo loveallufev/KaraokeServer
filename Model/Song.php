@@ -94,6 +94,9 @@ class Model_Song extends Model_BasicSong{
 
     public function catcheThisSong(){
 
+        if (!file_exists('songs')) {
+            mkdir('songs', 0777, true);
+        }
         /* SAVE BEAT */
         $filename = $this->ID . '.mp3';
 
@@ -135,6 +138,9 @@ class Model_Song extends Model_BasicSong{
 
     public static function cacheSong($ID, $beatURL){
 
+        if (!file_exists('songs')) {
+            mkdir('songs', 0777, true);
+        }
         /* SAVE BEAT */
         $filename = $ID . '.mp3';
 
@@ -197,6 +203,9 @@ class Model_Song extends Model_BasicSong{
     public static function saveRecord($file, $username, $songid, $isMixed) {
         $newName = time() . $file["name"];
 
+        if (!file_exists('upload')) {
+            mkdir('upload', 0777, true);
+        }
         // save file
         if (file_exists("upload/" . $newName))
         {
@@ -224,12 +233,25 @@ class Model_Song extends Model_BasicSong{
                     return  array('status' => 'FAILED', 'code' => CODE_ERROR_FAILED ,'message' => $model->getDB()->connection->error);
                 }
             }
+            if (file_exists("upload/" . $newName))
+                return  array(
+                    'status' => 'OK', 'code' => CODE_SUCCESS,
+                    'message' => "Save record successfully",
+                    'link' => BASE_URL . '/upload/' . $newName
+                );
+            else
+                return  array('status' => 'FAILED', 'code' => CODE_ERROR_FAILED ,
+                    'message' => 'can not create new file');
 
-            return  array('status' => 'OK', 'code' => CODE_SUCCESS, 'message' => "Save record successfully", 'link' => BASE_URL . '/upload/' . $newName);
+
         }
     }
 
     public static function fixlinkAction($link, $id=""){
+
+        if (!file_exists('temps')) {
+            mkdir('temps', 0777, true);
+        }
 
         if ($id != ""){
             // /home/../songs/L1923/L1923.mp3
