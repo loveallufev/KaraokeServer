@@ -23,7 +23,7 @@ class Controller_User extends Core_Controller{
 
         /* Sanity-check the username, don't rely on our use of prepared statements
         * alone to prevent attacks on the SQL server via malicious usernames. */
-        if (!preg_match('/^[a-zA-Z0-9_]{1,60}$/', $username))
+        if (!preg_match('/^[a-zA-Z0-9_.@]{6,60}$/', $username))
         {
             //Lib_Utility::fail('Invalid username');
             echo json_encode(array('status' => 'FAILED', 'message' => 'Invalid username'));
@@ -57,7 +57,7 @@ class Controller_User extends Core_Controller{
 
         /* Sanity-check the username, don't rely on our use of prepared statements
         * alone to prevent attacks on the SQL server via malicious usernames. */
-        if (!preg_match('/^[a-zA-Z0-9_]{1,60}$/', $username))
+        if (!preg_match('/^[a-zA-Z0-9_.@]{6,60}$/', $username))
         {
             //Lib_Utility::fail('Invalid username');
             echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_INVALID, 'message' => 'Invalid username'));
@@ -85,7 +85,15 @@ class Controller_User extends Core_Controller{
         header('Content-Type: application/json; charset=UTF-8');
         header('Cache-Control: no-cache, must-revalidate');
 
-        if (substr($username,0,2) == "fb"){
+        if (strlen($username) < 4){
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'code' => CODE_ERROR_INVALID,
+                'message' => 'Username must have more than 6 characters'
+            ));
+        }
+
+        if (substr($username,0,3) == "@"){
             if (Model_User::usernameExist($username)){
                 Controller_User::loginAction($param);
             }else{

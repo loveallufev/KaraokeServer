@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="fix error getInformation of song when unicode characters or ' or &quot; appear.&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/User.php" afterPath="$PROJECT_DIR$/Controller/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/User.php" afterPath="$PROJECT_DIR$/Model/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="f82865ad-9fcc-4c86-b07c-8dbefa202b76" name="Failed commit: Default" comment="flexible assistants choosing&#10;" />
     <ignored path="KaraokeServer.iws" />
@@ -99,7 +97,7 @@
       <file leaf-file-name="User.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controller/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="64" selection-start="3613" selection-end="3613" vertical-scroll-proportion="0.74285716" vertical-offset="845" max-vertical-offset="1650">
+            <state line="25" column="43" selection-start="896" selection-end="896" vertical-scroll-proportion="0.042857144" vertical-offset="345" max-vertical-offset="1770">
               <folding />
             </state>
           </provider>
@@ -966,7 +964,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controller/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="64" selection-start="3613" selection-end="3613" vertical-scroll-proportion="0.74285716" vertical-offset="845" max-vertical-offset="1650">
+        <state line="25" column="43" selection-start="896" selection-end="896" vertical-scroll-proportion="0.042857144" vertical-offset="345" max-vertical-offset="1770">
           <folding />
         </state>
       </provider>
