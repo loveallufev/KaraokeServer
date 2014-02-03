@@ -93,7 +93,7 @@ class Controller_User extends Core_Controller{
             ));
         }
 
-        if (substr($username,0,3) == "@"){
+        if (substr($username,0,3) == "fb@"){
             if (Model_User::usernameExist($username)){
                 Controller_User::loginAction($param);
             }else{
