@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="fix error getInformation of song when unicode characters or ' or &quot; appear.&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mix.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/Song.php" afterPath="$PROJECT_DIR$/Controller/Song.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Song.php" afterPath="$PROJECT_DIR$/Model/Song.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Utility.php" afterPath="$PROJECT_DIR$/Lib/Utility.php" />
+    <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mix.sh" afterPath="$PROJECT_DIR$/mix.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="f82865ad-9fcc-4c86-b07c-8dbefa202b76" name="Failed commit: Default" comment="flexible assistants choosing&#10;" />
@@ -58,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Song.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Song.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/Song.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="193" column="43" selection-start="5864" selection-end="5864" vertical-scroll-proportion="0.5588235" vertical-offset="2648" max-vertical-offset="5220">
+            <state line="193" column="43" selection-start="5864" selection-end="5864" vertical-scroll-proportion="-7.7916665" vertical-offset="2708" max-vertical-offset="5220">
               <folding>
                 <marker date="1391535343000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
                 <marker date="1391535343000" expanded="true" signature="1279:1319" placeholder="SELECT * FRO..song..." />
@@ -74,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mix.sh" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="mix.sh" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mix.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="32" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+            <state line="11" column="21" selection-start="211" selection-end="211" vertical-scroll-proportion="0.34591195" vertical-offset="0" max-vertical-offset="477">
               <folding />
             </state>
           </provider>
@@ -185,8 +181,8 @@
         <option value="$PROJECT_DIR$/Controller/Song.php" />
         <option value="$PROJECT_DIR$/Lib/Utility.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/mix.sh" />
         <option value="$PROJECT_DIR$/Model/Song.php" />
+        <option value="$PROJECT_DIR$/mix.sh" />
       </list>
     </option>
   </component>
@@ -614,30 +610,34 @@
       <created>1391306308298</created>
       <updated>1391306308298</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="add feature mix vocal and song">
+      <created>1391535420989</created>
+      <updated>1391535420989</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="22" width="1387" height="878" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32741117" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32824427" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30037174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -670,7 +670,8 @@
     <MESSAGE value="fix error getInformation of song when unicode characters or ' or &quot; appear." />
     <MESSAGE value="fix error getInformation of song when unicode characters or ' or &quot; appear.&#10;" />
     <MESSAGE value="face to problem wrong in language recognization&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="face to problem wrong in language recognization&#10;" />
+    <MESSAGE value="add feature mix vocal and song" />
+    <option name="LAST_COMMIT_MESSAGE" value="add feature mix vocal and song" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -967,13 +968,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mix.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="32" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/Song.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="213" column="9" selection-start="7959" selection-end="8004" vertical-scroll-proportion="-1.25" vertical-offset="3165" max-vertical-offset="5910">
@@ -983,7 +977,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/Song.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="193" column="43" selection-start="5864" selection-end="5864" vertical-scroll-proportion="0.5588235" vertical-offset="2648" max-vertical-offset="5220">
+        <state line="193" column="43" selection-start="5864" selection-end="5864" vertical-scroll-proportion="-7.7916665" vertical-offset="2708" max-vertical-offset="5220">
           <folding>
             <marker date="1391535343000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
             <marker date="1391535343000" expanded="true" signature="1279:1319" placeholder="SELECT * FRO..song..." />
@@ -992,6 +986,13 @@
             <marker date="1391535343000" expanded="true" signature="8659:8716" placeholder="INSERT INTO ..." />
             <marker date="1391535343000" expanded="true" signature="9371:9542" placeholder="INSERT INTO ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mix.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="21" selection-start="211" selection-end="211" vertical-scroll-proportion="0.34591195" vertical-offset="0" max-vertical-offset="477">
+          <folding />
         </state>
       </provider>
     </entry>

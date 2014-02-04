@@ -9,7 +9,7 @@ else
     output="$3"
     filename2=$(basename $2)
     extension="${filename2##*.}"
-    newname2=$(date %s)
+    newname2=$(date +%s)
     #filename="${filename%.*}"
     #$samplerate=$(sox --i  "${file1}" | grep "Sample Rate" | grep -o "[0-9]*")
     #$numberChannels=$(sox --i  "${file1}" | grep "Channels" | grep -o "[0-9]*")
