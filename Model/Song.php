@@ -184,15 +184,18 @@ class Model_Song extends Model_BasicSong{
             }
         }
 
-        echo "begin check sox";
+        echo "begin check sox:" . Lib_Utility::command_exist("sox") ;
         // if tool SOX is exist , merge vocal file and beat file
         $mixedfile = $path;
         if (Lib_Utility::command_exist("sox")){
             // if we didn't cache is song, cache it !
             if (!Model_Song::isCached($songid)) {
+                echo "cache song";
                 $song = Model_Song::getSongByID($songid);
                 $song->catcheThisSong();
+                echo "end of cache song";
             }
+
             //echo 'Have sox' . '<br/>';
 
 
