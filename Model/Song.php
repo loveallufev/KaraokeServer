@@ -153,7 +153,6 @@ class Model_Song extends Model_BasicSong{
             mkdir($folder, 0777, true);
         }
 
-        echo "end of create folder";
 
         // if this is a zip file, extract it and copy to our directory
         if ($file['type'] == 'application/zip'){
@@ -185,6 +184,7 @@ class Model_Song extends Model_BasicSong{
 
         // if tool SOX is exist , merge vocal file and beat file
         $mixedfile = $path;
+        $converted = false;
         if (Lib_Utility::command_exist("sox")){
             // if we didn't cache is song, cache it !
             if (!Model_Song::isCached($songid)) {
@@ -206,7 +206,7 @@ class Model_Song extends Model_BasicSong{
             //echo "output of mixer: " . $output . "*<br/>";
             // if error happened
             var_dump($output);
-            if(!empty($output) || !isset($output)){
+            if(!isset($output)){
                 $mixedfile = $path;
             } else {
                 $converted = true;
@@ -243,6 +243,9 @@ class Model_Song extends Model_BasicSong{
         // insert into database
         $model = new Core_Model();
         $model->getDB()->connect();
+
+        if ($converted) $isMixed = 1;
+            else $isMixed = 0;
 
         $query = sprintf("INSERT INTO record (username, url, songid, ismixed)" .
             " VALUES ('%s' , '%s', '%s' , %d)",
@@ -345,31 +348,7 @@ class Model_Song extends Model_BasicSong{
 
     public function catcheThisSong(){
 
-        /* SAVE BEAT */
-
-        $path = SERVER_ROOT . DS . Model_Song::getCachePathOfSong($this->ID) ;
-
-        $folder = dirname($path);
-        if (!file_exists($folder))
-        {
-            mkdir($folder, 0777, true);
-        }else {
-            if (!is_writable($folder)){
-                umask(0);
-                chmod($folder, 0777);
-            }
-        }
-
-        $ch = curl_init($this->beatURL);
-        $fp = fopen($path, 'wb');
-        curl_setopt($ch, CURLOPT_FILE, $fp);
-        curl_setopt($ch, CURLOPT_HEADER, 0);
-        curl_exec($ch);
-        curl_close($ch);
-        fclose($fp);
-
-        /* END OF SAVING BEAT */
-
+        Model_Song::cacheSong($this->ID, $this->beatURL);
 
     }
 }
