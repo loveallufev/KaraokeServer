@@ -331,6 +331,7 @@ class Model_Song extends Model_BasicSong{
 
         /* SAVE BEAT */
 
+        echo "cacheThisSong";
         $path = SERVER_ROOT . DS . Model_Song::getCachePathOfSong($this->ID) ;
         echo "path = $path in cachethissong";
 
