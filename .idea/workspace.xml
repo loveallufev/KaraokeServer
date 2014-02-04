@@ -47,14 +47,14 @@
       <file leaf-file-name="Song.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Model/Song.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="14" selection-start="5662" selection-end="5662" vertical-scroll-proportion="0.35681817" vertical-offset="2678" max-vertical-offset="5250">
+            <state line="186" column="31" selection-start="5480" selection-end="5480" vertical-scroll-proportion="0.65909094" vertical-offset="2500" max-vertical-offset="5340">
               <folding>
-                <marker date="1391538804000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
-                <marker date="1391538804000" expanded="true" signature="1279:1319" placeholder="SELECT * FRO..song..." />
-                <marker date="1391538804000" expanded="true" signature="5484:5715" placeholder="..." />
-                <marker date="1391538804000" expanded="true" signature="5484:5715" placeholder="..." />
-                <marker date="1391538804000" expanded="true" signature="8751:8808" placeholder="INSERT INTO ..." />
-                <marker date="1391538804000" expanded="true" signature="9463:9634" placeholder="INSERT INTO ..." />
+                <marker date="1391538998000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
+                <marker date="1391538998000" expanded="true" signature="1279:1319" placeholder="SELECT * FRO..song..." />
+                <marker date="1391538998000" expanded="true" signature="5675:5906" placeholder="..." />
+                <marker date="1391538998000" expanded="true" signature="5675:5906" placeholder="..." />
+                <marker date="1391538998000" expanded="true" signature="8942:8999" placeholder="INSERT INTO ..." />
+                <marker date="1391538998000" expanded="true" signature="9654:9825" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -708,12 +708,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="198" column="33" selection-start="5764" selection-end="5764" vertical-scroll-proportion="0.0" vertical-offset="2640" max-vertical-offset="3555">
           <folding>
-            <marker date="1391538804000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
-            <marker date="1391538804000" expanded="true" signature="1279:1319" placeholder="SELECT * FRO..song..." />
-            <marker date="1391538804000" expanded="true" signature="5484:5715" placeholder="..." />
-            <marker date="1391538804000" expanded="true" signature="5484:5715" placeholder="..." />
-            <marker date="1391538804000" expanded="true" signature="8751:8808" placeholder="INSERT INTO ..." />
-            <marker date="1391538804000" expanded="true" signature="9463:9634" placeholder="INSERT INTO ..." />
+            <marker date="1391538998000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
+            <marker date="1391538998000" expanded="true" signature="1279:1319" placeholder="SELECT * FRO..song..." />
+            <marker date="1391538998000" expanded="true" signature="5675:5906" placeholder="..." />
+            <marker date="1391538998000" expanded="true" signature="5675:5906" placeholder="..." />
+            <marker date="1391538998000" expanded="true" signature="8942:8999" placeholder="INSERT INTO ..." />
+            <marker date="1391538998000" expanded="true" signature="9654:9825" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -983,14 +983,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/Song.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="14" selection-start="5662" selection-end="5662" vertical-scroll-proportion="0.35681817" vertical-offset="2678" max-vertical-offset="5250">
+        <state line="186" column="31" selection-start="5480" selection-end="5480" vertical-scroll-proportion="0.65909094" vertical-offset="2500" max-vertical-offset="5340">
           <folding>
-            <marker date="1391538804000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
-            <marker date="1391538804000" expanded="true" signature="1279:1319" placeholder="SELECT * FRO..song..." />
-            <marker date="1391538804000" expanded="true" signature="5484:5715" placeholder="..." />
-            <marker date="1391538804000" expanded="true" signature="5484:5715" placeholder="..." />
-            <marker date="1391538804000" expanded="true" signature="8751:8808" placeholder="INSERT INTO ..." />
-            <marker date="1391538804000" expanded="true" signature="9463:9634" placeholder="INSERT INTO ..." />
+            <marker date="1391538998000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
+            <marker date="1391538998000" expanded="true" signature="1279:1319" placeholder="SELECT * FRO..song..." />
+            <marker date="1391538998000" expanded="true" signature="5675:5906" placeholder="..." />
+            <marker date="1391538998000" expanded="true" signature="5675:5906" placeholder="..." />
+            <marker date="1391538998000" expanded="true" signature="8942:8999" placeholder="INSERT INTO ..." />
+            <marker date="1391538998000" expanded="true" signature="9654:9825" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

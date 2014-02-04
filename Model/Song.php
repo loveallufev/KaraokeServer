@@ -142,20 +142,24 @@ class Model_Song extends Model_BasicSong{
     }
 
     public static function saveRecord($file, $username, $songid, $isMixed) {
-
+        echo "Begin function";
         $originalName = $file['name'];
         $newName = time() . $originalName;
         $songid = mysql_real_escape_string($songid);
         $username = mysql_real_escape_string($username);
         $path = 'upload' .  DS . $username . DS . $newName;
         $folder = dirname($path);
+        echo "end of preparing";
 
         if (!file_exists($folder)) {
             mkdir($folder, 0777, true);
         }
 
+        echo "end of create folder";
+
         // if this is a zip file, extract it and copy to our directory
         if ($file['type'] == 'application/zip'){
+            echo "ZIP file";
             $zip = new ZipArchive;
             $res = $zip->open($file["tmp_name"]);
             if ($res === TRUE) {
@@ -169,6 +173,7 @@ class Model_Song extends Model_BasicSong{
 
         else{   // if this is an audio file, copy it from temporary directory to our directory
             // save file
+            echo "WAV file";
             if (file_exists($path)) // check everything, believe no one and nothing
             {
                 return array('status' => 'OK', 'code' => CODE_ERROR_FAILED, 'message' => $file["name"] . " already exists. ");
@@ -179,6 +184,7 @@ class Model_Song extends Model_BasicSong{
             }
         }
 
+        echo "begin check sox";
         // if tool SOX is exist , merge vocal file and beat file
         $mixedfile = $path;
         if (Lib_Utility::command_exist("sox")){
