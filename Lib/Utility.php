@@ -217,4 +217,9 @@ class Lib_Utility {
         return str_replace($t1,$t2, $s );
     }
 
+    public static function command_exist($cmd) {
+        $returnVal = shell_exec("which $cmd");
+        return (empty($returnVal) ? false : true);
+    }
+
 }

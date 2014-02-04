@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="fix error getInformation of song when unicode characters or ' or &quot; appear.&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mix.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/Song.php" afterPath="$PROJECT_DIR$/Controller/Song.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Song.php" afterPath="$PROJECT_DIR$/Model/Song.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Utility.php" afterPath="$PROJECT_DIR$/Lib/Utility.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="f82865ad-9fcc-4c86-b07c-8dbefa202b76" name="Failed commit: Default" comment="flexible assistants choosing&#10;" />
     <ignored path="KaraokeServer.iws" />
@@ -29,16 +34,16 @@
       <file leaf-file-name="LuckyVoiceAssistant.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/LuckyVoiceAssistant.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="212" column="40" selection-start="8625" selection-end="8636" vertical-scroll-proportion="-28.541666" vertical-offset="2420" max-vertical-offset="5265">
+            <state line="212" column="40" selection-start="8625" selection-end="8636" vertical-scroll-proportion="0.0" vertical-offset="3180" max-vertical-offset="5340">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Song.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Song.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/Song.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="216" column="26" selection-start="8058" selection-end="8058" vertical-scroll-proportion="0.4642857" vertical-offset="2915" max-vertical-offset="5910">
+            <state line="213" column="9" selection-start="7959" selection-end="8004" vertical-scroll-proportion="-1.25" vertical-offset="3165" max-vertical-offset="5910">
               <folding />
             </state>
           </provider>
@@ -47,22 +52,42 @@
       <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Config/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+            <state line="1" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="105">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Song.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Song.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Model/Song.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="263" column="39" selection-start="8274" selection-end="8274" vertical-scroll-proportion="-5.4166665" vertical-offset="3815" max-vertical-offset="4635">
+            <state line="193" column="43" selection-start="5864" selection-end="5864" vertical-scroll-proportion="0.5588235" vertical-offset="2648" max-vertical-offset="5220">
               <folding>
-                <marker date="1391461887000" expanded="true" signature="991:1162" placeholder="INSERT INTO ..." />
-                <marker date="1391461887000" expanded="true" signature="2121:2153" placeholder="SELECT * FRO..song..." />
-                <marker date="1391461887000" expanded="true" signature="2579:2619" placeholder="SELECT * FRO..song..." />
-                <marker date="1391461887000" expanded="true" signature="9195:9252" placeholder="INSERT INTO ..." />
+                <marker date="1391535343000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
+                <marker date="1391535343000" expanded="true" signature="1279:1319" placeholder="SELECT * FRO..song..." />
+                <marker date="1391535343000" expanded="true" signature="5484:5674" placeholder="..." />
+                <marker date="1391535343000" expanded="true" signature="5484:5674" placeholder="..." />
+                <marker date="1391535343000" expanded="true" signature="8659:8716" placeholder="INSERT INTO ..." />
+                <marker date="1391535343000" expanded="true" signature="9371:9542" placeholder="INSERT INTO ..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mix.sh" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mix.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="32" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="0" selection-start="1421" selection-end="1501" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="930">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,7 +104,7 @@
       <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="40" selection-start="3677" selection-end="3677" vertical-scroll-proportion="-36.208332" vertical-offset="556" max-vertical-offset="1770">
+            <state line="95" column="40" selection-start="3677" selection-end="3677" vertical-scroll-proportion="0.0" vertical-offset="556" max-vertical-offset="1770">
               <folding />
             </state>
           </provider>
@@ -88,7 +113,7 @@
       <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="56" selection-start="409" selection-end="409" vertical-scroll-proportion="50.833332" vertical-offset="1355" max-vertical-offset="2190">
+            <state line="14" column="56" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="2265">
               <folding>
                 <marker date="1391443609000" expanded="true" signature="918:975" placeholder="INSERT INTO ..." />
                 <marker date="1391443609000" expanded="true" signature="2016:2061" placeholder="SELECT passw..user..." />
@@ -154,13 +179,14 @@
         <option value="$PROJECT_DIR$/Model/SongAssistantManager.php" />
         <option value="$PROJECT_DIR$/Model/ZingAssistant.php" />
         <option value="$PROJECT_DIR$/Model/LuckyVoiceAssistant.php" />
-        <option value="$PROJECT_DIR$/Lib/Utility.php" />
         <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/Controller/User.php" />
         <option value="$PROJECT_DIR$/Model/User.php" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/Model/Song.php" />
         <option value="$PROJECT_DIR$/Controller/Song.php" />
+        <option value="$PROJECT_DIR$/Lib/Utility.php" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/mix.sh" />
+        <option value="$PROJECT_DIR$/Model/Song.php" />
       </list>
     </option>
   </component>
@@ -171,7 +197,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="53" />
+    <option name="x" value="51" />
     <option name="y" value="22" />
     <option name="width" value="1387" />
     <option name="height" value="878" />
@@ -592,16 +618,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="22" width="1387" height="878" extended-state="6" />
-    <editor active="true" />
+    <frame x="51" y="22" width="1387" height="878" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32741117" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32741117" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29144982" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30037174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -652,13 +678,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Model/LuckyVoiceAssistant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="33" selection-start="5591" selection-end="5591" vertical-scroll-proportion="0.0" vertical-offset="1965" max-vertical-offset="5775">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/ZingAssistant.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="175" column="51" selection-start="6788" selection-end="6788" vertical-scroll-proportion="0.0" vertical-offset="2625" max-vertical-offset="4695" />
@@ -689,10 +708,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="198" column="33" selection-start="5764" selection-end="5764" vertical-scroll-proportion="0.0" vertical-offset="2640" max-vertical-offset="3555">
           <folding>
-            <marker date="1391461887000" expanded="true" signature="991:1162" placeholder="INSERT INTO ..." />
-            <marker date="1391461887000" expanded="true" signature="2121:2153" placeholder="SELECT * FRO..song..." />
-            <marker date="1391461887000" expanded="true" signature="2579:2619" placeholder="SELECT * FRO..song..." />
-            <marker date="1391461887000" expanded="true" signature="9195:9252" placeholder="INSERT INTO ..." />
+            <marker date="1391535343000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
+            <marker date="1391535343000" expanded="true" signature="1279:1319" placeholder="SELECT * FRO..song..." />
+            <marker date="1391535343000" expanded="true" signature="5484:5674" placeholder="..." />
+            <marker date="1391535343000" expanded="true" signature="5484:5674" placeholder="..." />
+            <marker date="1391535343000" expanded="true" signature="8659:8716" placeholder="INSERT INTO ..." />
+            <marker date="1391535343000" expanded="true" signature="9371:9542" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -708,11 +729,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.14266305" vertical-offset="0" max-vertical-offset="736" />
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.14266305" vertical-offset="0" max-vertical-offset="736" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Core/View.php">
@@ -882,21 +903,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/Driver/Mysql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="5" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.81065917" vertical-offset="262" max-vertical-offset="975">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Utility.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="212" column="27" selection-start="6118" selection-end="6118" vertical-scroll-proportion="0.7557143" vertical-offset="2576" max-vertical-offset="3300">
-          <folding />
-        </state>
+        <state line="61" column="5" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.81065917" vertical-offset="262" max-vertical-offset="975" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="56" selection-start="409" selection-end="409" vertical-scroll-proportion="50.833332" vertical-offset="1355" max-vertical-offset="2190">
+        <state line="14" column="56" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="2265">
           <folding>
             <marker date="1391443609000" expanded="true" signature="918:975" placeholder="INSERT INTO ..." />
             <marker date="1391443609000" expanded="true" signature="2016:2061" placeholder="SELECT passw..user..." />
@@ -909,23 +921,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/karaoke.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="283" column="39" selection-start="25811" selection-end="25811" vertical-scroll-proportion="-84.9" vertical-offset="0" max-vertical-offset="7035">
-          <folding />
-        </state>
+        <state line="283" column="39" selection-start="25811" selection-end="25811" vertical-scroll-proportion="-84.9" vertical-offset="0" max-vertical-offset="7035" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/karaoke_onlystructure.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1815">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="210" selection-end="210" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="180">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1815" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Config/.gitignore">
@@ -937,34 +938,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/LuckyVoiceAssistant.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="212" column="40" selection-start="8625" selection-end="8636" vertical-scroll-proportion="-28.541666" vertical-offset="2420" max-vertical-offset="5265">
+        <state line="212" column="40" selection-start="8625" selection-end="8636" vertical-scroll-proportion="0.0" vertical-offset="3180" max-vertical-offset="5340">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controller/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="40" selection-start="3677" selection-end="3677" vertical-scroll-proportion="-36.208332" vertical-offset="556" max-vertical-offset="1770">
+        <state line="95" column="40" selection-start="3677" selection-end="3677" vertical-scroll-proportion="0.0" vertical-offset="556" max-vertical-offset="1770">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Utility.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="219" column="18" selection-start="6315" selection-end="6315" vertical-scroll-proportion="0.8925502" vertical-offset="2587" max-vertical-offset="3375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1421" selection-end="1501" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mix.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="32" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Song.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="213" column="9" selection-start="7959" selection-end="8004" vertical-scroll-proportion="-1.25" vertical-offset="3165" max-vertical-offset="5910">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/Song.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="263" column="39" selection-start="8274" selection-end="8274" vertical-scroll-proportion="-5.4166665" vertical-offset="3815" max-vertical-offset="4635">
+        <state line="193" column="43" selection-start="5864" selection-end="5864" vertical-scroll-proportion="0.5588235" vertical-offset="2648" max-vertical-offset="5220">
           <folding>
-            <marker date="1391461887000" expanded="true" signature="991:1162" placeholder="INSERT INTO ..." />
-            <marker date="1391461887000" expanded="true" signature="2121:2153" placeholder="SELECT * FRO..song..." />
-            <marker date="1391461887000" expanded="true" signature="2579:2619" placeholder="SELECT * FRO..song..." />
-            <marker date="1391461887000" expanded="true" signature="9195:9252" placeholder="INSERT INTO ..." />
+            <marker date="1391535343000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
+            <marker date="1391535343000" expanded="true" signature="1279:1319" placeholder="SELECT * FRO..song..." />
+            <marker date="1391535343000" expanded="true" signature="5484:5674" placeholder="..." />
+            <marker date="1391535343000" expanded="true" signature="5484:5674" placeholder="..." />
+            <marker date="1391535343000" expanded="true" signature="8659:8716" placeholder="INSERT INTO ..." />
+            <marker date="1391535343000" expanded="true" signature="9371:9542" placeholder="INSERT INTO ..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Song.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="216" column="26" selection-start="8058" selection-end="8058" vertical-scroll-proportion="0.4642857" vertical-offset="2915" max-vertical-offset="5910">
-          <folding />
         </state>
       </provider>
     </entry>

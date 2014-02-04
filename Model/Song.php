@@ -22,34 +22,6 @@ class Model_Song extends Model_BasicSong{
         $this->category = $category;
     }
 
-    public function insertThisIntoDatabase(){
-        /* WRITE INFORMATION OF THIS SONG TO DATABASE */
-
-        $words = preg_split("/\s+/", $this->title);
-        $alias = '';
-        foreach ($words as $w) {
-            $alias .= $w[0];
-        }
-        $model = new Core_Model();
-        $model->getDB()->connect();
-        $model->getDB()->connection->query("SET NAMES utf8");
-
-        $query = sprintf("INSERT INTO song (customID, title, singer, author, category, beatURL, lyricURL, lyric, alias, karaoke ) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')",
-            $this->ID, Lib_Utility::escapeCharacter($this->title), Lib_Utility::escapeCharacter($this->singer), Lib_Utility::escapeCharacter($this->author), Lib_Utility::escapeCharacter($this->category), Lib_Utility::escapeCharacter($this->beatURL), Lib_Utility::escapeCharacter($this->lyricURL), Lib_Utility::escapeCharacter($this->lyric), $alias , Lib_Utility::escapeCharacter(($this->karaoke)));
-
-        $model->getDB()->prepare($query);
-        if (!$model->getDB()->query()){
-            if ($model->getDB()->connection->errno == 1062 /*DUPLICATE ENTRY ERROR*/){
-
-            }else{
-                    echo $model->getDB()->connection->error . "<br/>";
-            }
-        }
-
-        /* END WRITING */
-    }
-
-    // get song with ID >= $DBID, ID is the ID of song in database, not CustomID (L3323...)
     public static function getNewerSong($DBID){
         $model = new Core_Model();
         $model->getDB()->connect();
@@ -65,6 +37,8 @@ class Model_Song extends Model_BasicSong{
 
         return $qresult;
     }
+
+    // get song with ID >= $DBID, ID is the ID of song in database, not CustomID (L3323...)
 
     public static function getSongByID($id){
         $model = new Core_Model();
@@ -92,47 +66,15 @@ class Model_Song extends Model_BasicSong{
         return $song;
     }
 
-    public function catcheThisSong(){
+    public  static function isCached($ID){
+        $filename = $ID . '.mp3';
+        $path = SERVER_ROOT . DS . 'songs/' . $ID . DS . $filename ;
+        return file_exists($path);
+    }
 
-        if (!file_exists('songs')) {
-            mkdir('songs', 0777, true);
-        }
-        /* SAVE BEAT */
-        $filename = $this->ID . '.mp3';
-
-        $path = SERVER_ROOT . DS . 'songs/' . $this->ID . DS . $filename ;
-
-        $folder = dirname($path);
-        if (!is_dir($folder))
-        {
-            mkdir($folder, 0777, true);
-        }
-
-        $ch = curl_init($this->beatURL);
-        $fp = fopen($path, 'wb');
-        curl_setopt($ch, CURLOPT_FILE, $fp);
-        curl_setopt($ch, CURLOPT_HEADER, 0);
-        curl_exec($ch);
-        curl_close($ch);
-        fclose($fp);
-
-        /* END OF SAVING BEAT */
-
-
-        /* SAVE LYRIC */
-        $filename = $this->ID . '.sub';
-
-        $path = SERVER_ROOT . DS . 'songs/' . $this->ID . DS . $filename ;
-
-        $ch = curl_init($this->lyricURL);
-        $fp = fopen($path, 'wb');
-        curl_setopt($ch, CURLOPT_FILE, $fp);
-        curl_setopt($ch, CURLOPT_HEADER, 0);
-        curl_exec($ch);
-        curl_close($ch);
-        fclose($fp);
-
-        /* END OF SAVING LYRIC */
+    public static function getCachePathOfSong($ID){
+        $filename = $ID . '.mp3';
+        return 'songs/' . $ID . DS . $filename ;
 
     }
 
@@ -142,9 +84,8 @@ class Model_Song extends Model_BasicSong{
             mkdir('songs', 0777, true);
         }
         /* SAVE BEAT */
-        $filename = $ID . '.mp3';
 
-        $path = SERVER_ROOT . DS . 'songs/' . $ID . DS . $filename ;
+        $path = SERVER_ROOT . DS . Model_Song::getCachePathOfSong($ID);
 
         $folder = dirname($path);
         if (!is_dir($folder))
@@ -201,50 +142,93 @@ class Model_Song extends Model_BasicSong{
     }
 
     public static function saveRecord($file, $username, $songid, $isMixed) {
-        $newName = time() . $file["name"];
 
-        if (!file_exists('upload')) {
-            mkdir('upload', 0777, true);
+        $originalName = $file['name'];
+        $newName = time() . $originalName;
+        $songid = mysql_real_escape_string($songid);
+        $username = mysql_real_escape_string($username);
+        $path = 'upload' .  DS . $username . DS . $newName;
+        $folder = dirname($path);
+
+        if (!file_exists($folder)) {
+            mkdir($folder, 0777, true);
         }
-        // save file
-        if (file_exists("upload/" . $newName))
-        {
-            echo array('status' => 'OK', 'code' => CODE_ERROR_FAILED, 'message' => $file["name"] . " already exists. ");
-        }
-        else
-        {
-            move_uploaded_file($file["tmp_name"], "upload/" . $newName);
 
-
-            // insert into database
-            $model = new Core_Model();
-            $model->getDB()->connect();
-
-            $query = sprintf("INSERT INTO record (username, url, songid, ismixed)" .
-                " VALUES ('%s' , '%s', '%s' , %d)",
-                $username, BASE_URL . '/upload/' . $newName, mysql_real_escape_string($songid), $isMixed
-            );
-
-            $model->getDB()->prepare($query);
-            if (!$model->getDB()->query()){
-                if ($model->getDB()->connection->errno == 1062 /*DUPLICATE ENTRY ERROR*/){
-                    return array('message' => "Duplicate record" , 'status' => "FAILED", 'code' => CODE_ERROR_DUPLICATE);
-                }else{
-                    return  array('status' => 'FAILED', 'code' => CODE_ERROR_FAILED ,'message' => $model->getDB()->connection->error);
-                }
+        // if this is a zip file, extract it and copy to our directory
+        if ($file['type'] == 'application/zip'){
+            $zip = new ZipArchive;
+            $res = $zip->open($file["tmp_name"]);
+            if ($res === TRUE) {
+                $stat = $zip->statIndex( 0 );
+                $originalName = basename( $stat['name']);
+                $zip->extractTo('temps/');
+                $zip->close();
+                rename('temps/'. $originalName, $path );
             }
-            if (file_exists("upload/" . $newName))
-                return  array(
-                    'status' => 'OK', 'code' => CODE_SUCCESS,
-                    'message' => "Save record successfully",
-                    'link' => BASE_URL . '/upload/' . $newName
-                );
-            else
-                return  array('status' => 'FAILED', 'code' => CODE_ERROR_FAILED ,
-                    'message' => 'can not create new file');
-
-
         }
+
+        else{   // if this is an audio file, copy it from temporary directory to our directory
+            // save file
+            if (file_exists($path)) // check everything, believe no one and nothing
+            {
+                return array('status' => 'OK', 'code' => CODE_ERROR_FAILED, 'message' => $file["name"] . " already exists. ");
+            }
+            else
+            {
+                move_uploaded_file($file["tmp_name"], $path);
+            }
+        }
+
+        // if tool SOX is exist , merge vocal file and beat file
+        $mixedfile = $path;
+        if (Lib_Utility::command_exist("sox")){
+            // if we didn't cache is song, cache it !
+            if (!Model_Song::isCached($songid)) {
+                $song = Model_Song::getSongByID($songid);
+                $song->catcheThisSong();
+            }
+
+
+            $mixedfile = $folder . DS . time() . '.mp3';
+            $command = sprintf("./mix.sh %s %s %s", $path , Model_Song::getCachePathOfSong($songid), $mixedfile);
+            $output = shell_exec($command);
+
+            // if error happened
+            if(!isset($output)){
+                $mixedfile = $path;
+            } else {
+                $converted = true;
+            }
+        }
+
+        // insert into database
+        $model = new Core_Model();
+        $model->getDB()->connect();
+
+        $query = sprintf("INSERT INTO record (username, url, songid, ismixed)" .
+            " VALUES ('%s' , '%s', '%s' , %d)",
+            $username, BASE_URL . DS . $mixedfile, $songid, $isMixed
+        );
+
+        $model->getDB()->prepare($query);
+        if (!$model->getDB()->query()){
+            if ($model->getDB()->connection->errno == 1062 /*DUPLICATE ENTRY ERROR*/){
+                return array('message' => "Duplicate record" , 'status' => "FAILED", 'code' => CODE_ERROR_DUPLICATE);
+            }else{
+                return  array('status' => 'FAILED', 'code' => CODE_ERROR_FAILED ,'message' => $model->getDB()->connection->error);
+            }
+        }
+
+        // check again
+        if (file_exists("upload/" . $newName))
+            return  array(
+                'status' => 'OK', 'code' => CODE_SUCCESS,
+                'message' => "Save record successfully",
+                'link' => BASE_URL . DS . $mixedfile
+            );
+        else
+            return  array('status' => 'FAILED', 'code' => CODE_ERROR_FAILED ,
+                'message' => 'can not create new file');
     }
 
     public static function fixlinkAction($link, $id=""){
@@ -300,5 +284,60 @@ class Model_Song extends Model_BasicSong{
         if (!$model->getDB()->query()){
             return array('status' => 'FAILED', 'message'=>$model->getDB()->connection->error);
         }
+    }
+
+    public function insertThisIntoDatabase(){
+        /* WRITE INFORMATION OF THIS SONG TO DATABASE */
+
+        $words = preg_split("/\s+/", $this->title);
+        $alias = '';
+        foreach ($words as $w) {
+            $alias .= $w[0];
+        }
+        $model = new Core_Model();
+        $model->getDB()->connect();
+        $model->getDB()->connection->query("SET NAMES utf8");
+
+        $query = sprintf("INSERT INTO song (customID, title, singer, author, category, beatURL, lyricURL, lyric, alias, karaoke ) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')",
+            $this->ID, Lib_Utility::escapeCharacter($this->title), Lib_Utility::escapeCharacter($this->singer), Lib_Utility::escapeCharacter($this->author), Lib_Utility::escapeCharacter($this->category), Lib_Utility::escapeCharacter($this->beatURL), Lib_Utility::escapeCharacter($this->lyricURL), Lib_Utility::escapeCharacter($this->lyric), $alias , Lib_Utility::escapeCharacter(($this->karaoke)));
+
+        $model->getDB()->prepare($query);
+        if (!$model->getDB()->query()){
+            if ($model->getDB()->connection->errno == 1062 /*DUPLICATE ENTRY ERROR*/){
+
+            }else{
+                    echo $model->getDB()->connection->error . "<br/>";
+            }
+        }
+
+        /* END WRITING */
+    }
+
+    public function catcheThisSong(){
+
+        if (!file_exists('songs')) {
+            mkdir('songs', 0777, true);
+        }
+        /* SAVE BEAT */
+
+        $path = SERVER_ROOT . DS . Model_Song::getCachePathOfSong($this->ID) ;
+
+        $folder = dirname($path);
+        if (!is_dir($folder))
+        {
+            mkdir($folder, 0777, true);
+        }
+
+        $ch = curl_init($this->beatURL);
+        $fp = fopen($path, 'wb');
+        curl_setopt($ch, CURLOPT_FILE, $fp);
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+        curl_exec($ch);
+        curl_close($ch);
+        fclose($fp);
+
+        /* END OF SAVING BEAT */
+
+
     }
 }
