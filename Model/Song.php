@@ -241,6 +241,17 @@ class Model_Song extends Model_BasicSong{
             }
         }
 
+        // Logging class initialization
+        $log = new Lib_Logging();
+
+        // set path and name of log file (optional)
+        $log->lfile('logs/user_song.log');
+
+        // write message to the log file
+        $log->lwrite(sprintf('%s upload record of song %s at %s and mixed into %s', $username, $songid, $path, $mixedfile));
+        // close log file
+        $log->lclose();
+
         return $result;
     }
 
