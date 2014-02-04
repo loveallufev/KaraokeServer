@@ -95,12 +95,8 @@ class Model_Song extends Model_BasicSong{
             //$oldmask = umask(0);
             mkdir($folder, 0777, true);
             //umask($oldmask);
-        }else {
-            if (!is_writable($folder)){
-                umask(0);
-                chmod($folder, 0777);
-            }
         }
+        
         try {
             if (!file_exists($path)){
                 $ch = curl_init($beatURL);
