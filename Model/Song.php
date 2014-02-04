@@ -194,6 +194,7 @@ class Model_Song extends Model_BasicSong{
             if (!Model_Song::isCached($songid)) {
                 echo "cache song";
                 $song = Model_Song::getSongByID($songid);
+                echo "get song OK";
                 $song->catcheThisSong();
                 echo "end of cache song";
             }
