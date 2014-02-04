@@ -35,15 +35,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Song.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/Song.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="213" column="9" selection-start="7959" selection-end="8004" vertical-scroll-proportion="-81.875" vertical-offset="1230" max-vertical-offset="5910">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Config/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
@@ -56,41 +47,23 @@
       <file leaf-file-name="Song.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Model/Song.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="8" selection-start="2836" selection-end="2836" vertical-scroll-proportion="0.48660713" vertical-offset="1143" max-vertical-offset="5385">
+            <state line="102" column="42" selection-start="2985" selection-end="2985" vertical-scroll-proportion="0.39568347" vertical-offset="1255" max-vertical-offset="5445">
               <folding>
-                <marker date="1391544470000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
-                <marker date="1391544470000" expanded="true" signature="1279:1319" placeholder="SELECT * FRO..song..." />
-                <marker date="1391544470000" expanded="true" signature="5709:6114" placeholder="..." />
-                <marker date="1391544470000" expanded="true" signature="5709:6114" placeholder="..." />
-                <marker date="1391544470000" expanded="true" signature="9635:9692" placeholder="INSERT INTO ..." />
-                <marker date="1391544470000" expanded="true" signature="10347:10518" placeholder="INSERT INTO ..." />
+                <marker date="1391545819000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
+                <marker date="1391545819000" expanded="true" signature="1279:1319" placeholder="SELECT * FRO..song..." />
+                <marker date="1391545819000" expanded="true" signature="5763:6168" placeholder="..." />
+                <marker date="1391545819000" expanded="true" signature="5763:6168" placeholder="..." />
+                <marker date="1391545819000" expanded="true" signature="9689:9746" placeholder="INSERT INTO ..." />
+                <marker date="1391545819000" expanded="true" signature="10401:10572" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mix.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mix.sh">
+      <file leaf-file-name="ZingAssistant.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/ZingAssistant.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="21" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="0" selection-start="1421" selection-end="1501" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="930">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SongAssistantManager.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/SongAssistantManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="40" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1455">
+            <state line="248" column="24" selection-start="9462" selection-end="9462" vertical-scroll-proportion="-18.25" vertical-offset="3207" max-vertical-offset="4815">
               <folding />
             </state>
           </provider>
@@ -717,12 +690,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="198" column="33" selection-start="5764" selection-end="5764" vertical-scroll-proportion="0.0" vertical-offset="2640" max-vertical-offset="3555">
           <folding>
-            <marker date="1391544470000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
-            <marker date="1391544470000" expanded="true" signature="1279:1319" placeholder="SELECT * FRO..song..." />
-            <marker date="1391544470000" expanded="true" signature="5709:6114" placeholder="..." />
-            <marker date="1391544470000" expanded="true" signature="5709:6114" placeholder="..." />
-            <marker date="1391544470000" expanded="true" signature="9635:9692" placeholder="INSERT INTO ..." />
-            <marker date="1391544470000" expanded="true" signature="10347:10518" placeholder="INSERT INTO ..." />
+            <marker date="1391545819000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
+            <marker date="1391545819000" expanded="true" signature="1279:1319" placeholder="SELECT * FRO..song..." />
+            <marker date="1391545819000" expanded="true" signature="5763:6168" placeholder="..." />
+            <marker date="1391545819000" expanded="true" signature="5763:6168" placeholder="..." />
+            <marker date="1391545819000" expanded="true" signature="9689:9746" placeholder="INSERT INTO ..." />
+            <marker date="1391545819000" expanded="true" signature="10401:10572" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -845,11 +818,6 @@
         <state line="13" column="1" selection-start="193" selection-end="193" vertical-scroll-proportion="0.26431718" vertical-offset="0" max-vertical-offset="454" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/AbstractAssistant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="35" selection-start="210" selection-end="210" vertical-scroll-proportion="0.14726508" vertical-offset="0" max-vertical-offset="713" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Config/LuckyVoiceSetting.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="57" selection-start="284" selection-end="303" vertical-scroll-proportion="0.21097046" vertical-offset="0" max-vertical-offset="711" />
@@ -860,11 +828,6 @@
         <state line="12" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.24489796" vertical-offset="0" max-vertical-offset="735">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/ZingAssistant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="62" selection-start="8029" selection-end="8029" vertical-scroll-proportion="0.989781" vertical-offset="2322" max-vertical-offset="4815" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Config/Configuration.xml">
@@ -887,18 +850,6 @@
     <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="86" selection-start="286" selection-end="582" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/BasicSong.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="21" selection-start="215" selection-end="215" vertical-scroll-proportion="0.16830294" vertical-offset="0" max-vertical-offset="713" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/SongAssistantManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="40" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1455">
           <folding />
         </state>
       </provider>
@@ -959,23 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="1421" selection-end="1501" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mix.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/Utility.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="219" column="18" selection-start="6315" selection-end="6315" vertical-scroll-proportion="0.7681818" vertical-offset="2872" max-vertical-offset="3375">
@@ -990,16 +924,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Model/AbstractAssistant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="35" selection-start="210" selection-end="210" vertical-scroll-proportion="0.14767933" vertical-offset="0" max-vertical-offset="711">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/SongAssistantManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="40" selection-start="1033" selection-end="1033" vertical-scroll-proportion="-0.10548523" vertical-offset="525" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1421" selection-end="1501" vertical-scroll-proportion="0.9047619" vertical-offset="175" max-vertical-offset="930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mix.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="21" selection-start="211" selection-end="211" vertical-scroll-proportion="0.2176781" vertical-offset="0" max-vertical-offset="758">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/BasicSong.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="21" selection-start="215" selection-end="215" vertical-scroll-proportion="0.16348773" vertical-offset="0" max-vertical-offset="734">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/ZingAssistant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="248" column="24" selection-start="9462" selection-end="9462" vertical-scroll-proportion="-18.25" vertical-offset="3207" max-vertical-offset="4815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Model/Song.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="8" selection-start="2836" selection-end="2836" vertical-scroll-proportion="0.48660713" vertical-offset="1143" max-vertical-offset="5385">
+        <state line="102" column="42" selection-start="2985" selection-end="2985" vertical-scroll-proportion="0.39568347" vertical-offset="1255" max-vertical-offset="5445">
           <folding>
-            <marker date="1391544470000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
-            <marker date="1391544470000" expanded="true" signature="1279:1319" placeholder="SELECT * FRO..song..." />
-            <marker date="1391544470000" expanded="true" signature="5709:6114" placeholder="..." />
-            <marker date="1391544470000" expanded="true" signature="5709:6114" placeholder="..." />
-            <marker date="1391544470000" expanded="true" signature="9635:9692" placeholder="INSERT INTO ..." />
-            <marker date="1391544470000" expanded="true" signature="10347:10518" placeholder="INSERT INTO ..." />
+            <marker date="1391545819000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
+            <marker date="1391545819000" expanded="true" signature="1279:1319" placeholder="SELECT * FRO..song..." />
+            <marker date="1391545819000" expanded="true" signature="5763:6168" placeholder="..." />
+            <marker date="1391545819000" expanded="true" signature="5763:6168" placeholder="..." />
+            <marker date="1391545819000" expanded="true" signature="9689:9746" placeholder="INSERT INTO ..." />
+            <marker date="1391545819000" expanded="true" signature="10401:10572" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

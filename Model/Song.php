@@ -96,9 +96,10 @@ class Model_Song extends Model_BasicSong{
             mkdir($folder, 0777, true);
             //umask($oldmask);
         }
-        
+
         try {
             if (!file_exists($path)){
+                $beatURL = str_replace(' ', '%20', $beatURL);
                 $ch = curl_init($beatURL);
                 $fp = fopen($path, 'wb');
                 curl_setopt($ch, CURLOPT_FILE, $fp);
@@ -332,7 +333,10 @@ class Model_Song extends Model_BasicSong{
         $model->getDB()->connection->query("SET NAMES utf8");
 
         $query = sprintf("INSERT INTO song (customID, title, singer, author, category, beatURL, lyricURL, lyric, alias, karaoke ) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')",
-            $this->ID, Lib_Utility::escapeCharacter($this->title), Lib_Utility::escapeCharacter($this->singer), Lib_Utility::escapeCharacter($this->author), Lib_Utility::escapeCharacter($this->category), Lib_Utility::escapeCharacter($this->beatURL), Lib_Utility::escapeCharacter($this->lyricURL), Lib_Utility::escapeCharacter($this->lyric), $alias , Lib_Utility::escapeCharacter(($this->karaoke)));
+            $this->ID, Lib_Utility::escapeCharacter($this->title), Lib_Utility::escapeCharacter($this->singer),
+            Lib_Utility::escapeCharacter($this->author), Lib_Utility::escapeCharacter($this->category),
+            Lib_Utility::escapeCharacter(str_replace(' ', '%20',$this->beatURL)), Lib_Utility::escapeCharacter($this->lyricURL),
+            Lib_Utility::escapeCharacter($this->lyric), $alias , Lib_Utility::escapeCharacter(($this->karaoke)));
 
         $model->getDB()->prepare($query);
         if (!$model->getDB()->query()){
