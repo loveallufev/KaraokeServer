@@ -80,15 +80,15 @@ class Model_Song extends Model_BasicSong{
 
     public static function cacheSong($ID, $beatURL){
 
-        if (!file_exists('songs')) {
-            mkdir('songs', 0777, true);
-        }
+        //if (!file_exists('songs')) {
+        //    mkdir('songs', 0777, true);
+        //}
         /* SAVE BEAT */
 
         $path = SERVER_ROOT . DS . Model_Song::getCachePathOfSong($ID);
 
         $folder = dirname($path);
-        if (!is_dir($folder))
+        if (!file_exists($folder))
         {
             $oldmask = umask(0);
             mkdir($folder, 0777, true);
@@ -205,12 +205,40 @@ class Model_Song extends Model_BasicSong{
 
             //echo "output of mixer: " . $output . "*<br/>";
             // if error happened
-            if(!empty($output)){
+            var_dump($output);
+            if(!empty($output) || !isset($output)){
                 $mixedfile = $path;
             } else {
                 $converted = true;
             }
         }
+
+
+
+        $result = null;
+
+        // check again
+
+        if (file_exists($mixedfile)){
+            $result =  array(
+                'status' => 'OK', 'code' => CODE_SUCCESS,
+                'message' => "Save record successfully",
+                'link' => BASE_URL . DS . $mixedfile
+            );
+        }
+        else if (file_exists($path)){
+            $mixedfile = $path;
+            $result =  array(
+                'status' => 'OK', 'code' => CODE_SUCCESS,
+                'message' => "Save record successfully",
+                'link' => BASE_URL . DS . $path
+            );
+        }
+        else{
+            $result =  array('status' => 'FAILED', 'code' => CODE_ERROR_FAILED ,
+                'message' => 'can not create new file ' . $mixedfile);
+        }
+
 
         // insert into database
         $model = new Core_Model();
@@ -230,16 +258,7 @@ class Model_Song extends Model_BasicSong{
             }
         }
 
-        // check again
-        if (file_exists($mixedfile))
-            return  array(
-                'status' => 'OK', 'code' => CODE_SUCCESS,
-                'message' => "Save record successfully",
-                'link' => BASE_URL . DS . $mixedfile
-            );
-        else
-            return  array('status' => 'FAILED', 'code' => CODE_ERROR_FAILED ,
-                'message' => 'can not create new file ' . $mixedfile);
+        return $result;
     }
 
     public static function fixlinkAction($link, $id=""){
@@ -334,6 +353,11 @@ class Model_Song extends Model_BasicSong{
         if (!file_exists($folder))
         {
             mkdir($folder, 0777, true);
+        }else {
+            if (!is_writable($folder)){
+                umask(0);
+                chmod($folder, 0777);
+            }
         }
 
         $ch = curl_init($this->beatURL);
