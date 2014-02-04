@@ -87,6 +87,7 @@ class Model_Song extends Model_BasicSong{
 
         $path = SERVER_ROOT . DS . Model_Song::getCachePathOfSong($ID);
         echo "path = $path in cacheSong";
+        echo "beatURL = $beatURL";
 
         $folder = dirname($path);
         if (!file_exists($folder))
