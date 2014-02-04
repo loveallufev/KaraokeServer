@@ -194,7 +194,7 @@ class Model_Song extends Model_BasicSong{
             $command = sprintf("./mix.sh %s %s %s", $path , Model_Song::getCachePathOfSong($songid), $mixedfile);
             $output = shell_exec($command);
 
-            echo "output of mixer: " . $output . "*<br/>";
+            //echo "output of mixer: " . $output . "*<br/>";
             // if error happened
             if(!empty($output)){
                 $mixedfile = $path;
