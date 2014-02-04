@@ -86,13 +86,14 @@ class Model_Song extends Model_BasicSong{
         /* SAVE BEAT */
 
         $path = SERVER_ROOT . DS . Model_Song::getCachePathOfSong($ID);
+        echo "path = $path in cacheSong";
 
         $folder = dirname($path);
         if (!file_exists($folder))
         {
-            $oldmask = umask(0);
+            //$oldmask = umask(0);
             mkdir($folder, 0777, true);
-            umask($oldmask);
+            //umask($oldmask);
         }else {
             if (!is_writable($folder)){
                 umask(0);
