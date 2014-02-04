@@ -138,7 +138,6 @@ class Model_Song extends Model_BasicSong{
 
 
         // if this is a zip file, extract it and copy to our directory
-        echo "file type " . $file['type'];
 
         if ($file['type'] == 'application/zip'){
 
@@ -149,7 +148,7 @@ class Model_Song extends Model_BasicSong{
                 $originalName = basename( $stat['name']);
                 $newName = time() . $originalName;
                 $path = 'upload' .  DS . $username . DS . $newName;
-                echo "Extract:" . $zip->extractTo('temps/');
+                $zip->extractTo('temps/');
                 $zip->close();
                 rename('temps/'. $originalName, $path );
             }
