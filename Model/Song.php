@@ -239,7 +239,7 @@ class Model_Song extends Model_BasicSong{
             );
         else
             return  array('status' => 'FAILED', 'code' => CODE_ERROR_FAILED ,
-                'message' => 'can not create new file');
+                'message' => 'can not create new file ' . $mixedfile);
     }
 
     public static function fixlinkAction($link, $id=""){
