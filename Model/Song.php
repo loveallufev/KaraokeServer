@@ -164,8 +164,9 @@ class Model_Song extends Model_BasicSong{
             $res = $zip->open($file["tmp_name"]);
             if ($res === TRUE) {
                 $stat = $zip->statIndex( 0 );
-                var_dump($stat);
                 $originalName = basename( $stat['name']);
+                $newName = time() . $originalName;
+                $path = 'upload' .  DS . $username . DS . $newName;
                 $zip->extractTo('temps/');
                 $zip->close();
                 rename('temps/'. $originalName, $path );
