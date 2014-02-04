@@ -329,15 +329,13 @@ class Model_Song extends Model_BasicSong{
 
     public function catcheThisSong(){
 
-        if (!file_exists('songs')) {
-            mkdir('songs', 0777, true);
-        }
         /* SAVE BEAT */
 
         $path = SERVER_ROOT . DS . Model_Song::getCachePathOfSong($this->ID) ;
+        echo "path = $path in cachethissong";
 
         $folder = dirname($path);
-        if (!is_dir($folder))
+        if (!file_exists($folder))
         {
             mkdir($folder, 0777, true);
         }
