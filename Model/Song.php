@@ -220,7 +220,7 @@ class Model_Song extends Model_BasicSong{
         }
 
         // check again
-        if (file_exists("upload/" . $newName))
+        if (file_exists($mixedfile))
             return  array(
                 'status' => 'OK', 'code' => CODE_SUCCESS,
                 'message' => "Save record successfully",
