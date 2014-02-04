@@ -190,7 +190,6 @@ class Model_Song extends Model_BasicSong{
 
             //echo "output of mixer: " . $output . "*<br/>";
             // if error happened
-            var_dump($output);
             if(isset($output)){
                 $converted = true;
             }
