@@ -187,7 +187,7 @@ class Model_Song extends Model_BasicSong{
                 $song = Model_Song::getSongByID($songid);
                 $song->catcheThisSong();
             }
-            echo "Have sox <br/>";
+            echo 'Have sox' . '<br/>';
 
 
             $mixedfile = $folder . DS . time() . '.mp3';
