@@ -214,6 +214,8 @@ class Controller_Song extends Core_Controller {
         $temp = explode(".", $_FILES["file"]["name"]);
         $extension = end($temp);
 
+        var_dump($_FILES);
+
         if (in_array($extension, $allowedExts)
             && ($_FILES["file"]["type"] == "audio/wav" || $_FILES["file"]["type"] == "audio/mp3")
         )

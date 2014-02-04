@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="fix error getInformation of song when unicode characters or ' or &quot; appear.&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Song.php" afterPath="$PROJECT_DIR$/Model/Song.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/Song.php" afterPath="$PROJECT_DIR$/Controller/Song.php" />
     </list>
     <list id="f82865ad-9fcc-4c86-b07c-8dbefa202b76" name="Failed commit: Default" comment="flexible assistants choosing&#10;" />
     <ignored path="KaraokeServer.iws" />
@@ -35,10 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Song.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Song.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controller/Song.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="240" column="122" selection-start="9034" selection-end="9034" vertical-scroll-proportion="-28.541666" vertical-offset="2915" max-vertical-offset="5880">
+            <state line="216" column="26" selection-start="8058" selection-end="8058" vertical-scroll-proportion="0.4642857" vertical-offset="2915" max-vertical-offset="5910">
               <folding />
             </state>
           </provider>
@@ -53,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Song.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Song.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/Song.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="263" column="39" selection-start="8274" selection-end="8274" vertical-scroll-proportion="0.057142857" vertical-offset="3905" max-vertical-offset="4635">
+            <state line="263" column="39" selection-start="8274" selection-end="8274" vertical-scroll-proportion="-5.4166665" vertical-offset="3815" max-vertical-offset="4635">
               <folding>
                 <marker date="1391461887000" expanded="true" signature="991:1162" placeholder="INSERT INTO ..." />
                 <marker date="1391461887000" expanded="true" signature="2121:2153" placeholder="SELECT * FRO..song..." />
@@ -159,8 +159,8 @@
         <option value="$PROJECT_DIR$/Controller/User.php" />
         <option value="$PROJECT_DIR$/Model/User.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/Controller/Song.php" />
         <option value="$PROJECT_DIR$/Model/Song.php" />
+        <option value="$PROJECT_DIR$/Controller/Song.php" />
       </list>
     </option>
   </component>
@@ -949,22 +949,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Song.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="240" column="122" selection-start="9034" selection-end="9034" vertical-scroll-proportion="-28.541666" vertical-offset="2915" max-vertical-offset="5880">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/Song.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="263" column="39" selection-start="8274" selection-end="8274" vertical-scroll-proportion="0.057142857" vertical-offset="3905" max-vertical-offset="4635">
+        <state line="263" column="39" selection-start="8274" selection-end="8274" vertical-scroll-proportion="-5.4166665" vertical-offset="3815" max-vertical-offset="4635">
           <folding>
             <marker date="1391461887000" expanded="true" signature="991:1162" placeholder="INSERT INTO ..." />
             <marker date="1391461887000" expanded="true" signature="2121:2153" placeholder="SELECT * FRO..song..." />
             <marker date="1391461887000" expanded="true" signature="2579:2619" placeholder="SELECT * FRO..song..." />
             <marker date="1391461887000" expanded="true" signature="9195:9252" placeholder="INSERT INTO ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Song.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="216" column="26" selection-start="8058" selection-end="8058" vertical-scroll-proportion="0.4642857" vertical-offset="2915" max-vertical-offset="5910">
+          <folding />
         </state>
       </provider>
     </entry>
