@@ -117,6 +117,7 @@ class Model_Song extends Model_BasicSong{
                 return 0;
             }
         }catch (Exception $e){
+            echo "Error:" . $e->getMessage();
             return -1;
         }
 
