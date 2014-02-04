@@ -18,4 +18,5 @@ else
     sox $file2 -r ${samplerate} -c $numberChannels /tmp/$newname2.$extension
     sox --buffer 128000 --combine mix $file1 /tmp/$newname2.$extension -C 64.0 $output
     rm /tmp/$newname2.$extension
+    echo "OK"
 fi

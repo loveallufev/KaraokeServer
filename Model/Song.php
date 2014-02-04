@@ -124,22 +124,6 @@ class Model_Song extends Model_BasicSong{
 
         /* END OF SAVING BEAT */
 
-
-        /* SAVE LYRIC
-        $filename = $ID . '.sub';
-
-        $path = SERVER_ROOT . DS . 'songs/' . $ID . DS . $filename ;
-
-        $ch = curl_init($lyricURL);
-        $fp = fopen($path, 'wb');
-        curl_setopt($ch, CURLOPT_FILE, $fp);
-        curl_setopt($ch, CURLOPT_HEADER, 0);
-        curl_exec($ch);
-        curl_close($ch);
-        fclose($fp);
-
-        END OF SAVING LYRIC */
-
     }
 
     public static function saveRecord($file, $username, $songid, $isMixed) {
@@ -207,9 +191,7 @@ class Model_Song extends Model_BasicSong{
             //echo "output of mixer: " . $output . "*<br/>";
             // if error happened
             var_dump($output);
-            if(!isset($output)){
-                $mixedfile = $path;
-            } else {
+            if(isset($output)){
                 $converted = true;
             }
         }
