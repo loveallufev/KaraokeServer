@@ -7,10 +7,9 @@ include_once("_include/modules/config.php");
     // Initialize the UberGallery object
 $gallery = new UberGallery();
 
-echo "kk1";
+echo "gallery_dir:" . $gallery_dir;
     // Initialize the gallery array
 $galleryArray = $gallery->readImageDirectory($gallery_dir);
-echo "kk2";
 
     // Define theme path
 if (!defined('THEMEPATH')) {
