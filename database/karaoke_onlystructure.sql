@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 07, 2014 at 07:28 PM
+-- Generation Time: Feb 07, 2014 at 07:31 PM
 -- Server version: 5.5.33
 -- PHP Version: 5.5.3
 
@@ -26,6 +26,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `authentication`
 --
 
+DROP TABLE IF EXISTS `authentication`;
 CREATE TABLE `authentication` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `username` varchar(32) NOT NULL,
@@ -40,6 +41,7 @@ CREATE TABLE `authentication` (
 -- Table structure for table `history`
 --
 
+DROP TABLE IF EXISTS `history`;
 CREATE TABLE `history` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(32) NOT NULL,
@@ -54,6 +56,7 @@ CREATE TABLE `history` (
 -- Table structure for table `record`
 --
 
+DROP TABLE IF EXISTS `record`;
 CREATE TABLE `record` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `url` varchar(400) NOT NULL,
@@ -72,6 +75,7 @@ CREATE TABLE `record` (
 -- Table structure for table `song`
 --
 
+DROP TABLE IF EXISTS `song`;
 CREATE TABLE `song` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `customID` char(20) DEFAULT NULL,
@@ -96,6 +100,7 @@ CREATE TABLE `song` (
 -- Table structure for table `user`
 --
 
+DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `username` char(32) NOT NULL,
