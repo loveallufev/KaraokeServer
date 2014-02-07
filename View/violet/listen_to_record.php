@@ -33,6 +33,7 @@
                     <span><b>Category:</b> <?php echo $data['record']->category; ?></span><br/>
                     <span><b>User:</b> <?php echo $data['record']->user; ?></span><br/>
                     <span><b>Time:</b> <?php echo $data['record']->time; ?></span><br/>
+                    <span><b>Views:</b> <?php echo $data['record']->count; ?></span><br/>
                     </p>
                     <audio controls>
                         <source src="<?php echo $data['record']->url; ?>" type="audio/mpeg">
