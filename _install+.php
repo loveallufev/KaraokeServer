@@ -6,8 +6,6 @@
  * Time: 10:59 PM
  */
 
-echo "who am i: " . exec('whoami');
-
 if (!file_exists('logs')){
     mkdir('logs', 0777, true);
     echo "create directory logs <br/>" ;
@@ -96,7 +94,7 @@ if (!file_exists('Config/Configuration.xml')){
 
 $testGD = get_extension_funcs("gd"); // Grab function list
 if (!$testGD){ echo "GD not even installed.<br/>"; }
-echo"<pre>".print_r($testGD,true)."</pre>";
+echo"<pre> GD is already install</pre>";
 
 chmod('Config/Configuration.xml', 775);
 chmod('Config/LuckyVoice.xml', 775);

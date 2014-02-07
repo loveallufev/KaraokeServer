@@ -7,7 +7,6 @@ include_once("_include/modules/config.php");
     // Initialize the UberGallery object
 $gallery = new UberGallery();
 
-echo "gallery_dir:" . $gallery_dir;
     // Initialize the gallery array
 $galleryArray = $gallery->readImageDirectory($gallery_dir);
 
@@ -15,7 +14,6 @@ $galleryArray = $gallery->readImageDirectory($gallery_dir);
 if (!defined('THEMEPATH')) {
     define('THEMEPATH', BASE_URL . DS . $gallery->getThemePath());
 }
-echo "kk3";
 
 ?>
 
