@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_install+.php" afterPath="$PROJECT_DIR$/_install+.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/violet/gallery.php" afterPath="$PROJECT_DIR$/View/violet/gallery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/Song.php" afterPath="$PROJECT_DIR$/Controller/Song.php" />
     </list>
     <list id="f82865ad-9fcc-4c86-b07c-8dbefa202b76" name="Failed commit: Default" comment="flexible assistants choosing&#10;" />
     <ignored path="KaraokeServer.iws" />
@@ -31,6 +30,15 @@
         <entry file="file://$PROJECT_DIR$/Controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="17" column="8" selection-start="282" selection-end="316" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="585">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Song.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Controller/Song.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="312" column="33" selection-start="11248" selection-end="11248" vertical-scroll-proportion="0.3110119" vertical-offset="4471" max-vertical-offset="5910">
               <folding />
             </state>
           </provider>
@@ -86,10 +94,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_install+.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_install+.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_install+.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="34" selection-start="2642" selection-end="2642" vertical-scroll-proportion="0.8101266" vertical-offset="789" max-vertical-offset="1500">
+            <state line="96" column="34" selection-start="2642" selection-end="2642" vertical-scroll-proportion="-24.0" vertical-offset="789" max-vertical-offset="1500">
               <folding>
                 <marker date="1391782327000" expanded="true" signature="721:1097" placeholder="..." />
                 <marker date="1391782327000" expanded="true" signature="733:867" placeholder="..." />
@@ -167,7 +175,6 @@
         <option value="$PROJECT_DIR$/Model/LuckyVoiceAssistant.php" />
         <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/Controller/User.php" />
-        <option value="$PROJECT_DIR$/Controller/Song.php" />
         <option value="$PROJECT_DIR$/Lib/Utility.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/mix.sh" />
@@ -195,6 +202,7 @@
         <option value="$PROJECT_DIR$/View/violet/resources/cache/.gitignore" />
         <option value="$PROJECT_DIR$/View/violet/gallery.php" />
         <option value="$PROJECT_DIR$/_install+.php" />
+        <option value="$PROJECT_DIR$/Controller/Song.php" />
       </list>
     </option>
   </component>
@@ -892,13 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Song.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="213" column="9" selection-start="7959" selection-end="8004" vertical-scroll-proportion="-81.875" vertical-offset="1230" max-vertical-offset="5910">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/AbstractAssistant.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="35" selection-start="210" selection-end="210" vertical-scroll-proportion="0.14767933" vertical-offset="0" max-vertical-offset="711">
@@ -1178,7 +1179,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_install+.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="34" selection-start="2642" selection-end="2642" vertical-scroll-proportion="0.8101266" vertical-offset="789" max-vertical-offset="1500">
+        <state line="96" column="34" selection-start="2642" selection-end="2642" vertical-scroll-proportion="-24.0" vertical-offset="789" max-vertical-offset="1500">
           <folding>
             <marker date="1391782327000" expanded="true" signature="721:1097" placeholder="..." />
             <marker date="1391782327000" expanded="true" signature="733:867" placeholder="..." />
@@ -1193,6 +1194,13 @@
             <marker date="1391782327000" expanded="true" signature="2133:2314" placeholder="..." />
             <marker date="1391782327000" expanded="true" signature="2401:2450" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Song.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="312" column="33" selection-start="11248" selection-end="11248" vertical-scroll-proportion="0.3110119" vertical-offset="4471" max-vertical-offset="5910">
+          <folding />
         </state>
       </provider>
     </entry>

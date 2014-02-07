@@ -309,7 +309,7 @@ class Controller_Song extends Core_Controller {
 
 
 
-        $path = SERVER_ROOT . '/Logs/cache';
+        $path = SERVER_ROOT . '/logs/cache';
         $folder = dirname($path);
         if (!is_dir($folder))
         {
