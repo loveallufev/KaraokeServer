@@ -2,363 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/css/ie6.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/css/ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/css/jquery.bubbletip-ie.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/css/jquery.bubbletip.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/css/jquery.cycle.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/css/jquery.prettyPhoto.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/css/jquery.roundabout.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/css/style-enhance.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/css/style-green-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/css/style-green.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/css/style-orange-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/css/style-orange.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/css/style-pink-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/css/style-pink.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/fonts/aller.font.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/fonts/arials.font.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/fonts/gnuolane.font.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/fonts/licenses/Aller_EULA.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/fonts/licenses/Gnuolane Typodermic Freeware EULA.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/fonts/licenses/Lorimer License.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/fonts/licenses/Paratype PT Sans Free Font License.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/fonts/licenses/Puritan SIL Open Font License 1.1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/fonts/lorimer.font.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/fonts/ptsans.font.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/fonts/puritan.font.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/fonts/yanone.font.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/bubble-blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/bubble-darkpink-alternate.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/bubble-darkpink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/bubble-green-alternate.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/bubble-green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/bubble-orange-alternate.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/bubble-orange.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/bullet-blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/dark-baseline.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/faq-close-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/faq-close-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/faq-open-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/faq-open-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-at-the-bottom-wborder.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-at-the-bottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-at-the-top-darker-wborder.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-at-the-top-darker.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-at-the-top-wborder.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-at-the-top.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-big-footer-dark.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-big-footer-green.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-big-footer-orange.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-big-footer.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-darkpink-bottom.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-darkpink-top.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-full-green-baseline.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-full-green.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-full-grey-btm-no-border.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-full-grey-btm.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-full-grey-top-no-border.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-full-grey-top.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-full-orange-baseline.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-full-orange.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-full-pink-baseline.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-full-pink.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-green-bottom.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-green-top.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-main-menu-tab-off.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-main-menu-tab-on.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-nav.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-orange-bottom.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-orange-top.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-slide-nav-dark-no-border.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-slide-nav-dark.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-small-footer-dark.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-small-footer.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-top-dark.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/gradient-top.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/greenbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/input-background-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/input-background.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/picture-frame-220px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/picture-frame-220pxh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/pricing-shadow-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/pricing-shadow-left1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/pricing-shadow-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/pricing-shadow-right1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/translucentbg1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/translucentbg2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/wide-shadow-faded.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/backgrounds/wide-shadow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/bubbletip/bubbletip-B-tail.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/bubbletip/bubbletip-B.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/bubbletip/bubbletip-BL-corner.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/bubbletip/bubbletip-BR-corner.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/bubbletip/bubbletip-L-R.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/bubbletip/bubbletip-L-tail.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/bubbletip/bubbletip-L.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/bubbletip/bubbletip-R-tail.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/bubbletip/bubbletip-R.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/bubbletip/bubbletip-T-B.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/bubbletip/bubbletip-T-tail.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/bubbletip/bubbletip-T.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/bubbletip/bubbletip-TL-corner.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/bubbletip/bubbletip-TR-corner.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/bubbletip/bubbletip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-darkpink-dark-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-darkpink-dark-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-darkpink-dark-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-darkpink-dark-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-darkpink-fixed-width.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-darkpink-fixed-widthh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-darkpink-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-darkpink-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-darkpink-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-darkpink-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-green-dark-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-green-dark-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-green-dark-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-green-dark-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-green-fixed-width.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-green-fixed-widthh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-green-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-green-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-green-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-green-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-grey-dark-fixed-width.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-grey-dark-fixed-widthh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-grey-dark-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-grey-dark-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-grey-dark-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-grey-dark-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-grey-fixed-width.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-grey-fixed-widthh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-grey-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-grey-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-grey-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-grey-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-orange-dark-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-orange-dark-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-orange-dark-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-orange-dark-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-orange-fixed-width.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-orange-fixed-widthh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-orange-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-orange-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-orange-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-big-orange-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-darkpink-dark-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-darkpink-dark-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-darkpink-dark-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-darkpink-dark-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-darkpink-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-darkpink-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-darkpink-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-darkpink-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-green-dark-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-green-dark-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-green-dark-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-green-dark-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-green-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-green-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-green-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-green-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-grey-dark-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-grey-dark-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-grey-dark-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-grey-dark-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-grey-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-grey-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-grey-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-grey-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-orange-dark-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-orange-dark-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-orange-dark-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-orange-dark-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-orange-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-orange-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-orange-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-small-orange-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-superbig-gray-dark-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-superbig-gray-dark-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-superbig-gray-dark-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-superbig-gray-dark-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-superbig-gray-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-superbig-gray-lefth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-superbig-gray-right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/buttons/btn-superbig-gray-righth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/cycle/cycle-next.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/cycle/cycle-nexth.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/cycle/cycle-prev.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/cycle/cycle-prevh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/cycle/noff.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/cycle/non.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/air-and-safari.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/air.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/apple-phones-smaller.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/button-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/check.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/download-small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/download.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/error-cross.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/facebook.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/flickr.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/htc-phone1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/htc-phone1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/htc-phones-smaller.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/icon-check.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/icon-no.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/id.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/ipad-center.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/ipads.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/iphone4.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/iphone4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/iphones.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/key.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/linkedin.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/multiple-phones-center.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/network.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/notification-triangle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/phones.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/pin.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/play.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/plus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/quotes.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/recycle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/rss.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/small-play.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/small-plus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/smallphone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/stumble.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/success-check.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/tools.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/tweet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/twitter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/user-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/user.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/users.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/vimeo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/wand.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/icons/youtube.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/color-green-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/color-green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/color-orange-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/color-orange.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/color-pink-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/color-pink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/for-android-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/for-android.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/for-iphone-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/for-iphone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/longhr-faded-ends-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/longhr-faded-ends.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/longhr.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/map.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/picture1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/picture2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/picture3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/picture4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/pretty.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/separator-faded-left-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/separator-faded-left.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/separator-faded-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/separator-faded-left1-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/separator-faded-left1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/separator-faded-right-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/separator-faded-right.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/separator-faded-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/separator-faded-right1-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/separator-faded-right1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/sidegrad-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/sidegrad-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/misc/x.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/dark_rounded/btnNext.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/dark_rounded/btnPrevious.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/dark_rounded/contentPattern.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/dark_rounded/default_thumbnail.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/dark_rounded/loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/dark_rounded/sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/dark_square/btnNext.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/dark_square/btnPrevious.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/dark_square/contentPattern.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/dark_square/default_thumbnail.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/dark_square/loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/dark_square/sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/facebook/btnNext.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/facebook/btnPrevious.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/facebook/contentPatternBottom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/facebook/contentPatternLeft.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/facebook/contentPatternRight.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/facebook/contentPatternTop.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/facebook/default_thumbnail.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/facebook/loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/facebook/sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/light_rounded/btnNext.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/light_rounded/btnPrevious.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/light_rounded/default_thumbnail.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/light_rounded/loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/light_rounded/sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/light_square/btnNext.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/light_square/btnPrevious.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/light_square/default_thumbnail.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/light_square/loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/light_square/sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/mediaplayer/player.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/mediaplayer/preview.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/mediaplayer/readme.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/mediaplayer/swfobject.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/mediaplayer/video.flv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/prettyPhoto/mediaplayer/yt.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/styleswitcher/switcher-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/styleswitcher/switcher-style-minus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/images/styleswitcher/switcher-style-plus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/browserdetect.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/cufon.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/jquery.badBrowser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/jquery.bgiframe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/jquery.bubbletip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/jquery.captify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/jquery.css-rotate-scale.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/jquery.css-transform.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/jquery.cycle.all.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/jquery.cycle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/jquery.easing.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/jquery.hoverInt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/jquery.metadata.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/jquery.prettyPhoto.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/jquery.roundabout-shapes-1.1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/jquery.roundabout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/jquery.tools.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/jquery.tweet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/pngfix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/roundies.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/styleswitch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/superfish.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/js/swfobject.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/modules/config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/modules/css-js.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/modules/footer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/modules/google-analytics.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/_include/modules/top.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/contact.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/faq.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/features.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/index-roundabout.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/index-static.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/pricing-alternate.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/pricing.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/View/apptasti/send.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/upload/ndtrung/1391650588635271382423865799.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/upload/ndtrung/1391650760635271382423865799.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/upload/ndtrung/1391651921635271382423865799.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/upload/ndtrung/1391691462635271382423865799.wav" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/violet/gallery.php" afterPath="$PROJECT_DIR$/View/violet/gallery.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="f82865ad-9fcc-4c86-b07c-8dbefa202b76" name="Failed commit: Default" comment="flexible assistants choosing&#10;" />
@@ -460,10 +104,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gallery.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="gallery.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/violet/gallery.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="12" selection-start="433" selection-end="433" vertical-scroll-proportion="0.3653295" vertical-offset="0" max-vertical-offset="1995">
+            <state line="17" column="12" selection-start="433" selection-end="433" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="1995">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="9" selection-start="30" selection-end="30" vertical-scroll-proportion="0.040816326" vertical-offset="0" max-vertical-offset="735">
               <folding />
             </state>
           </provider>
@@ -487,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Model/Model_SongConstants.php" />
         <option value="$PROJECT_DIR$/Model/SongConstants.php" />
         <option value="$PROJECT_DIR$/Model/ZingSong.php" />
         <option value="$PROJECT_DIR$/Controller/ZingFactory.php" />
@@ -538,6 +190,7 @@
         <option value="$PROJECT_DIR$/Config/.gitignore" />
         <option value="$PROJECT_DIR$/Model/Record.php" />
         <option value="$PROJECT_DIR$/View/violet/gallery.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1142,11 +795,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lib/LanguageDetector/etc/data/dutch.raw">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="89789" selection-start="89789" selection-end="89789" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/LanguageDetector/LanguageDetector.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="53" selection-start="812" selection-end="812" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="735" />
@@ -1497,7 +1145,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/View/violet/gallery.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="12" selection-start="433" selection-end="433" vertical-scroll-proportion="0.3653295" vertical-offset="0" max-vertical-offset="1995">
+        <state line="17" column="12" selection-start="433" selection-end="433" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="1995">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="9" selection-start="30" selection-end="30" vertical-scroll-proportion="0.040816326" vertical-offset="0" max-vertical-offset="735">
           <folding />
         </state>
       </provider>
