@@ -28,7 +28,7 @@ if (!file_exists('upload')){
 
 if (!file_exists('Config/LuckyVoice.xml')){
     echo "create Config/LuckyVoice.xml<br/>" ;
-    $file = fopen('Config/LuckyVoice.xml', 'wb');
+    $file = fopen('Config/LuckyVoice.xml', 'w');
     fwrite($file,'<?xml version="1.0" standalone="yes"?>
 <configuration>
     <login>
@@ -47,7 +47,7 @@ if (!file_exists('Config/LuckyVoice.xml')){
 
 if (!file_exists('Config/Configuration.xml')){
     echo "create Config/Configuration.xml<br/>";
-    $file = fopen('Config/Configuration.xml', 'wb');
+    $file = fopen('Config/Configuration.xml', 'w');
     fwrite($file,'<?xml version="1.0" standalone="yes"?>
 <configuration>
     <connection>
