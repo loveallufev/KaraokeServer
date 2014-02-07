@@ -1,8 +1,10 @@
 <?php
 
+echo "here1";
     // Include the UberGallery class
 include('resources/UberGallery.php');
 include_once("_include/modules/config.php");
+echo "here2";
 
     // Initialize the UberGallery object
 $gallery = new UberGallery();
@@ -15,7 +17,7 @@ if (!defined('THEMEPATH')) {
     define('THEMEPATH', BASE_URL . DS . $gallery->getThemePath());
 }
 
-echo "here";
+echo "here3";
 
 ?>
 
