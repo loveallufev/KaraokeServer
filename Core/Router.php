@@ -45,6 +45,8 @@ class Core_Router {
         // if in config file, no controller class was declared
         $classname = 'Controller_' . ucfirst(self::$controller);// . '_Controller';
 
+
+
         $controller = new $classname();
 
         // if the action function isn't exist in controller object

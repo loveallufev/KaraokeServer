@@ -63,8 +63,12 @@ class Core_View {
      * @param $template: name of template file (contain html + php code to display)
      */
     public function setTemplate($template){
+        $theme = '';
+        if (MY_THEME != ""){
+            $theme = MY_THEME . '/';
+        }
         //compose file name
-        $file = SERVER_ROOT . '/View/' . $template . '.php';
+        $file = SERVER_ROOT . '/View/' . $theme . $template . '.php';
 
         if (file_exists($file))
         {

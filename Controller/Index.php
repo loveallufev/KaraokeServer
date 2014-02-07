@@ -15,6 +15,9 @@ class Controller_Index extends Core_Controller {
      */
     public function indexAction($param){
 
+        $this->view->setTemplate('index');
+
+        /*
         // set title for page
         // this operation will done by function __set of Core_View whether title_url hasn't declared before
         //(it's will be declared now)
@@ -28,7 +31,8 @@ class Controller_Index extends Core_Controller {
 
         $this->view->merchants = array_keys(Core::$config['modules']['merchant']);
         $this->view->currentMerchant = 'amazon';
-        
+        */
+
         $this->view->render();
 
     }

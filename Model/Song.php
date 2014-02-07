@@ -34,6 +34,7 @@ class Model_Song extends Model_BasicSong{
         }
 
         $qresult = $model->getDB()->fetch('array');
+        $model->getDB()->disconnect();
 
         return $qresult;
     }
@@ -48,10 +49,11 @@ class Model_Song extends Model_BasicSong{
 
         $model->getDB()->prepare($query);
         if (!$model->getDB()->query()){
-            return array('status' => 'FAIL', 'message'=>$model->getDB()->connection->error);
+            return array('status' => 'FAILED', 'code' => CODE_ERROR_FAILED , 'message'=>$model->getDB()->connection->error);
         }
 
         $qresult = $model->getDB()->fetch();
+        $model->getDB()->disconnect();
 
         if ($qresult == null){
             return null;
@@ -233,14 +235,27 @@ class Model_Song extends Model_BasicSong{
             $username, BASE_URL . DS . $mixedfile, $songid, $isMixed
         );
 
+
+
+
+        /*
         $model->getDB()->prepare($query);
         if (!$model->getDB()->query()){
-            if ($model->getDB()->connection->errno == 1062 /*DUPLICATE ENTRY ERROR*/){
+            if ($model->getDB()->connection->errno == 1062) //DUPLICATE ENTRY ERROR
+        {
                 return array('message' => "Duplicate record" , 'status' => "FAILED", 'code' => CODE_ERROR_DUPLICATE);
             }else{
                 return  array('status' => 'FAILED', 'code' => CODE_ERROR_FAILED ,'message' => $model->getDB()->connection->error);
             }
         }
+        */
+
+        $model->getDB()->connection->query($query);
+        $recordID = mysqli_insert_id($model->getDB()->connection);
+        $model->getDB()->disconnect();
+
+
+        $result['link'] = BASE_URL . DS . 'index.php/record/listen?id=' . $recordID;
 
         // Logging class initialization
         $log = new Lib_Logging();
@@ -307,8 +322,10 @@ class Model_Song extends Model_BasicSong{
 
         $model->getDB()->prepare($query);
         if (!$model->getDB()->query()){
+            $model->getDB()->disconnect();
             return array('status' => 'FAILED', 'message'=>$model->getDB()->connection->error);
         }
+        $model->getDB()->disconnect();
     }
 
     public function insertThisIntoDatabase(){
@@ -337,6 +354,7 @@ class Model_Song extends Model_BasicSong{
                     echo $model->getDB()->connection->error . "<br/>";
             }
         }
+        $model->getDB()->disconnect();
 
         /* END WRITING */
     }

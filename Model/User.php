@@ -115,6 +115,7 @@ class Model_User extends  Core_Model{
         }
 
         $qresult = $model->getDB()->fetch();
+        $model->getDB()->disconnect();
         if (isset($qresult)){
             return true;
         }
@@ -136,6 +137,8 @@ class Model_User extends  Core_Model{
         }
 
         $qresult = $model->getDB()->fetch();
+
+        $model->getDB()->disconnect();
 
         if (isset($qresult)){
             return $qresult->username;

@@ -16,6 +16,7 @@ define('APP', TRUE);
 define('DEBUG', FALSE);
 define('DS', DIRECTORY_SEPARATOR);
 define('SERVER_ROOT', realpath(dirname(__FILE__)));
+define('MY_THEME', 'violet');
 
 // absolute path
 if (!isset( $_SERVER['HTTP_HOST'])){
