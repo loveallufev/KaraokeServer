@@ -17,10 +17,9 @@ if (!defined('THEMEPATH')) {
 
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <?php  $pagename="screenshot"; include_once("_include/modules/config.php"); ?>
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="<?=$language?>">
-<head profile="http://gmpg.org/xfn/11">
+<html>
+<head>
     <title><?=$site_name?></title>
     <meta http-equiv="Content-Type" content="<?=$page_encoding?>" />
     <meta name="keywords" content="<?=$site_keywords?>" />
@@ -28,9 +27,8 @@ if (!defined('THEMEPATH')) {
     <meta name="author" content="<?=$author?>" />
     <meta name="copyright" content="<?=$copy?>" />
     <link rel="shortcut icon" href="<?=$img_dir?>/icons/favicon.ico" type="image/x-icon" />
-    <link rel="image_src"
-          type="image/jpeg"
-          href="<?=$img_dir?>/misc/logo.png" />
+    <meta property="og:image" content="<?=$img_dir?>/misc/logo.png" />
+
     <?php include("_include/modules/css-js.php"); ?>
     <?php include("_include/modules/google-analytics.php"); ?>
 
