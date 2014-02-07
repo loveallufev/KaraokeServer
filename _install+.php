@@ -27,8 +27,9 @@ if (!file_exists('upload')){
 }
 
 if (!file_exists('Config/LuckyVoice.xml')){
+    echo "create Config/LuckyVoice.xml<br/>" ;
     $file = fopen('Config/LuckyVoice.xml', 'wb');
-    $file->write('<?xml version="1.0" standalone="yes"?>
+    fwrite($file,'<?xml version="1.0" standalone="yes"?>
 <configuration>
     <login>
         <sessionid>5zmbjoka55yvuq1ura2pnv2udhmek92s</sessionid>
@@ -41,12 +42,13 @@ if (!file_exists('Config/LuckyVoice.xml')){
     </api_token>
 </configuration>'
 );
-    $file->close();
+    fclose($file);
 }
 
 if (!file_exists('Config/Configuration.xml')){
+    echo "create Config/Configuration.xml<br/>";
     $file = fopen('Config/Configuration.xml', 'wb');
-    $file->write('<?xml version="1.0" standalone="yes"?>
+    fwrite($file,'<?xml version="1.0" standalone="yes"?>
 <configuration>
     <connection>
         <host>localhost</host>
@@ -85,13 +87,13 @@ if (!file_exists('Config/Configuration.xml')){
         <lastsongid>-1</lastsongid>
     </cache>
 </configuration>');
-    $file->close();
+    fclose($file);
 }
 
 
 
 $testGD = get_extension_funcs("gd"); // Grab function list
-if (!$testGD){ echo "GD not even installed."; exit; }
+if (!$testGD){ echo "GD not even installed.<br/>"; }
 echo"<pre>".print_r($testGD,true)."</pre>";
 
 chmod('Config/Configuration.xml', 775);
