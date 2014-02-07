@@ -60,7 +60,7 @@ class Model_Record extends  Core_Model{
         $query = sprintf(
             'SELECT record.id,song.title, song.category, song.author,' .
             'record.ismixed, record.time, record.url, record.username ' .
-            'FROM song,record WHERE song.customID=record.songid AND record.username="%s" LIMIT 0,10', mysql_real_escape_string($username));
+            'FROM song,record WHERE song.customID=record.songid AND record.username="%s" ORDER BY record.time DESC  LIMIT 0,10', mysql_real_escape_string($username));
 
         $model->getDB()->prepare($query);
         if (!$model->getDB()->query()){
