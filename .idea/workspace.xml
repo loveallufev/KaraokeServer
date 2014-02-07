@@ -67,10 +67,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listen_to_record.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="listen_to_record.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/View/violet/listen_to_record.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="720" selection-end="847" vertical-scroll-proportion="-5.625" vertical-offset="30" max-vertical-offset="1590">
+            <state line="13" column="47" selection-start="821" selection-end="821" vertical-scroll-proportion="0.23638968" vertical-offset="30" max-vertical-offset="1590">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -81,7 +81,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/violet/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="73" selection-start="942" selection-end="942" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="3285">
+            <state line="15" column="47" selection-start="916" selection-end="916" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="3285">
               <folding />
             </state>
           </provider>
@@ -90,25 +90,25 @@
       <file leaf-file-name="gallery.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/violet/gallery.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="73" selection-start="1278" selection-end="1278" vertical-scroll-proportion="-15.625" vertical-offset="105" max-vertical-offset="2010">
+            <state line="32" column="47" selection-start="1252" selection-end="1252" vertical-scroll-proportion="-15.625" vertical-offset="105" max-vertical-offset="2010">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pricing.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/View/violet/pricing.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2370">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/violet/contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="73" selection-start="832" selection-end="832" vertical-scroll-proportion="0.27936962" vertical-offset="0" max-vertical-offset="2235">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="top.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/violet/_include/modules/top.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="111" selection-start="128" selection-end="181" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="600">
+            <state line="11" column="4" selection-start="709" selection-end="806" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="2235">
               <folding />
             </state>
           </provider>
@@ -197,10 +197,10 @@
         <option value="$PROJECT_DIR$/Controller/Record.php" />
         <option value="$PROJECT_DIR$/Model/Record.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/View/violet/listen_to_record.php" />
+        <option value="$PROJECT_DIR$/View/violet/contact.php" />
         <option value="$PROJECT_DIR$/View/violet/index.php" />
         <option value="$PROJECT_DIR$/View/violet/gallery.php" />
-        <option value="$PROJECT_DIR$/View/violet/contact.php" />
+        <option value="$PROJECT_DIR$/View/violet/listen_to_record.php" />
       </list>
     </option>
   </component>
@@ -793,11 +793,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Model/LyricKaraoke.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="154" selection-end="154" vertical-scroll-proportion="0.08438819" vertical-offset="0" max-vertical-offset="711" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/Sentence.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="28" selection-start="146" selection-end="146" vertical-scroll-proportion="0.13215859" vertical-offset="0" max-vertical-offset="454" />
@@ -1143,38 +1138,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/View/violet/_include/modules/top.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="111" selection-start="128" selection-end="181" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/violet/listen_to_record.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="720" selection-end="847" vertical-scroll-proportion="-5.625" vertical-offset="30" max-vertical-offset="1590">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/violet/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="73" selection-start="942" selection-end="942" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="3285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/violet/gallery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="73" selection-start="1278" selection-end="1278" vertical-scroll-proportion="-15.625" vertical-offset="105" max-vertical-offset="2010">
+        <state line="3" column="111" selection-start="128" selection-end="181" vertical-scroll-proportion="0.06446991" vertical-offset="0" max-vertical-offset="698">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/violet/contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="73" selection-start="832" selection-end="832" vertical-scroll-proportion="0.27936962" vertical-offset="0" max-vertical-offset="2235">
+        <state line="11" column="4" selection-start="709" selection-end="806" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="2235">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/violet/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="47" selection-start="916" selection-end="916" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="3285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/violet/gallery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="47" selection-start="1252" selection-end="1252" vertical-scroll-proportion="-15.625" vertical-offset="105" max-vertical-offset="2010">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/violet/pricing.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2370">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/violet/listen_to_record.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="47" selection-start="821" selection-end="821" vertical-scroll-proportion="0.23638968" vertical-offset="30" max-vertical-offset="1590">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

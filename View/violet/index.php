@@ -13,7 +13,7 @@
     <?php include("_include/modules/google-analytics.php"); ?>
     <link rel="image_src"
           type="image/jpeg"
-          href="<?=$site_dir?>"><img src="<?=$img_dir?>/misc/logo.png" />
+          href="<?=$img_dir?>/misc/logo.png" />
 
     <!-- start load cycle slideshow -->
     <link href="<?=$css_dir?>/jquery.cycle.css" rel="stylesheet" type="text/css" />
