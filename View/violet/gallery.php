@@ -1,23 +1,22 @@
 <?php
 
-echo "here1";
     // Include the UberGallery class
 include('resources/UberGallery.php');
 include_once("_include/modules/config.php");
-echo "here2";
 
     // Initialize the UberGallery object
 $gallery = new UberGallery();
 
+echo "kk1";
     // Initialize the gallery array
 $galleryArray = $gallery->readImageDirectory($gallery_dir);
+echo "kk2";
 
     // Define theme path
 if (!defined('THEMEPATH')) {
     define('THEMEPATH', BASE_URL . DS . $gallery->getThemePath());
 }
-
-echo "here3";
+echo "kk3";
 
 ?>
 
