@@ -6,6 +6,8 @@
  * Time: 10:59 PM
  */
 
+echo "who am i: " . exec('whoami');
+
 if (!file_exists('logs')){
     mkdir('logs', 0777, true);
     echo "create directory logs <br/>" ;

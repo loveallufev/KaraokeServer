@@ -88,20 +88,20 @@
       <file leaf-file-name="_install+.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_install+.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="1" selection-start="1123" selection-end="1123" vertical-scroll-proportion="-0.2658228" vertical-offset="789" max-vertical-offset="1500">
+            <state line="8" column="35" selection-start="129" selection-end="129" vertical-scroll-proportion="0.06329114" vertical-offset="0" max-vertical-offset="1530">
               <folding>
-                <marker date="1391779340000" expanded="true" signature="721:1097" placeholder="..." />
-                <marker date="1391779340000" expanded="true" signature="733:867" placeholder="..." />
-                <marker date="1391779340000" expanded="true" signature="883:1080" placeholder="..." />
-                <marker date="1391779340000" expanded="true" signature="1344:2467" placeholder="..." />
-                <marker date="1391779340000" expanded="true" signature="1361:1541" placeholder="..." />
-                <marker date="1391779340000" expanded="true" signature="1592:1698" placeholder="..." />
-                <marker date="1391779340000" expanded="true" signature="1712:2389" placeholder="..." />
-                <marker date="1391779340000" expanded="true" signature="1733:2336" placeholder="..." />
-                <marker date="1391779340000" expanded="true" signature="1758:2114" placeholder="..." />
-                <marker date="1391779340000" expanded="true" signature="1783:1921" placeholder="..." />
-                <marker date="1391779340000" expanded="true" signature="2133:2314" placeholder="..." />
-                <marker date="1391779340000" expanded="true" signature="2401:2450" placeholder="..." />
+                <marker date="1391781558000" expanded="true" signature="758:1134" placeholder="..." />
+                <marker date="1391781558000" expanded="true" signature="770:904" placeholder="..." />
+                <marker date="1391781558000" expanded="true" signature="920:1117" placeholder="..." />
+                <marker date="1391781558000" expanded="true" signature="1381:2504" placeholder="..." />
+                <marker date="1391781558000" expanded="true" signature="1398:1578" placeholder="..." />
+                <marker date="1391781558000" expanded="true" signature="1629:1735" placeholder="..." />
+                <marker date="1391781558000" expanded="true" signature="1749:2426" placeholder="..." />
+                <marker date="1391781558000" expanded="true" signature="1770:2373" placeholder="..." />
+                <marker date="1391781558000" expanded="true" signature="1795:2151" placeholder="..." />
+                <marker date="1391781558000" expanded="true" signature="1820:1958" placeholder="..." />
+                <marker date="1391781558000" expanded="true" signature="2170:2351" placeholder="..." />
+                <marker date="1391781558000" expanded="true" signature="2438:2487" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -1177,20 +1177,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_install+.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="1" selection-start="1123" selection-end="1123" vertical-scroll-proportion="-0.2658228" vertical-offset="789" max-vertical-offset="1500">
+        <state line="8" column="35" selection-start="129" selection-end="129" vertical-scroll-proportion="0.06329114" vertical-offset="0" max-vertical-offset="1530">
           <folding>
-            <marker date="1391779340000" expanded="true" signature="721:1097" placeholder="..." />
-            <marker date="1391779340000" expanded="true" signature="733:867" placeholder="..." />
-            <marker date="1391779340000" expanded="true" signature="883:1080" placeholder="..." />
-            <marker date="1391779340000" expanded="true" signature="1344:2467" placeholder="..." />
-            <marker date="1391779340000" expanded="true" signature="1361:1541" placeholder="..." />
-            <marker date="1391779340000" expanded="true" signature="1592:1698" placeholder="..." />
-            <marker date="1391779340000" expanded="true" signature="1712:2389" placeholder="..." />
-            <marker date="1391779340000" expanded="true" signature="1733:2336" placeholder="..." />
-            <marker date="1391779340000" expanded="true" signature="1758:2114" placeholder="..." />
-            <marker date="1391779340000" expanded="true" signature="1783:1921" placeholder="..." />
-            <marker date="1391779340000" expanded="true" signature="2133:2314" placeholder="..." />
-            <marker date="1391779340000" expanded="true" signature="2401:2450" placeholder="..." />
+            <marker date="1391781558000" expanded="true" signature="758:1134" placeholder="..." />
+            <marker date="1391781558000" expanded="true" signature="770:904" placeholder="..." />
+            <marker date="1391781558000" expanded="true" signature="920:1117" placeholder="..." />
+            <marker date="1391781558000" expanded="true" signature="1381:2504" placeholder="..." />
+            <marker date="1391781558000" expanded="true" signature="1398:1578" placeholder="..." />
+            <marker date="1391781558000" expanded="true" signature="1629:1735" placeholder="..." />
+            <marker date="1391781558000" expanded="true" signature="1749:2426" placeholder="..." />
+            <marker date="1391781558000" expanded="true" signature="1770:2373" placeholder="..." />
+            <marker date="1391781558000" expanded="true" signature="1795:2151" placeholder="..." />
+            <marker date="1391781558000" expanded="true" signature="1820:1958" placeholder="..." />
+            <marker date="1391781558000" expanded="true" signature="2170:2351" placeholder="..." />
+            <marker date="1391781558000" expanded="true" signature="2438:2487" placeholder="..." />
           </folding>
         </state>
       </provider>
