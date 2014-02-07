@@ -96,7 +96,7 @@
                                                 <div class="tip" style="width:240px;">
                                                     <h4>Choose your platform:</h4>
                                                     <p>The application for other flatforms is beeing developed.</p>
-                                                    <img src="<?=$img_dir?>/icons/download-small.png" width="16" height="16" alt="" class="vm"/>&nbsp;&nbsp;  for Windows phone: <a href="#">USS Karaoke v.1.0</a><br/>
+                                                    <img src="<?=$img_dir?>/icons/download-small.png" width="16" height="16" alt="" class="vm"/>&nbsp;&nbsp;  for Windows phone: <a href="<?php echo BASE_URL . '/release/USS_Karaoke_1.0.xap'?>">USS Karaoke v.1.0</a><br/>
                                                     <!--<div class="separator"></div>
                                                     <img src="<?=$img_dir?>/icons/download-small.png" width="16" height="16" alt="" class="vm"/>&nbsp;&nbsp;  for Android: <a href="#">Lorem Ipsum v.2.02</a>
                                                     -->
