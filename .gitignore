@@ -1,3 +1,6 @@
 ./songs/*
 ./upload/*
 ./temps/*
+./Config/Configuration.xml
+./Config/LuckyVoice.xml
+./logs/*
