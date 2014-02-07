@@ -38,8 +38,10 @@ function rglob($pattern='*', $flags = 0, $path='')
 }
 
 // Load system configuration
-$xml = simplexml_load_file(SERVER_ROOT . '/Config/' . 'Configuration.xml');
+//$xml = simplexml_load_file(SERVER_ROOT . '/Config/' . 'Configuration.xml');
 //var_dump($xml);
 
-$config = XmlToArray($xml);
+//$config = XmlToArray($xml);
+require('Config/Configuration.php');
+
 //var_dump($config['modules']['merchant']); die;
