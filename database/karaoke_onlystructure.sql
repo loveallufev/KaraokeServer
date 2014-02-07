@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 03, 2014 at 05:55 PM
+-- Generation Time: Feb 07, 2014 at 07:28 PM
 -- Server version: 5.5.33
 -- PHP Version: 5.5.3
 
@@ -26,14 +26,13 @@ SET time_zone = "+00:00";
 -- Table structure for table `authentication`
 --
 
-DROP TABLE IF EXISTS `authentication`;
 CREATE TABLE `authentication` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `username` varchar(32) NOT NULL,
   `token` varchar(255) NOT NULL COMMENT 'Token when login',
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Login time',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=235 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=243 ;
 
 -- --------------------------------------------------------
 
@@ -41,14 +40,13 @@ CREATE TABLE `authentication` (
 -- Table structure for table `history`
 --
 
-DROP TABLE IF EXISTS `history`;
 CREATE TABLE `history` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(32) NOT NULL,
   `keyword` text NOT NULL,
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=75 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=79 ;
 
 -- --------------------------------------------------------
 
@@ -56,7 +54,6 @@ CREATE TABLE `history` (
 -- Table structure for table `record`
 --
 
-DROP TABLE IF EXISTS `record`;
 CREATE TABLE `record` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `url` varchar(400) NOT NULL,
@@ -64,9 +61,10 @@ CREATE TABLE `record` (
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `ismixed` tinyint(1) NOT NULL DEFAULT '1',
   `username` varchar(60) NOT NULL,
+  `count` int(11) DEFAULT '0' COMMENT 'so luot nghe',
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
 
 -- --------------------------------------------------------
 
@@ -74,7 +72,6 @@ CREATE TABLE `record` (
 -- Table structure for table `song`
 --
 
-DROP TABLE IF EXISTS `song`;
 CREATE TABLE `song` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `customID` char(20) DEFAULT NULL,
@@ -91,7 +88,7 @@ CREATE TABLE `song` (
   UNIQUE KEY `customID_2` (`customID`),
   KEY `customID` (`customID`),
   KEY `customID_3` (`customID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=102 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=113 ;
 
 -- --------------------------------------------------------
 
@@ -99,7 +96,6 @@ CREATE TABLE `song` (
 -- Table structure for table `user`
 --
 
-DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `username` char(32) NOT NULL,
