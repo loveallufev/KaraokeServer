@@ -16,6 +16,15 @@
 <body>
 
 <?php include("_include/modules/top.php"); ?>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=476841689104290";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
 
 <!-- start middle -->
 <div class="middle" style="min-height: 580px;">
@@ -39,6 +48,10 @@
                         <source src="<?php echo $data['record']->url; ?>" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
+                    <br/>
+                    <div class="fb-like" data-href="<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];?>" data-width="420" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                    <br/>
+                    <div class="fb-comments" data-href="<?php echo $_SERVER['HTTP_HOST']. $_SERVER['REQUEST_URI'];?>" data-width="420" data-numposts="10" data-colorscheme="light"></div>
                 <?php } else { ?>
                     <h2> Invalid record ID </h2>
                 <?php } ?>
