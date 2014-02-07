@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/violet/contact.php" afterPath="$PROJECT_DIR$/View/violet/contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/violet/gallery.php" afterPath="$PROJECT_DIR$/View/violet/gallery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/violet/index.php" afterPath="$PROJECT_DIR$/View/violet/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/violet/listen_to_record.php" afterPath="$PROJECT_DIR$/View/violet/listen_to_record.php" />
     </list>
     <list id="f82865ad-9fcc-4c86-b07c-8dbefa202b76" name="Failed commit: Default" comment="flexible assistants choosing&#10;" />
@@ -26,15 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LuckyVoiceAssistant.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/LuckyVoiceAssistant.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="212" column="40" selection-start="8625" selection-end="8636" vertical-scroll-proportion="-69.375" vertical-offset="1440" max-vertical-offset="5265">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Configuration.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Config/Configuration.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,10 +67,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listen_to_record.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="listen_to_record.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/violet/listen_to_record.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="41" selection-start="2543" selection-end="2543" vertical-scroll-proportion="0.5272206" vertical-offset="412" max-vertical-offset="1545">
+            <state line="11" column="0" selection-start="720" selection-end="847" vertical-scroll-proportion="-5.625" vertical-offset="30" max-vertical-offset="1590">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/View/violet/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="73" selection-start="942" selection-end="942" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="3285">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gallery.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/View/violet/gallery.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="73" selection-start="1278" selection-end="1278" vertical-scroll-proportion="-15.625" vertical-offset="105" max-vertical-offset="2010">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/View/violet/contact.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="73" selection-start="832" selection-end="832" vertical-scroll-proportion="0.27936962" vertical-offset="0" max-vertical-offset="2235">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="top.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/View/violet/_include/modules/top.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="111" selection-start="128" selection-end="181" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
@@ -91,28 +123,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Configuration.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Config/Configuration.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="8" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SongAssistantManager.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/SongAssistantManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="64" selection-start="2707" selection-end="2707" vertical-scroll-proportion="-18.375" vertical-offset="669" max-vertical-offset="1380">
               <folding />
             </state>
           </provider>
@@ -168,16 +182,13 @@
         <option value="$PROJECT_DIR$/View/violet/_include/modules/config.php" />
         <option value="$PROJECT_DIR$/View/violet/_include/modules/footer.php" />
         <option value="$PROJECT_DIR$/Controller/Contact.php" />
-        <option value="$PROJECT_DIR$/View/violet/contact.php" />
         <option value="$PROJECT_DIR$/View/violet/_include/css/style.css" />
         <option value="$PROJECT_DIR$/View/violet/_include/modules/top.php" />
         <option value="$PROJECT_DIR$/Config/.gitignore" />
         <option value="$PROJECT_DIR$/View/violet/resources/cache/.gitignore" />
-        <option value="$PROJECT_DIR$/View/violet/gallery.php" />
         <option value="$PROJECT_DIR$/_install+.php" />
         <option value="$PROJECT_DIR$/Controller/Song.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/View/violet/index.php" />
         <option value="$PROJECT_DIR$/Model/Song.php" />
         <option value="$PROJECT_DIR$/Config/Configuration.xml" />
         <option value="$PROJECT_DIR$/Config/Configuration.php" />
@@ -187,6 +198,9 @@
         <option value="$PROJECT_DIR$/Model/Record.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/View/violet/listen_to_record.php" />
+        <option value="$PROJECT_DIR$/View/violet/index.php" />
+        <option value="$PROJECT_DIR$/View/violet/gallery.php" />
+        <option value="$PROJECT_DIR$/View/violet/contact.php" />
       </list>
     </option>
   </component>
@@ -261,6 +275,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="violet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="violet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KaraokeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="violet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -865,25 +927,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/violet/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="2736" selection-end="7989" vertical-scroll-proportion="0.35530087" vertical-offset="682" max-vertical-offset="2190">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/View/violet/_include/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1997" column="29" selection-start="48342" selection-end="48342" vertical-scroll-proportion="-21.0" vertical-offset="29409" max-vertical-offset="30105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/violet/_include/modules/top.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="133" selection-start="2295" selection-end="2295" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="600">
           <folding />
         </state>
       </provider>
@@ -905,13 +951,6 @@
     <entry file="file://$PROJECT_DIR$/Model/ZingAssistant.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="8" selection-start="1017" selection-end="1017" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="4815">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/violet/gallery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="1" selection-start="419" selection-end="419" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1965">
           <folding />
         </state>
       </provider>
@@ -949,13 +988,6 @@
     <entry file="file://$PROJECT_DIR$/Controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="8" selection-start="282" selection-end="316" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/violet/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="86" selection-start="5651" selection-end="5651" vertical-scroll-proportion="-14.083333" vertical-offset="1087" max-vertical-offset="3240">
           <folding />
         </state>
       </provider>
@@ -1109,9 +1141,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/View/violet/_include/modules/top.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="111" selection-start="128" selection-end="181" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/View/violet/listen_to_record.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="41" selection-start="2543" selection-end="2543" vertical-scroll-proportion="0.5272206" vertical-offset="412" max-vertical-offset="1545">
+        <state line="11" column="0" selection-start="720" selection-end="847" vertical-scroll-proportion="-5.625" vertical-offset="30" max-vertical-offset="1590">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/violet/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="73" selection-start="942" selection-end="942" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="3285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/violet/gallery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="73" selection-start="1278" selection-end="1278" vertical-scroll-proportion="-15.625" vertical-offset="105" max-vertical-offset="2010">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/violet/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="73" selection-start="832" selection-end="832" vertical-scroll-proportion="0.27936962" vertical-offset="0" max-vertical-offset="2235">
           <folding />
         </state>
       </provider>

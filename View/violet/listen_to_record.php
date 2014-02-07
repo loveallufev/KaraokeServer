@@ -9,6 +9,9 @@
     <meta name="author" content="<?=$author?>" />
     <meta name="copyright" content="<?=$copy?>" />
     <link rel="shortcut icon" href="<?=$img_dir?>/icons/favicon.ico" type="image/x-icon" />
+    <link rel="image_src"
+          type="image/jpeg"
+          href="<?=$site_dir?>"><img src="<?=$img_dir?>/misc/logo.png" />
     <?php include("_include/modules/css-js.php"); ?>
     <?php include("_include/modules/google-analytics.php"); ?>
 
