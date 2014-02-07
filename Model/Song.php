@@ -268,6 +268,10 @@ class Model_Song extends Model_BasicSong{
         // close log file
         $log->lclose();
 
+        if ($path != $mixedfile){
+            unlink($path);
+        }
+
         return $result;
     }
 

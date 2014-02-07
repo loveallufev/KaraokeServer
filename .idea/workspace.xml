@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="" />
+    <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Song.php" afterPath="$PROJECT_DIR$/Model/Song.php" />
+    </list>
     <list id="f82865ad-9fcc-4c86-b07c-8dbefa202b76" name="Failed commit: Default" comment="flexible assistants choosing&#10;" />
     <ignored path="KaraokeServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,22 +35,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Song.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/Song.php">
+      <file leaf-file-name="Song.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Model/Song.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="312" column="33" selection-start="11248" selection-end="11248" vertical-scroll-proportion="-4.18" vertical-offset="4471" max-vertical-offset="5910">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listen_to_record.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/violet/listen_to_record.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="38" selection-start="2369" selection-end="2369" vertical-scroll-proportion="-20.958334" vertical-offset="277" max-vertical-offset="1305">
+            <state line="269" column="0" selection-start="8480" selection-end="8480" vertical-scroll-proportion="0.6876791" vertical-offset="3555" max-vertical-offset="5640">
               <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1391745947000" expanded="true" signature="1733:1770" placeholder="..." />
+                <marker date="1391794220000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
+                <marker date="1391794220000" expanded="true" signature="1318:1358" placeholder="SELECT * FRO..song..." />
+                <marker date="1391794220000" expanded="true" signature="9983:10040" placeholder="INSERT INTO ..." />
+                <marker date="1391794220000" expanded="true" signature="10777:10948" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -66,22 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/violet/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="86" selection-start="5651" selection-end="5651" vertical-scroll-proportion="0.48424068" vertical-offset="1087" max-vertical-offset="3240">
+            <state line="95" column="86" selection-start="5651" selection-end="5651" vertical-scroll-proportion="-14.083333" vertical-offset="1087" max-vertical-offset="3240">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Record.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/Record.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="45" selection-start="2342" selection-end="2342" vertical-scroll-proportion="-19.708334" vertical-offset="652" max-vertical-offset="1365">
-              <folding>
-                <marker date="1391747690000" expanded="true" signature="444:658" placeholder="SELECT recor..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -179,7 +163,6 @@
         <option value="$PROJECT_DIR$/Lib/Utility.php" />
         <option value="$PROJECT_DIR$/mix.sh" />
         <option value="$PROJECT_DIR$/Lib/Logging.php" />
-        <option value="$PROJECT_DIR$/Model/Song.php" />
         <option value="$PROJECT_DIR$/Model/User.php" />
         <option value="$PROJECT_DIR$/Controller/Index.php" />
         <option value="$PROJECT_DIR$/Core/View.php" />
@@ -204,6 +187,7 @@
         <option value="$PROJECT_DIR$/Controller/Song.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/View/violet/index.php" />
+        <option value="$PROJECT_DIR$/Model/Song.php" />
       </list>
     </option>
   </component>
@@ -260,102 +244,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="KaraokeServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KaraokeServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KaraokeServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="violet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KaraokeServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KaraokeServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="violet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_include" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KaraokeServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KaraokeServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="violet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_include" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KaraokeServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KaraokeServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="violet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_include" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icons" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -764,7 +652,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="22" width="1387" height="878" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -778,7 +666,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30037174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30037174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1036,18 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Song.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="38" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.12893982" vertical-offset="450" max-vertical-offset="5580">
-          <folding>
-            <marker date="1391691302000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..song..." />
-            <marker date="1391691302000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..song..." />
-            <marker date="1391691302000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1391691302000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/View/violet/contact.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="62" column="0" selection-start="2736" selection-end="7989" vertical-scroll-proportion="0.35530087" vertical-offset="682" max-vertical-offset="2190">
@@ -1085,21 +961,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Record.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="45" selection-start="2342" selection-end="2342" vertical-scroll-proportion="-19.708334" vertical-offset="652" max-vertical-offset="1365">
-          <folding>
-            <marker date="1391747690000" expanded="true" signature="444:658" placeholder="SELECT recor..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/View/violet/listen_to_record.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="38" selection-start="2369" selection-end="2369" vertical-scroll-proportion="-20.958334" vertical-offset="277" max-vertical-offset="1305">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1391745947000" expanded="true" signature="1733:1770" placeholder="..." />
+            <marker date="1391745947000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1139,13 +1006,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="8" selection-start="282" selection-end="316" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/View/violet/gallery.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="1" selection-start="419" selection-end="419" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1965">
@@ -1173,13 +1033,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Song.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="312" column="33" selection-start="11248" selection-end="11248" vertical-scroll-proportion="-4.18" vertical-offset="4471" max-vertical-offset="5910">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -1190,10 +1043,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Song.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="324" column="58" selection-start="11593" selection-end="11593" vertical-scroll-proportion="0.37797618" vertical-offset="4606" max-vertical-offset="5910">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="8" selection-start="282" selection-end="316" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Record.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="45" selection-start="2342" selection-end="2342" vertical-scroll-proportion="0.6561605" vertical-offset="667" max-vertical-offset="1365">
+          <folding>
+            <marker date="1391747690000" expanded="true" signature="-1:-1" placeholder="SELECT recor..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/View/violet/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="86" selection-start="5651" selection-end="5651" vertical-scroll-proportion="0.48424068" vertical-offset="1087" max-vertical-offset="3240">
+        <state line="95" column="86" selection-start="5651" selection-end="5651" vertical-scroll-proportion="-14.083333" vertical-offset="1087" max-vertical-offset="3240">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Song.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="269" column="0" selection-start="8480" selection-end="8480" vertical-scroll-proportion="0.6876791" vertical-offset="3555" max-vertical-offset="5640">
+          <folding>
+            <marker date="1391794220000" expanded="true" signature="728:760" placeholder="SELECT * FRO..song..." />
+            <marker date="1391794220000" expanded="true" signature="1318:1358" placeholder="SELECT * FRO..song..." />
+            <marker date="1391794220000" expanded="true" signature="9983:10040" placeholder="INSERT INTO ..." />
+            <marker date="1391794220000" expanded="true" signature="10777:10948" placeholder="INSERT INTO ..." />
+          </folding>
         </state>
       </provider>
     </entry>
