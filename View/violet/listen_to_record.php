@@ -35,7 +35,8 @@
         <div class="full-width">
 
             <div class="one-half pt20">
-                <?php if (isset($data['record'])){ ?>
+                <?php if (isset($data['record'])){
+                    $http = ($_SERVER['HTTPS'] ? 'https://' : 'http://'); ?>
                     <p>
                     <span><b>Title:</b> <?php echo $data['record']->title; ?></span><br/>
                     <span><b>Author:</b> <?php echo $data['record']->author; ?></span><br/>
@@ -49,9 +50,9 @@
                         Your browser does not support the audio element.
                     </audio>
                     <br/>
-                    <div class="fb-like" data-href="<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];?>" data-width="420" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                    <div class="fb-like" data-href="<?php echo $http . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];?>" data-width="420" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
                     <br/>
-                    <div class="fb-comments" data-href="<?php echo $_SERVER['HTTP_HOST']. $_SERVER['REQUEST_URI'];?>" data-width="420" data-numposts="10" data-colorscheme="light"></div>
+                    <div class="fb-comments" data-href="<?php echo $http . $_SERVER['HTTP_HOST']. $_SERVER['REQUEST_URI'];?>" data-width="420" data-numposts="10" data-colorscheme="light"></div>
                 <?php } else { ?>
                     <h2> Invalid record ID </h2>
                 <?php } ?>
