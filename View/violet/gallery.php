@@ -27,7 +27,7 @@ if (!defined('THEMEPATH')) {
     <meta name="author" content="<?=$author?>" />
     <meta name="copyright" content="<?=$copy?>" />
     <link rel="shortcut icon" href="<?=$img_dir?>/icons/favicon.ico" type="image/x-icon" />
-    <meta property="og:image" content="<?=$img_dir?>/misc/logo.png" />
+    <meta property="og:image" content="<?=$img_dir?>/misc/icon300x300.png" />
 
     <?php include("_include/modules/css-js.php"); ?>
     <?php include("_include/modules/google-analytics.php"); ?>

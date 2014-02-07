@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="<?=$img_dir?>/icons/favicon.ico" type="image/x-icon" />
 	<?php include("_include/modules/css-js.php"); ?>
     <?php include("_include/modules/google-analytics.php"); ?>
-    <meta property="og:image" content="<?=$img_dir?>/misc/logo.png" />
+    <meta property="og:image" content="<?=$img_dir?>/misc/icon300x300.png" />
 
     <!-- start load cycle slideshow -->
     <link href="<?=$css_dir?>/jquery.cycle.css" rel="stylesheet" type="text/css" />
