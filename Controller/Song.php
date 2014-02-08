@@ -114,21 +114,22 @@ class Controller_Song extends Core_Controller {
         $song = Model_Song::getSongByID($id);
 
 
+        // Logging class initialization
+        $log = new Lib_Logging();
+
+        // set path and name of log file (optional)
+        $log->lfile(SERVER_ROOT. DS . 'logs/user_song.log');
+
+        // write message to the log file
+        $log->lwrite(sprintf('%s sing the song ID=%s', $username, $id));
+        // close log file
+        $log->lclose();
 
         // Find in our database first
         if (isset($song)){
             Model_Song::updateCounterTo($song, $song->count + 1);
 
-            // Logging class initialization
-            $log = new Lib_Logging();
 
-            // set path and name of log file (optional)
-            $log->lfile(SERVER_ROOT. DS . 'logs/user_song.log');
-
-            // write message to the log file
-            $log->lwrite(sprintf('%s sing the song ID=%s', $username, $song->ID));
-            // close log file
-            $log->lclose();
 
             //$song = new Model_Song("Title", "Singer", "Author");
             echo json_encode(array('status' => 'OK' , 'code' => CODE_SUCCESS, 'song' => $song));
