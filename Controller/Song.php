@@ -30,7 +30,6 @@ class Controller_Song extends Core_Controller {
         $tmp = str_replace('+', ' ', $songName);
         $lang = $t->predict($tmp);
 
-
         $result = null;
 
         $songAssistant = Model_SongAssistantManager::getSongAssistantByLanguage($lang);
@@ -95,6 +94,7 @@ class Controller_Song extends Core_Controller {
         }
 
         $token = Lib_Utility::get_post_var('token');
+        $username = '';
 
         if (!isset($token)){
             echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING , 'message' => "Missing token"));

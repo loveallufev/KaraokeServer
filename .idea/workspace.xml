@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/Song.php" afterPath="$PROJECT_DIR$/Controller/Song.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/ZingAssistant.php" afterPath="$PROJECT_DIR$/Model/ZingAssistant.php" />
     </list>
     <list id="f82865ad-9fcc-4c86-b07c-8dbefa202b76" name="Failed commit: Default" comment="flexible assistants choosing&#10;" />
     <ignored path="KaraokeServer.iws" />
@@ -89,7 +89,16 @@
       <file leaf-file-name="Song.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controller/Song.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="23" selection-start="4608" selection-end="4608" vertical-scroll-proportion="0.7352941" vertical-offset="1550" max-vertical-offset="6120">
+            <state line="35" column="0" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.38914028" vertical-offset="353" max-vertical-offset="6120">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZingAssistant.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/ZingAssistant.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="56" selection-start="997" selection-end="997" vertical-scroll-proportion="-8.75" vertical-offset="90" max-vertical-offset="4815">
               <folding />
             </state>
           </provider>
@@ -151,7 +160,6 @@
         <option value="$PROJECT_DIR$/Model/AbstractAssistant.php" />
         <option value="$PROJECT_DIR$/Model/BasicSong.php" />
         <option value="$PROJECT_DIR$/Model/SongAssistantManager.php" />
-        <option value="$PROJECT_DIR$/Model/ZingAssistant.php" />
         <option value="$PROJECT_DIR$/Model/LuckyVoiceAssistant.php" />
         <option value="$PROJECT_DIR$/Controller/User.php" />
         <option value="$PROJECT_DIR$/Lib/Utility.php" />
@@ -184,6 +192,7 @@
         <option value="$PROJECT_DIR$/Model/Record.php" />
         <option value="$PROJECT_DIR$/View/violet/listen_to_record.php" />
         <option value="$PROJECT_DIR$/Lib/Logging.php" />
+        <option value="$PROJECT_DIR$/Model/ZingAssistant.php" />
         <option value="$PROJECT_DIR$/Controller/Song.php" />
       </list>
     </option>
@@ -917,11 +926,6 @@
         <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/ZingAssistant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="8" selection-start="1017" selection-end="1017" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="4815" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_install+.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="96" column="34" selection-start="2642" selection-end="2642" vertical-scroll-proportion="-24.0" vertical-offset="789" max-vertical-offset="1500" />
@@ -1096,9 +1100,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Model/ZingAssistant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="56" selection-start="997" selection-end="997" vertical-scroll-proportion="-8.75" vertical-offset="90" max-vertical-offset="4815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/Song.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="23" selection-start="4608" selection-end="4608" vertical-scroll-proportion="0.7352941" vertical-offset="1550" max-vertical-offset="6120">
+        <state line="35" column="0" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.38914028" vertical-offset="353" max-vertical-offset="6120">
           <folding />
         </state>
       </provider>

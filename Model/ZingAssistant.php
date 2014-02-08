@@ -18,7 +18,7 @@ class Model_ZingAssistant extends  Model_AbstractAssistant{
     public function searchByName($songName){
         $songName = strtolower($songName);
         $songNameBreak = explode(" ",$songName);
-        $url = sprintf(ZING_DOMAIN . ZING_SEARCH_URL, implode("-", $songNameBreak), implode("+", $songNameBreak));
+        $url = sprintf(ZING_DOMAIN . ZING_SEARCH_URL, str_replace('%', '-',implode("-", $songNameBreak)), implode("+", $songNameBreak));
 
         $html = Lib_Utility::SendRequest($url);
         $begin = strpos($html, '<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tblstyle01">', 10000);
