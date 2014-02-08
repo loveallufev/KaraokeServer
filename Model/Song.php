@@ -235,6 +235,17 @@ class Model_Song extends Model_BasicSong{
             );
         }
         else{
+            // Logging class initialization
+            $log = new Lib_Logging();
+
+            // set path and name of log file (optional)
+            $log->lfile(SERVER_ROOT. DS . 'logs/logs.log');
+
+            // write message to the log file
+            $log->lwrite("Error when creating file in $folder (" . substr(sprintf('%o', fileperms($folder)), -4) .")");
+            // close log file
+            $log->lclose();
+
             $result =  array('status' => 'FAILED', 'code' => CODE_ERROR_FAILED ,
                 'message' => 'can not create new file ' . $mixedfile);
         }

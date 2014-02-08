@@ -18,7 +18,20 @@ class LuckyVoiceSetting {
 
 
     public static function updateConfig(){
-        LuckyVoiceSetting::$config->asXml(SERVER_ROOT . '/Config/' . 'LuckyVoice.xml');
+        $configfile = SERVER_ROOT . '/Config/' . 'LuckyVoice.xml';
+        if(!LuckyVoiceSetting::$config->asXml($configfile))
+        {
+            // Logging class initialization
+            $log = new Lib_Logging();
+
+            // set path and name of log file (optional)
+            $log->lfile(SERVER_ROOT. DS . 'logs/logs.log');
+
+            // write message to the log file
+            $log->lwrite("Error when update config for LuckyVoice (" . substr(sprintf('%o', fileperms($configfile)), -4) .")");
+            // close log file
+            $log->lclose();
+        }
     }
 
 }

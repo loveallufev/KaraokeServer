@@ -24,16 +24,19 @@ class Controller_Song extends Core_Controller {
         }
 
         $songName = $param['s'];
+        $tmp = urldecode($songName);
         $songName = str_replace('%20','+', $songName  );
 
         $t = new Lib_LanguageDetector_LanguageDetector();
-        $tmp = str_replace('+', ' ', $songName);
+
         $lang = $t->predict($tmp);
 
         $result = null;
 
+
         $songAssistant = Model_SongAssistantManager::getSongAssistantByLanguage($lang);
 
+        //$songName = str_replace('+','+', $songName  );
 
         //$result = (new Model_ZingSong())->searchByName($songName);
         header('Content-Type: application/json; charset=UTF-8');
@@ -341,8 +344,9 @@ class Controller_Song extends Core_Controller {
         $now->setTimezone(new DateTimeZone('UTC'));
 
 
+        $configFile = SERVER_ROOT . '/Config/' . 'Configuration.xml';
 
-        $cacheConfig = simplexml_load_file(SERVER_ROOT . '/Config/' . 'Configuration.xml');
+        $cacheConfig = simplexml_load_file($configFile);
 
         if (isset($param['id'])){
             try{
@@ -391,7 +395,19 @@ class Controller_Song extends Core_Controller {
         echo "Caching songs finish!" . "<br/>";
         echo "Lastsong ID: " . $lastSongID . "<br/>";
         $cacheConfig->cache->lastsongid = $lastSongID;
-        $cacheConfig->asXml(SERVER_ROOT . '/Config/' . 'Configuration.xml');
+        if(!$cacheConfig->asXml($configFile))
+        {
+            // Logging class initialization
+            $log = new Lib_Logging();
+
+            // set path and name of log file (optional)
+            $log->lfile(SERVER_ROOT. DS . 'logs/logs.log');
+
+            // write message to the log file
+            $log->lwrite("Error when update config for Caching (" . substr(sprintf('%o', fileperms($configFile)), -4) .")");
+            // close log file
+            $log->lclose();
+        }
         echo "Write to database OK";
         fwrite($fp, "Finish with lastsongid=" . $lastSongID . "\n\n");
         fclose($fp);
