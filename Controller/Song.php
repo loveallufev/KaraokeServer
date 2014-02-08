@@ -123,7 +123,7 @@ class Controller_Song extends Core_Controller {
             $log = new Lib_Logging();
 
             // set path and name of log file (optional)
-            $log->lfile('logs/user_song.log');
+            $log->lfile(SERVER_ROOT. DS . 'logs/user_song.log');
 
             // write message to the log file
             $log->lwrite(sprintf('%s sing the song ID=%s', $username, $song->ID));
