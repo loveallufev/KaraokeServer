@@ -126,7 +126,7 @@ class Controller_Song extends Core_Controller {
             $log->lfile('logs/user_song.log');
 
             // write message to the log file
-            $log->lwrite(sprintf('%s sing song %s', $username, $song->ID));
+            $log->lwrite(sprintf('%s sing the song ID=%s', $username, $song->ID));
             // close log file
             $log->lclose();
 

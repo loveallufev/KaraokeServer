@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Record.php" afterPath="$PROJECT_DIR$/Model/Record.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/Song.php" afterPath="$PROJECT_DIR$/Controller/Song.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/user_song.log" afterPath="$PROJECT_DIR$/logs/user_song.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/violet/listen_to_record.php" afterPath="$PROJECT_DIR$/View/violet/listen_to_record.php" />
     </list>
     <list id="f82865ad-9fcc-4c86-b07c-8dbefa202b76" name="Failed commit: Default" comment="flexible assistants choosing&#10;" />
     <ignored path="KaraokeServer.iws" />
@@ -28,29 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Configuration.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Config/Configuration.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="29" selection-start="1513" selection-end="1513" vertical-scroll-proportion="-11.5" vertical-offset="564" max-vertical-offset="1305">
-              <folding>
-                <marker date="1391801155000" expanded="true" signature="122:1245" placeholder="..." />
-                <marker date="1391801155000" expanded="true" signature="139:319" placeholder="..." />
-                <marker date="1391801155000" expanded="true" signature="370:476" placeholder="..." />
-                <marker date="1391801155000" expanded="true" signature="490:1167" placeholder="..." />
-                <marker date="1391801155000" expanded="true" signature="511:1114" placeholder="..." />
-                <marker date="1391801155000" expanded="true" signature="536:892" placeholder="..." />
-                <marker date="1391801155000" expanded="true" signature="561:699" placeholder="..." />
-                <marker date="1391801155000" expanded="true" signature="911:1092" placeholder="..." />
-                <marker date="1391801155000" expanded="true" signature="1179:1228" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Record.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/Record.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="5" selection-start="2754" selection-end="3211" vertical-scroll-proportion="-24.791666" vertical-offset="935" max-vertical-offset="1635">
+            <state line="90" column="9" selection-start="2807" selection-end="2807" vertical-scroll-proportion="-21.041666" vertical-offset="770" max-vertical-offset="1650">
               <folding />
             </state>
           </provider>
@@ -95,7 +76,7 @@
       <file leaf-file-name="listen_to_record.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/violet/listen_to_record.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="6" selection-start="717" selection-end="717" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1545">
+            <state line="68" column="94" selection-start="3426" selection-end="3426" vertical-scroll-proportion="-19.791666" vertical-offset="545" max-vertical-offset="1545">
               <folding />
             </state>
           </provider>
@@ -118,7 +99,19 @@
       <file leaf-file-name="Song.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controller/Song.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="197" column="41" selection-start="7263" selection-end="7263" vertical-scroll-proportion="0.42142856" vertical-offset="2660" max-vertical-offset="6105">
+            <state line="128" column="54" selection-start="4675" selection-end="4675" vertical-scroll-proportion="0.42142856" vertical-offset="1625" max-vertical-offset="6105">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="23" selection-start="108" selection-end="108" vertical-scroll-proportion="7.5185184" vertical-offset="263" max-vertical-offset="960">
               <folding />
             </state>
           </provider>
@@ -194,13 +187,13 @@
         <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Controller/Record.php" />
-        <option value="$PROJECT_DIR$/Model/Record.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/View/violet/listen_to_record.php" />
         <option value="$PROJECT_DIR$/View/violet/index.php" />
         <option value="$PROJECT_DIR$/View/violet/gallery.php" />
         <option value="$PROJECT_DIR$/View/violet/contact.php" />
         <option value="$PROJECT_DIR$/Model/Song.php" />
+        <option value="$PROJECT_DIR$/Model/Record.php" />
+        <option value="$PROJECT_DIR$/View/violet/listen_to_record.php" />
         <option value="$PROJECT_DIR$/Controller/Song.php" />
       </list>
     </option>
@@ -943,14 +936,6 @@
         <state line="96" column="34" selection-start="2642" selection-end="2642" vertical-scroll-proportion="-24.0" vertical-offset="789" max-vertical-offset="1500" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="23" selection-start="108" selection-end="108" vertical-scroll-proportion="-2.2222223" vertical-offset="0" max-vertical-offset="960" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="8" selection-start="282" selection-end="316" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="585" />
@@ -1031,15 +1016,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="29" selection-start="1513" selection-end="1513" vertical-scroll-proportion="-11.5" vertical-offset="564" max-vertical-offset="1305">
           <folding>
-            <marker date="1391801155000" expanded="true" signature="122:1245" placeholder="..." />
-            <marker date="1391801155000" expanded="true" signature="139:319" placeholder="..." />
-            <marker date="1391801155000" expanded="true" signature="370:476" placeholder="..." />
-            <marker date="1391801155000" expanded="true" signature="490:1167" placeholder="..." />
-            <marker date="1391801155000" expanded="true" signature="511:1114" placeholder="..." />
-            <marker date="1391801155000" expanded="true" signature="536:892" placeholder="..." />
-            <marker date="1391801155000" expanded="true" signature="561:699" placeholder="..." />
-            <marker date="1391801155000" expanded="true" signature="911:1092" placeholder="..." />
-            <marker date="1391801155000" expanded="true" signature="1179:1228" placeholder="..." />
+            <marker date="1391801155000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1391801155000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1391801155000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1391801155000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1391801155000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1391801155000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1391801155000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1391801155000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1391801155000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1094,20 +1079,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/violet/listen_to_record.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="717" selection-end="717" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1545">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Record.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="5" selection-start="2754" selection-end="3211" vertical-scroll-proportion="-24.791666" vertical-offset="935" max-vertical-offset="1635">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/Song.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="285" column="23" selection-start="8626" selection-end="9004" vertical-scroll-proportion="-20.0" vertical-offset="3795" max-vertical-offset="5895">
@@ -1120,6 +1091,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="23" selection-start="108" selection-end="108" vertical-scroll-proportion="7.5185184" vertical-offset="263" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/violet/listen_to_record.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="94" selection-start="3426" selection-end="3426" vertical-scroll-proportion="-19.791666" vertical-offset="545" max-vertical-offset="1545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Record.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="9" selection-start="2807" selection-end="2807" vertical-scroll-proportion="-21.041666" vertical-offset="770" max-vertical-offset="1650">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/Record.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="71" selection-start="406" selection-end="406" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="375">
@@ -1129,7 +1124,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controller/Song.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="197" column="41" selection-start="7263" selection-end="7263" vertical-scroll-proportion="0.42142856" vertical-offset="2660" max-vertical-offset="6105">
+        <state line="128" column="54" selection-start="4675" selection-end="4675" vertical-scroll-proportion="0.42142856" vertical-offset="1625" max-vertical-offset="6105">
           <folding />
         </state>
       </provider>

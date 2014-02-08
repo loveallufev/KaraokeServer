@@ -74,19 +74,20 @@ class Model_Record extends  Core_Model{
         $model->getDB()->disconnect();
 
         $result = array();
-
-        foreach ($qresult as $s){
-            $record = new Model_Record();
-            $record->id = $s['id'];
-            $record->title = $s['title'];
-            $record->category = $s['category'];
-            $record->author = $s['author'];
-            $record->ismixed = $s['ismixed'];
-            $record->time = $s['time'];
-            $record->url = $s['url'];
-            $record->user = $s['username'];
-            $record->count = $s['count'];
-            array_push($result,$record);
+        if (isset($qresult)){
+            foreach ($qresult as $s){
+                $record = new Model_Record();
+                $record->id = $s['id'];
+                $record->title = $s['title'];
+                $record->category = $s['category'];
+                $record->author = $s['author'];
+                $record->ismixed = $s['ismixed'];
+                $record->time = $s['time'];
+                $record->url = $s['url'];
+                $record->user = $s['username'];
+                $record->count = $s['count'];
+                array_push($result,$record);
+            }
         }
 
         return $result;

@@ -36,7 +36,7 @@
 
             <div class="one-half pt20">
                 <?php if (isset($data['record'])){
-                    $http = ($_SERVER['HTTPS'] ? 'https://' : 'http://'); ?>
+                    $http = ((isset( $_SERVER["HTTPS"] ) && strtolower( $_SERVER["HTTPS"] ) == "on") ? 'https://' : 'http://'); ?>
                     <p>
                     <span><b>Title:</b> <?php echo $data['record']->title; ?></span><br/>
                     <span><b>Author:</b> <?php echo $data['record']->author; ?></span><br/>
@@ -66,7 +66,7 @@
                         <h1>Related records:</h1>
                         <div id="list4">
                             <ul>
-                                <?php if (isset($data['related']))  {
+                                <?php if (isset($data['related']) && sizeof($data['related']))  {
                                     foreach ($data['related'] as $relatedRec) { ?>
                                     <li><a href="<?php echo BASE_URL . DS . 'index.php/record/listen?id=' . $relatedRec->id; ?>">
                                             <strong><?php echo $relatedRec->title; ?></strong><?php echo $relatedRec->time;?></a></li>
