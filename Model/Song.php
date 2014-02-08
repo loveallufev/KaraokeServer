@@ -13,6 +13,7 @@ class Model_Song extends Model_BasicSong{
     public $linkToSong;
     // this field will contain information of lyric (starting time, ending time...)
     public $karaoke;
+    public $count;
 
     public function __construct($title, $singer, $author, $lyric=null, $category=null){
         $this->title = $title;
@@ -64,8 +65,24 @@ class Model_Song extends Model_BasicSong{
         $song->beatURL = $qresult->beatURL;
         $song->karaoke = $qresult->karaoke;
         $song->ID = $qresult->customID;
+        $song->count = $qresult->count;
 
         return $song;
+    }
+
+    public static function updateCounterTo($song, $newvalue){
+        $query = sprintf('UPDATE  `song` SET  `count` =%s WHERE customid="%s"', $newvalue, $song->ID);
+
+        $model = new Core_Model();
+        $model->getDB()->connect();
+        $model->getDB()->prepare($query);
+        if (!$model->getDB()->query()){
+            $model->getDB()->disconnect();
+            return false;
+        }
+
+        $model->getDB()->disconnect();
+        return true;
     }
 
     public  static function isCached($ID){

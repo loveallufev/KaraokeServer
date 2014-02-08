@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 07, 2014 at 07:31 PM
+-- Generation Time: Feb 08, 2014 at 01:38 PM
 -- Server version: 5.5.33
 -- PHP Version: 5.5.3
 
@@ -48,7 +48,7 @@ CREATE TABLE `history` (
   `keyword` text NOT NULL,
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=79 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=81 ;
 
 -- --------------------------------------------------------
 
@@ -88,11 +88,12 @@ CREATE TABLE `song` (
   `title` varchar(100) NOT NULL,
   `lyric` text,
   `karaoke` text,
+  `count` int(11) DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `customID_2` (`customID`),
   KEY `customID` (`customID`),
   KEY `customID_3` (`customID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=113 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=114 ;
 
 -- --------------------------------------------------------
 

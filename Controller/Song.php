@@ -114,9 +114,10 @@ class Controller_Song extends Core_Controller {
         $song = Model_Song::getSongByID($id);
 
 
+
         // Find in our database first
         if (isset($song)){
-
+            Model_Song::updateCounterTo($song, $song->count + 1);
             //$song = new Model_Song("Title", "Singer", "Author");
             echo json_encode(array('status' => 'OK' , 'code' => CODE_SUCCESS, 'song' => $song));
             return;
