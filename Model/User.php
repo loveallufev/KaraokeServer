@@ -49,8 +49,10 @@ class Model_User extends  Core_Model{
         $model = new Core_Model();
         $model->getDB()->connect();
         $username = mysql_real_escape_string($username);
+        echo "username:" . $username;
 
         $query = sprintf("SELECT `password` FROM `user` WHERE `username`='%s'", $username);
+        echo $query;
         $model->getDB()->prepare($query);
 
         if (!$model->getDB()->query()){

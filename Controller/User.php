@@ -47,7 +47,7 @@ class Controller_User extends Core_Controller{
     public function loginAction($param){
         $username = Lib_Utility::get_post_var('username');
         $password = Lib_Utility::get_post_var('password');
-        echo $username . $password;
+
         if (!isset($username) || !isset($password)){
             echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING, 'message' => 'Missing username or password'));
             return;
