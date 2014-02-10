@@ -45,8 +45,9 @@ class Model_Song extends Model_BasicSong{
     public static function getSongByID($id){
         $model = new Core_Model();
         $model->getDB()->connect();
+        $id = $model->getDB()->escape($id);
 
-        $query = sprintf("SELECT * FROM song WHERE customID = '%s'", mysql_real_escape_string($id));
+        $query = sprintf("SELECT * FROM song WHERE customID = '%s'", $id);
 
         $model->getDB()->prepare($query);
         if (!$model->getDB()->query()){
@@ -144,10 +145,14 @@ class Model_Song extends Model_BasicSong{
     }
 
     public static function saveRecord($file, $username, $songid, $isMixed) {
+        // insert into database
+        $model = new Core_Model();
+        $model->getDB()->connect();
+
         $originalName = $file['name'];
         $newName = time() . $originalName;
-        $songid = mysql_real_escape_string($songid);
-        $username = mysql_real_escape_string($username);
+        $songid = $model->getDB()->escape($songid);
+        $username = $model->getDB()->escape($username);
         $path = 'upload' .  DS . $username . DS . $newName;
         $folder = dirname($path);
 
@@ -251,9 +256,7 @@ class Model_Song extends Model_BasicSong{
         }
 
 
-        // insert into database
-        $model = new Core_Model();
-        $model->getDB()->connect();
+
 
         if ($converted) $isMixed = 1;
             else $isMixed = 0;
@@ -350,7 +353,9 @@ class Model_Song extends Model_BasicSong{
         $model = new Core_Model();
         $model->getDB()->connect();
 
-        $query = sprintf("INSERT INTO history(username, keyword) VALUES('%s', '%s')", $username, mysql_real_escape_string($keyword));
+        $keyword = $model->getDB()->escape($keyword);
+
+        $query = sprintf("INSERT INTO history(username, keyword) VALUES('%s', '%s')", $username, $keyword);
 
         $model->getDB()->prepare($query);
         if (!$model->getDB()->query()){

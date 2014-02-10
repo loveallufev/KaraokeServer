@@ -116,7 +116,7 @@ class Model_User extends  Core_Model{
 
         $model = new Core_Model();
         $model->getDB()->connect();
-        $username = mysqli_real_escape_string($model->getDB()->connection, $username);
+        $username = $model->getDB()->escape($username);
 
         $query = sprintf("SELECT `password` FROM user WHERE `username`='%s'", $username);
         $model->getDB()->prepare($query);
@@ -137,7 +137,7 @@ class Model_User extends  Core_Model{
 
         $model = new Core_Model();
         $model->getDB()->connect();
-        $token = mysqli_real_escape_string($model->getDB()->connection, $token);
+        $token = $model->getDB()->escape($token);
 
         $query = sprintf("SELECT * FROM `authentication` WHERE `token`='%s'", $token);
 

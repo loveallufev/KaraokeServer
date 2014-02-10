@@ -22,10 +22,11 @@ class Model_Record extends  Core_Model{
 
         $model = new Core_Model();
         $model->getDB()->connect();
+        $id = $model->getDB()->escape($id);
         $query = sprintf(
             'SELECT record.id,song.title, song.category, song.author,' .
             'record.ismixed, record.time, record.url, record.username, record.count ' .
-            'FROM song,record WHERE song.customID=record.songid AND record.id=%s', mysql_real_escape_string($id));
+            'FROM song,record WHERE song.customID=record.songid AND record.id=%s', $id);
 
         $model->getDB()->prepare($query);
         if (!$model->getDB()->query()){
@@ -59,10 +60,13 @@ class Model_Record extends  Core_Model{
 
         $model = new Core_Model();
         $model->getDB()->connect();
+
+        $username = $model->getDB()->escape($username);
+
         $query = sprintf(
             'SELECT record.id,song.title, song.category, song.author,' .
             'record.ismixed, record.time, record.url, record.username, record.count ' .
-            'FROM song,record WHERE song.customID=record.songid AND record.username="%s" ORDER BY record.time DESC  LIMIT 0,10', mysql_real_escape_string($username));
+            'FROM song,record WHERE song.customID=record.songid AND record.username="%s" ORDER BY record.time DESC  LIMIT 0,10', ($username));
 
         $model->getDB()->prepare($query);
         if (!$model->getDB()->query()){
