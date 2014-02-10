@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/User.php" afterPath="$PROJECT_DIR$/Controller/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/User.php" afterPath="$PROJECT_DIR$/Model/User.php" />
     </list>
     <list id="f82865ad-9fcc-4c86-b07c-8dbefa202b76" name="Failed commit: Default" comment="flexible assistants choosing&#10;" />
@@ -53,13 +52,13 @@
       <file leaf-file-name="User.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Model/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="20" selection-start="2144" selection-end="2144" vertical-scroll-proportion="0.42307693" vertical-offset="548" max-vertical-offset="2340">
+            <state line="50" column="23" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.28733033" vertical-offset="548" max-vertical-offset="2355">
               <folding>
-                <marker date="1391999356000" expanded="true" signature="918:979" placeholder="INSERT INTO ..." />
-                <marker date="1391999356000" expanded="true" signature="2058:2109" placeholder="SELECT `pass..." />
-                <marker date="1391999356000" expanded="true" signature="3072:3141" placeholder="INSERT INTO ..." />
-                <marker date="1391999356000" expanded="true" signature="4262:4311" placeholder="SELECT `pass..." />
-                <marker date="1391999356000" expanded="true" signature="4906:4955" placeholder="SELECT * FRO..." />
+                <marker date="1391999394000" expanded="true" signature="918:979" placeholder="INSERT INTO ..." />
+                <marker date="1391999394000" expanded="true" signature="2082:2133" placeholder="SELECT `pass..." />
+                <marker date="1391999394000" expanded="true" signature="3096:3165" placeholder="INSERT INTO ..." />
+                <marker date="1391999394000" expanded="true" signature="4286:4335" placeholder="SELECT `pass..." />
+                <marker date="1391999394000" expanded="true" signature="4930:4979" placeholder="SELECT * FRO..." />
               </folding>
             </state>
           </provider>
@@ -1117,13 +1116,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="20" selection-start="2144" selection-end="2144" vertical-scroll-proportion="0.42307693" vertical-offset="548" max-vertical-offset="2340">
+        <state line="50" column="23" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.28733033" vertical-offset="548" max-vertical-offset="2355">
           <folding>
-            <marker date="1391999356000" expanded="true" signature="918:979" placeholder="INSERT INTO ..." />
-            <marker date="1391999356000" expanded="true" signature="2058:2109" placeholder="SELECT `pass..." />
-            <marker date="1391999356000" expanded="true" signature="3072:3141" placeholder="INSERT INTO ..." />
-            <marker date="1391999356000" expanded="true" signature="4262:4311" placeholder="SELECT `pass..." />
-            <marker date="1391999356000" expanded="true" signature="4906:4955" placeholder="SELECT * FRO..." />
+            <marker date="1391999394000" expanded="true" signature="918:979" placeholder="INSERT INTO ..." />
+            <marker date="1391999394000" expanded="true" signature="2082:2133" placeholder="SELECT `pass..." />
+            <marker date="1391999394000" expanded="true" signature="3096:3165" placeholder="INSERT INTO ..." />
+            <marker date="1391999394000" expanded="true" signature="4286:4335" placeholder="SELECT `pass..." />
+            <marker date="1391999394000" expanded="true" signature="4930:4979" placeholder="SELECT * FRO..." />
           </folding>
         </state>
       </provider>

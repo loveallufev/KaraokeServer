@@ -48,6 +48,7 @@ class Model_User extends  Core_Model{
     public static function login($username, $password, $return_json = true){
         $model = new Core_Model();
         $model->getDB()->connect();
+        echo $username;
         $username = mysql_real_escape_string($username);
         echo "username:" . $username;
 
