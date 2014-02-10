@@ -54,11 +54,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="50" column="23" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.28733033" vertical-offset="548" max-vertical-offset="2355">
               <folding>
-                <marker date="1391999394000" expanded="true" signature="918:979" placeholder="INSERT INTO ..." />
-                <marker date="1391999394000" expanded="true" signature="2082:2133" placeholder="SELECT `pass..." />
-                <marker date="1391999394000" expanded="true" signature="3096:3165" placeholder="INSERT INTO ..." />
-                <marker date="1391999394000" expanded="true" signature="4286:4335" placeholder="SELECT `pass..." />
-                <marker date="1391999394000" expanded="true" signature="4930:4979" placeholder="SELECT * FRO..." />
+                <marker date="1391999533000" expanded="true" signature="918:979" placeholder="INSERT INTO ..." />
+                <marker date="1391999533000" expanded="true" signature="2112:2163" placeholder="SELECT `pass..." />
+                <marker date="1391999533000" expanded="true" signature="3126:3195" placeholder="INSERT INTO ..." />
+                <marker date="1391999533000" expanded="true" signature="4316:4365" placeholder="SELECT `pass..." />
+                <marker date="1391999533000" expanded="true" signature="4960:5009" placeholder="SELECT * FRO..." />
               </folding>
             </state>
           </provider>
@@ -1118,11 +1118,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="23" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.28733033" vertical-offset="548" max-vertical-offset="2355">
           <folding>
-            <marker date="1391999394000" expanded="true" signature="918:979" placeholder="INSERT INTO ..." />
-            <marker date="1391999394000" expanded="true" signature="2082:2133" placeholder="SELECT `pass..." />
-            <marker date="1391999394000" expanded="true" signature="3096:3165" placeholder="INSERT INTO ..." />
-            <marker date="1391999394000" expanded="true" signature="4286:4335" placeholder="SELECT `pass..." />
-            <marker date="1391999394000" expanded="true" signature="4930:4979" placeholder="SELECT * FRO..." />
+            <marker date="1391999533000" expanded="true" signature="918:979" placeholder="INSERT INTO ..." />
+            <marker date="1391999533000" expanded="true" signature="2112:2163" placeholder="SELECT `pass..." />
+            <marker date="1391999533000" expanded="true" signature="3126:3195" placeholder="INSERT INTO ..." />
+            <marker date="1391999533000" expanded="true" signature="4316:4365" placeholder="SELECT `pass..." />
+            <marker date="1391999533000" expanded="true" signature="4960:5009" placeholder="SELECT * FRO..." />
           </folding>
         </state>
       </provider>
