@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/User.php" afterPath="$PROJECT_DIR$/Model/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/User.php" afterPath="$PROJECT_DIR$/Controller/User.php" />
     </list>
     <list id="f82865ad-9fcc-4c86-b07c-8dbefa202b76" name="Failed commit: Default" comment="flexible assistants choosing&#10;" />
     <ignored path="KaraokeServer.iws" />
@@ -27,15 +27,6 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Record.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/Record.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="9" selection-start="2807" selection-end="2807" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="1725">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Record.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/Record.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="71" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="450">
@@ -58,10 +49,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="13" selection-start="3719" selection-end="3719" vertical-scroll-proportion="0.89819" vertical-offset="908" max-vertical-offset="2310">
+            <state line="92" column="13" selection-start="3719" selection-end="3719" vertical-scroll-proportion="-16.541666" vertical-offset="908" max-vertical-offset="2310">
               <folding>
                 <marker date="1391999081000" expanded="true" signature="918:979" placeholder="INSERT INTO ..." />
                 <marker date="1391999081000" expanded="true" signature="2020:2071" placeholder="SELECT `pass..." />
@@ -69,6 +60,15 @@
                 <marker date="1391999081000" expanded="true" signature="4203:4252" placeholder="SELECT `pass..." />
                 <marker date="1391999081000" expanded="true" signature="4847:4896" placeholder="SELECT * FRO..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Controller/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="35" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.40723982" vertical-offset="555" max-vertical-offset="1785">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -167,7 +167,6 @@
         <option value="$PROJECT_DIR$/Model/AbstractAssistant.php" />
         <option value="$PROJECT_DIR$/Model/BasicSong.php" />
         <option value="$PROJECT_DIR$/Model/SongAssistantManager.php" />
-        <option value="$PROJECT_DIR$/Controller/User.php" />
         <option value="$PROJECT_DIR$/Lib/Utility.php" />
         <option value="$PROJECT_DIR$/mix.sh" />
         <option value="$PROJECT_DIR$/Controller/Index.php" />
@@ -202,6 +201,7 @@
         <option value="$PROJECT_DIR$/Controller/Song.php" />
         <option value="$PROJECT_DIR$/Model/Song.php" />
         <option value="$PROJECT_DIR$/Model/User.php" />
+        <option value="$PROJECT_DIR$/Controller/User.php" />
       </list>
     </option>
   </component>
@@ -867,11 +867,6 @@
         <state line="20" column="13" selection-start="701" selection-end="701" vertical-scroll-proportion="0.40816328" vertical-offset="0" max-vertical-offset="735" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="166" selection-end="212" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="1770" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Core/View.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="71" column="0" selection-start="1627" selection-end="1627" vertical-scroll-proportion="-14.0" vertical-offset="654" max-vertical-offset="1800" />
@@ -1123,7 +1118,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="13" selection-start="3719" selection-end="3719" vertical-scroll-proportion="0.89819" vertical-offset="908" max-vertical-offset="2310">
+        <state line="92" column="13" selection-start="3719" selection-end="3719" vertical-scroll-proportion="-16.541666" vertical-offset="908" max-vertical-offset="2310">
           <folding>
             <marker date="1391999081000" expanded="true" signature="918:979" placeholder="INSERT INTO ..." />
             <marker date="1391999081000" expanded="true" signature="2020:2071" placeholder="SELECT `pass..." />
@@ -1131,6 +1126,13 @@
             <marker date="1391999081000" expanded="true" signature="4203:4252" placeholder="SELECT `pass..." />
             <marker date="1391999081000" expanded="true" signature="4847:4896" placeholder="SELECT * FRO..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="35" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.40723982" vertical-offset="555" max-vertical-offset="1785">
+          <folding />
         </state>
       </provider>
     </entry>
