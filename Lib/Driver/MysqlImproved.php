@@ -158,6 +158,7 @@ class Lib_Driver_MysqlImproved extends Lib_Database{
      */
     public function escape($data)
     {
-        return $this->connection->real_escape_string($data);
+        $data =  mysqli_real_escape_string($this->connection, $data);
+        return $data;
     }
 }

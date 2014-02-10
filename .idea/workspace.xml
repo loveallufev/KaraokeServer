@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6d0d5ca-c92c-4708-ad1a-e124f9515b14" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Driver/MysqlImproved.php" afterPath="$PROJECT_DIR$/Lib/Driver/MysqlImproved.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/User.php" afterPath="$PROJECT_DIR$/Model/User.php" />
     </list>
     <list id="f82865ad-9fcc-4c86-b07c-8dbefa202b76" name="Failed commit: Default" comment="flexible assistants choosing&#10;" />
@@ -52,14 +53,23 @@
       <file leaf-file-name="User.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Model/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="23" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.28733033" vertical-offset="548" max-vertical-offset="2355">
+            <state line="53" column="56" selection-start="1994" selection-end="1994" vertical-scroll-proportion="0.4651163" vertical-offset="540" max-vertical-offset="2415">
               <folding>
-                <marker date="1391999533000" expanded="true" signature="918:979" placeholder="INSERT INTO ..." />
-                <marker date="1391999533000" expanded="true" signature="2112:2163" placeholder="SELECT `pass..." />
-                <marker date="1391999533000" expanded="true" signature="3126:3195" placeholder="INSERT INTO ..." />
-                <marker date="1391999533000" expanded="true" signature="4316:4365" placeholder="SELECT `pass..." />
-                <marker date="1391999533000" expanded="true" signature="4960:5009" placeholder="SELECT * FRO..." />
+                <marker date="1391999882000" expanded="true" signature="919:980" placeholder="INSERT INTO ..." />
+                <marker date="1391999882000" expanded="true" signature="2023:2074" placeholder="SELECT `pass..." />
+                <marker date="1391999882000" expanded="true" signature="3017:3086" placeholder="INSERT INTO ..." />
+                <marker date="1391999882000" expanded="true" signature="4294:4343" placeholder="SELECT `pass..." />
+                <marker date="1391999882000" expanded="true" signature="4993:5042" placeholder="SELECT * FRO..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MysqlImproved.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lib/Driver/MysqlImproved.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="161" column="21" selection-start="3690" selection-end="3690" vertical-scroll-proportion="-14.583333" vertical-offset="1990" max-vertical-offset="2460">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -148,7 +158,6 @@
         <option value="$PROJECT_DIR$/Lib/LanguageDetector/build.php" />
         <option value="$PROJECT_DIR$/Lib/LanguageDetector/classifier.php" />
         <option value="$PROJECT_DIR$/Lib/LanguageDetector/LanguageDetector.php" />
-        <option value="$PROJECT_DIR$/Lib/Driver/MysqlImproved.php" />
         <option value="$PROJECT_DIR$/Config/LuckyVoice.xml" />
         <option value="$PROJECT_DIR$/Model/Sentence.php" />
         <option value="$PROJECT_DIR$/Model/LyricKaraoke.php" />
@@ -192,6 +201,7 @@
         <option value="$PROJECT_DIR$/Controller/Song.php" />
         <option value="$PROJECT_DIR$/Model/Song.php" />
         <option value="$PROJECT_DIR$/Controller/User.php" />
+        <option value="$PROJECT_DIR$/Lib/Driver/MysqlImproved.php" />
         <option value="$PROJECT_DIR$/Model/User.php" />
       </list>
     </option>
@@ -933,13 +943,6 @@
         <state line="20" column="39" selection-start="301" selection-end="301" vertical-scroll-proportion="0.3164557" vertical-offset="0" max-vertical-offset="711" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Driver/MysqlImproved.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="20" selection-start="517" selection-end="517" vertical-scroll-proportion="0.21097046" vertical-offset="240" max-vertical-offset="2445">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Config/LuckyVoice.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.24489796" vertical-offset="0" max-vertical-offset="735">
@@ -1114,15 +1117,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Driver/MysqlImproved.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="161" column="21" selection-start="3690" selection-end="3690" vertical-scroll-proportion="-14.583333" vertical-offset="1990" max-vertical-offset="2460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Model/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="23" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.28733033" vertical-offset="548" max-vertical-offset="2355">
+        <state line="53" column="56" selection-start="1994" selection-end="1994" vertical-scroll-proportion="0.4651163" vertical-offset="540" max-vertical-offset="2415">
           <folding>
-            <marker date="1391999533000" expanded="true" signature="918:979" placeholder="INSERT INTO ..." />
-            <marker date="1391999533000" expanded="true" signature="2112:2163" placeholder="SELECT `pass..." />
-            <marker date="1391999533000" expanded="true" signature="3126:3195" placeholder="INSERT INTO ..." />
-            <marker date="1391999533000" expanded="true" signature="4316:4365" placeholder="SELECT `pass..." />
-            <marker date="1391999533000" expanded="true" signature="4960:5009" placeholder="SELECT * FRO..." />
+            <marker date="1391999882000" expanded="true" signature="919:980" placeholder="INSERT INTO ..." />
+            <marker date="1391999882000" expanded="true" signature="2023:2074" placeholder="SELECT `pass..." />
+            <marker date="1391999882000" expanded="true" signature="3017:3086" placeholder="INSERT INTO ..." />
+            <marker date="1391999882000" expanded="true" signature="4294:4343" placeholder="SELECT `pass..." />
+            <marker date="1391999882000" expanded="true" signature="4993:5042" placeholder="SELECT * FRO..." />
           </folding>
         </state>
       </provider>
