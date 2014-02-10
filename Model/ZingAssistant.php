@@ -173,80 +173,84 @@ class Model_ZingAssistant extends  Model_AbstractAssistant{
         $html = Lib_Utility::SendRequest($url);
         $html = str_replace('&', '&amp;', $html);
         $xml = simplexml_load_string($html);
+        $song = null;
 
-        $song = new Model_Song((string)$xml->title,(string)$xml->singer, (string)$xml->author, "", (string)$xml->type );
+        if (isset($xml->title) && (strlen(trim((string)$xml->title)) > 0)){
 
-        $song->beatURL = (string)$xml->karaokelink;
-        $song->lyricURL = (string)$xml->lyric;
-        $song->ID = $id;
-        $header = array(
-            'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0',
-            'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language: vi-vn,vi;q=0.8,en-us;q=0.5,en;q=0.3',
-            'Accept-Encoding: gzip, deflate',
-            'DNT: 1',
-            'Connection: Close'
-        );
+            $song = new Model_Song((string)$xml->title,(string)$xml->singer, (string)$xml->author, "", (string)$xml->type );
 
-
-        //$response = Lib_Utility::post_request(str_replace(' ', '%20',$song->lyricURL), $header, array(), 'GET');
-        $response = Lib_Utility::SendRequest(str_replace(' ', '%20',$song->lyricURL));
-        $karaokexml = simplexml_load_string($response);
-
-        $karaoke = new Model_LyricKaraoke();
-
-        foreach($karaokexml->param as $sentense_raw){
-            $sentence = new Model_Sentence();
-
-            // 1 = one singer, 2 = second singer, 3 = both
-            $gender = (string)$sentense_raw['s'] == 'm' ? 1 : ((string)$sentense_raw['s'] == 'f' ? 2 : 3);
-
-            foreach($sentense_raw->i as $word){
-                $content = (string)$word;
-                if (strpos($content, '*') !== false) continue;
-                $starttime = str_replace(' ', '', (string)$word['va']);
-                $starttime = explode(':', $starttime);
+            $song->beatURL = (string)$xml->karaokelink;
+            $song->lyricURL = (string)$xml->lyric;
+            $song->ID = $id;
+            $header = array(
+                'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0',
+                'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                'Accept-Language: vi-vn,vi;q=0.8,en-us;q=0.5,en;q=0.3',
+                'Accept-Encoding: gzip, deflate',
+                'DNT: 1',
+                'Connection: Close'
+            );
 
 
-                $minute = intval($starttime[0]);
-                $sec = intval($starttime[1]);
-                $milisec = intval($starttime[2]);
+            //$response = Lib_Utility::post_request(str_replace(' ', '%20',$song->lyricURL), $header, array(), 'GET');
+            $response = Lib_Utility::SendRequest(str_replace(' ', '%20',$song->lyricURL));
+            $karaokexml = simplexml_load_string($response);
 
-                $starttime = ($minute*60 + $sec)*1000 + $milisec;
+            $karaoke = new Model_LyricKaraoke();
 
-                $w = new Model_Word();
-                $w->content = $content;
-                $w->start = $starttime;
-                $w->gender = $gender;
+            foreach($karaokexml->param as $sentense_raw){
+                $sentence = new Model_Sentence();
 
-                array_push($sentence->words, $w);
-            }
+                // 1 = one singer, 2 = second singer, 3 = both
+                $gender = (string)$sentense_raw['s'] == 'm' ? 1 : ((string)$sentense_raw['s'] == 'f' ? 2 : 3);
 
-            array_push($karaoke->sentences, $sentence);
-        }
+                foreach($sentense_raw->i as $word){
+                    $content = (string)$word;
+                    if (strpos($content, '*') !== false) continue;
+                    $starttime = str_replace(' ', '', (string)$word['va']);
+                    $starttime = explode(':', $starttime);
 
-        $factor = array(0.1, 0.2,0.3, 0.4);
 
-        foreach($karaoke->sentences as $sentence){
-            $sum = 0;
-            $index = 0;
-            for ($i = 1; $i < sizeof($sentence->words); $i+=1){
-                $sentence->words[$i-1]->end = $sentence->words[$i]->start - 5;
-                if ($i >= sizeof($sentence->words) - sizeof($factor)){
-                    $sum += (int)(($sentence->words[$i-1]->end - $sentence->words[$i-1]->start)*$factor[$index]);
-                    $index++;
+                    $minute = intval($starttime[0]);
+                    $sec = intval($starttime[1]);
+                    $milisec = intval($starttime[2]);
+
+                    $starttime = ($minute*60 + $sec)*1000 + $milisec;
+
+                    $w = new Model_Word();
+                    $w->content = $content;
+                    $w->start = $starttime;
+                    $w->gender = $gender;
+
+                    array_push($sentence->words, $w);
                 }
+
+                array_push($karaoke->sentences, $sentence);
             }
-            $sentence->words[$i-1]->end = $sentence->words[$i-1]->start + $sum;
+
+            $factor = array(0.1, 0.2,0.3, 0.4);
+
+            foreach($karaoke->sentences as $sentence){
+                $sum = 0;
+                $index = 0;
+                for ($i = 1; $i < sizeof($sentence->words); $i+=1){
+                    $sentence->words[$i-1]->end = $sentence->words[$i]->start - 5;
+                    if ($i >= sizeof($sentence->words) - sizeof($factor)){
+                        $sum += (int)(($sentence->words[$i-1]->end - $sentence->words[$i-1]->start)*$factor[$index]);
+                        $index++;
+                    }
+                }
+                $sentence->words[$i-1]->end = $sentence->words[$i-1]->start + $sum;
+            }
+
+            if ($response != null){
+                $song->karaoke = json_encode($karaoke);
+            }
+
+            /* WRITE INFORMATION OF THIS SONG TO DATABASE */
+
+            $song->insertThisIntoDatabase();
         }
-
-        if ($response != null){
-            $song->karaoke = json_encode($karaoke);
-        }
-
-        /* WRITE INFORMATION OF THIS SONG TO DATABASE */
-
-        $song->insertThisIntoDatabase();
 
         /* END WRITING */
 
