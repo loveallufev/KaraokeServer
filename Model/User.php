@@ -25,7 +25,7 @@ class Model_User extends  Core_Model{
         unset($hasher);
 
         //$model->getDB()->prepare("INSERT INTO Product(ProductCode, Name, Website) VALUES ('B000KKI1F6', 'Clearblue Digital Pregnancy Test Kit with Conception Indicator - Twin-Pack', 'amazon')");
-        $query = sprintf("INSERT INTO user (username, password) VALUES ('%s', '%s')", $username, $hash);
+        $query = sprintf("INSERT INTO user (`username`, `password`) VALUES ('%s', '%s')", $username, $hash);
         $model->getDB()->prepare($query);
 
         $result = null;
@@ -50,7 +50,7 @@ class Model_User extends  Core_Model{
         $model->getDB()->connect();
         $username = mysql_real_escape_string($username);
 
-        $query = sprintf("SELECT password FROM user WHERE username='%s'", $username);
+        $query = sprintf("SELECT `password` FROM `user` WHERE `username`='%s'", $username);
         $model->getDB()->prepare($query);
 
         if (!$model->getDB()->query()){
@@ -74,7 +74,7 @@ class Model_User extends  Core_Model{
             $timeNdate=gmdate($dateFormat, time());
             $token = $hasher->HashPassword($timeNdate);
 
-            $query = sprintf("INSERT INTO authentication(username, token) VALUES ('%s', '%s')", $username, $token);
+            $query = sprintf("INSERT INTO `authentication`(`username`, `token`) VALUES ('%s', '%s')", $username, $token);
             $model->getDB()->prepare($query);
 
             $r = array ('status' => 'OK', 'code' =>  CODE_SUCCESS ,'message' => 'Authentication succeeded', 'token' => $token);
@@ -107,7 +107,7 @@ class Model_User extends  Core_Model{
         $model = new Core_Model();
         $model->getDB()->connect();
 
-        $query = sprintf("SELECT password FROM user WHERE username='%s'", mysql_real_escape_string($username));
+        $query = sprintf("SELECT `password` FROM user WHERE `username`='%s'", mysql_real_escape_string($username));
         $model->getDB()->prepare($query);
 
         if (!$model->getDB()->query()){
@@ -127,7 +127,7 @@ class Model_User extends  Core_Model{
         $model = new Core_Model();
         $model->getDB()->connect();
 
-        $query = sprintf("SELECT * FROM authentication WHERE token='%s'", mysql_real_escape_string($token));
+        $query = sprintf("SELECT * FROM `authentication` WHERE `token`='%s'", mysql_real_escape_string($token));
 
         $model->getDB()->prepare($query);
 
