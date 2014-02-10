@@ -58,38 +58,43 @@ class Model_User extends  Core_Model{
         }
 
         $qresult = $model->getDB()->fetch();
+        $checked = false;
 
-
-
-        $hasher = new Lib_PasswordHash();
-
-        $r = null;
-        $checked = $hasher->CheckPassword($password, $qresult->password);
-        $token = null;
-        if ($checked) {
-
-
-            /* Write a token to database and return token to user */
-            $dateFormat="d-m-Y H:i";
-            $timeNdate=gmdate($dateFormat, time());
-            $token = $hasher->HashPassword($timeNdate);
-
-            $query = sprintf("INSERT INTO `authentication`(`username`, `token`) VALUES ('%s', '%s')", $username, $token);
-            $model->getDB()->prepare($query);
-
-            $r = array ('status' => 'OK', 'code' =>  CODE_SUCCESS ,'message' => 'Authentication succeeded', 'token' => $token);
-
-            $result = null;
-            if (!$model->getDB()->query()){
-                echo $model->getDB()->connection->error ."<br/>";
-                Lib_Utility::fail('Can not insert token into database', $model->getDB()->connection->error);
-            }
-        } else {
+        if (!isset($qresult)){
             $r = array('status' => 'FAIL','code' => CODE_ERROR_FAILED ,'message' =>  'Authentication failed');
         }
+        else {
 
-        unset($hasher);
-        $model->getDB()->disconnect();
+            $hasher = new Lib_PasswordHash();
+
+            $r = null;
+            $checked = $hasher->CheckPassword($password, $qresult->password);
+            $token = null;
+            if ($checked) {
+
+
+                /* Write a token to database and return token to user */
+                $dateFormat="d-m-Y H:i";
+                $timeNdate=gmdate($dateFormat, time());
+                $token = $hasher->HashPassword($timeNdate);
+
+                $query = sprintf("INSERT INTO `authentication`(`username`, `token`) VALUES ('%s', '%s')", $username, $token);
+                $model->getDB()->prepare($query);
+
+                $r = array ('status' => 'OK', 'code' =>  CODE_SUCCESS ,'message' => 'Authentication succeeded', 'token' => $token);
+
+                $result = null;
+                if (!$model->getDB()->query()){
+                    echo $model->getDB()->connection->error ."<br/>";
+                    Lib_Utility::fail('Can not insert token into database', $model->getDB()->connection->error);
+                }
+            } else {
+                $r = array('status' => 'FAIL','code' => CODE_ERROR_FAILED ,'message' =>  'Authentication failed');
+            }
+
+            unset($hasher);
+            $model->getDB()->disconnect();
+        }
 
         // if Don't need to return in json format, only return the token or null
         if (!$return_json){
