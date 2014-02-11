@@ -96,7 +96,7 @@
                                                 <div class="tip" style="width:240px;">
                                                     <h4>Choose your platform:</h4>
                                                     <p>The application for other flatforms is beeing developed.</p>
-                                                    <img src="<?=$img_dir?>/icons/download-small.png" width="16" height="16" alt="" class="vm"/>&nbsp;&nbsp;  for Windows phone: <a href="<?php echo BASE_URL . '/release/USS_Karaoke_1.0.xap'?>">USS Karaoke v.1.0</a><br/>
+                                                    <img src="<?=$img_dir?>/icons/download-small.png" width="16" height="16" alt="" class="vm"/>&nbsp;&nbsp;  for Windows phone: <a href="http://www.windowsphone.com/en-us/store/app/uss-karaoke/03c663ab-60b8-4cec-a62c-bfc4f387bba6">USS Karaoke v.1.0</a><br/>
                                                     <!--<div class="separator"></div>
                                                     <img src="<?=$img_dir?>/icons/download-small.png" width="16" height="16" alt="" class="vm"/>&nbsp;&nbsp;  for Android: <a href="#">Lorem Ipsum v.2.02</a>
                                                     -->
@@ -188,7 +188,7 @@
                                 Android and iOS versions are comming soon.
                                 </h4>
                                 <!--<a href="#" class="btn-superbig-neutral" style="width:230px;"><span><b class="for-iphone"></b></span></a>-->
-                                <a href="#" class="btn-superbig-neutral" style="width:230px;"><span><b class="for-wp"><!--  --></b></span></a>
+                                <a href="http://www.windowsphone.com/en-us/store/app/uss-karaoke/03c663ab-60b8-4cec-a62c-bfc4f387bba6" class="btn-superbig-neutral" style="width:230px;"><span><b class="for-wp"><!--  --></b></span></a>
                                 <div class="center"><small>FREE, Version 1.0 - 01/02/2014</small></div>
                             </li>
                           </ul>
