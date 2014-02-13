@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!--?xml version="1.0" encoding="utf-8"?>
 <AdSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<CultureDescriptors>
     <AdCultureDescriptor CultureName="en-US">
@@ -6,6 +6,32 @@
     </AdCultureDescriptor>
 		<AdCultureDescriptor CultureName="default">
       <Probabilities Probability="100" AdType="PubCenter" AppID="b7729962-13c6-46d4-a2a6-042dd1dcd06b" SecondaryID="156815" />
+    </AdCultureDescriptor>
+	</CultureDescriptors>
+</AdSettings>
+-->
+<?xml version="1.0" encoding="utf-8"?>
+
+<AdSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CultureDescriptors>
+    <AdCultureDescriptor CultureName="en-US">
+      <!--Probabilities Probability="10" AdType="Smaato" AppID="65754722" SecondaryID="923855310"/>
+      <Probabilities Probability="10" AdType="InnerActive" AppID="DavideCleopadre_ClockAlarmNightLight_WP7" /-->
+      <Probabilities Probability="80" AdType="PubCenter" AppID="b7729962-13c6-46d4-a2a6-042dd1dcd06b" SecondaryID="156815" />
+      <Probabilities Probability="20" AdType="AdDuplex" AppID="76731"/>
+      <!--Probabilities Probability="30" AdType="DefaultHouseAd" AppID="http://adrotator.apphb.com/SampleRemoteHouseAd.xaml"/-->
+    </AdCultureDescriptor>
+    <AdCultureDescriptor CultureName="en-GB">
+      <Probabilities Probability="80" AdType="PubCenter" AppID="b7729962-13c6-46d4-a2a6-042dd1dcd06b" SecondaryID="156815" />
+      <Probabilities Probability="20" AdType="AdDuplex" AppID="76731"/>
+    </AdCultureDescriptor>
+    <AdCultureDescriptor CultureName="de-DE">
+      <Probabilities Probability="80" AdType="PubCenter" AppID="b7729962-13c6-46d4-a2a6-042dd1dcd06b" SecondaryID="156815" />
+      <Probabilities Probability="20" AdType="AdDuplex" AppID="76731"/>
+    </AdCultureDescriptor>
+		<AdCultureDescriptor CultureName="default">
+     <Probabilities Probability="80" AdType="PubCenter" AppID="b7729962-13c6-46d4-a2a6-042dd1dcd06b" SecondaryID="156815" />
+      <Probabilities Probability="20" AdType="AdDuplex" AppID="76731"/>
     </AdCultureDescriptor>
 	</CultureDescriptors>
 </AdSettings>
