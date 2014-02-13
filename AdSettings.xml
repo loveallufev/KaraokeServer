@@ -6,7 +6,6 @@
     </AdCultureDescriptor>
 		<AdCultureDescriptor CultureName="default">
       <Probabilities Probability="80" AdType="PubCenter" AppID="b7729962-13c6-46d4-a2a6-042dd1dcd06b" SecondaryID="156815" />
-      <Probabilities Probabiliry="20" AddType="AdMob" AppID="ca-app-pub-1550929189722049/6767240615" />
     </AdCultureDescriptor>
 	</CultureDescriptors>
 </AdSettings>
