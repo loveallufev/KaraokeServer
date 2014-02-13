@@ -5,7 +5,7 @@
       <Probabilities Probability="100" AdType="PubCenter" AppID="b7729962-13c6-46d4-a2a6-042dd1dcd06b" SecondaryID="156815" />
     </AdCultureDescriptor>
 		<AdCultureDescriptor CultureName="default">
-      <Probabilities Probability="80" AdType="PubCenter" AppID="b7729962-13c6-46d4-a2a6-042dd1dcd06b" SecondaryID="156815" />
+      <Probabilities Probability="100" AdType="PubCenter" AppID="b7729962-13c6-46d4-a2a6-042dd1dcd06b" SecondaryID="156815" />
     </AdCultureDescriptor>
 	</CultureDescriptors>
 </AdSettings>
