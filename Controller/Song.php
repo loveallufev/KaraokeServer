@@ -23,10 +23,14 @@ class Controller_Song extends Core_Controller {
             }
         }
 
-        $songName = $param['s'];
-        $tmp = urldecode($songName);
-        $songName = str_replace('%20','+', $songName  );
+        header('Content-Type: application/json; charset=UTF-8');
+        header('Cache-Control: no-cache, must-revalidate');
 
+        $songName = $param['s'];
+        //$tmp = urldecode($songName);
+        //$songName = str_replace('%20','+', $songName  );
+        $songName =urldecode($songName);
+        /*
         $t = new Lib_LanguageDetector_LanguageDetector();
 
         $lang = $t->predict($tmp);
@@ -35,19 +39,17 @@ class Controller_Song extends Core_Controller {
 
 
         $songAssistant = Model_SongAssistantManager::getSongAssistantByLanguage($lang);
-
-        //$songName = str_replace('+','+', $songName  );
-
-        //$result = (new Model_ZingSong())->searchByName($songName);
-        header('Content-Type: application/json; charset=UTF-8');
-        header('Cache-Control: no-cache, must-revalidate');
+        */
+        $songAssistant = new Model_MySongAssistant();
 
         if (isset($songAssistant)){
             $result = $songAssistant->searchByName($songName);
+            /*
             if ($lang == "en" && sizeof($result) == 0){
                 $songAssistant = Model_SongAssistantManager::getSongAssistantByLanguage("vi");
                 $result = $songAssistant->searchByName($songName);
             }
+            */
             echo json_encode(array('status' => 'OK', 'code' => CODE_SUCCESS, 'query' => $songName ,'song_list' => $result));
             Model_Song::saveSearchHistory($songName, $username);
             return;
@@ -79,9 +81,13 @@ class Controller_Song extends Core_Controller {
             $lang = $param['lang'];
         }
 
-        $songAssistant = Model_SongAssistantManager::getSongAssistantByLanguage($lang);
+        //$songAssistant = Model_SongAssistantManager::getSongAssistantByLanguage($lang);
 
-        $result = $songAssistant->getHotKaraoke();
+        //$result = $songAssistant->getHotKaraoke();
+
+        $songAssistant = new Model_MySongAssistant();
+        $result = $songAssistant->getHotKaraoke($lang);
+
         //$result = Model_Song::getHotKaraoke();
         header('Content-Type: application/json; charset=UTF-8');
         header('Cache-Control: no-cache, must-revalidate');
@@ -143,11 +149,20 @@ class Controller_Song extends Core_Controller {
 
 
             // Get the first character of id, this is the prefix of zing song or lucky voice song
-            $songAssistant = Model_SongAssistantManager::getSongAssistantByPrefix($id[0]);
+            $i = 0;
+            $number = array('0','1','2','3','4','5','6','7','8','9');
+            $prefix = '';
+            while (($i < strlen($id)) && (!in_array($id[$i], $number))){
+                $prefix .= $id[$i];
+                $i = $i +1;
+            }
+
+            $songAssistant = Model_SongAssistantManager::getSongAssistantByPrefix($prefix);
 
             $id = substr($id, 1);
             if (isset($songAssistant)){
                 $result = $songAssistant->getInfo($id);
+                $song = $result;
                 if (isset($result))
                     echo json_encode(array('status' => 'OK' , 'code' => CODE_SUCCESS, 'song'=> $result));
                 else

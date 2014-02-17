@@ -57,7 +57,7 @@ class Model_SongAssistantManager {
             Model_SongAssistantManager::Init();
 
         foreach (Model_SongAssistantManager::$assistants as $module){
-            if ($module['prefix'] == $prefix){
+            if (in_array($prefix, $module['prefix'])){
                 $assistant =  new $module['class'];
                 if (isset($module['config'])) $assistant->config = $module['config'];
                 $assistant->prefix = $prefix;

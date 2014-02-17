@@ -371,7 +371,7 @@ class Model_Song extends Model_BasicSong{
         $words = preg_split("/\s+/", $this->title);
         $alias = '';
         foreach ($words as $w) {
-            $alias .= $w[0];
+            $alias .= strtoupper($w[0]);
         }
         $model = new Core_Model();
         $model->getDB()->connect();
