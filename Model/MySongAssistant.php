@@ -64,7 +64,7 @@ class Model_MySongAssistant extends Model_AbstractAssistant{
             $condition = " 1 ";
 
 
-        $query = sprintf("SELECT * FROM song WHERE %s ORDER BY count DESC ,id DESC LIMIT 0,20", $condition);
+        $query = sprintf("SELECT * FROM song WHERE %s ORDER BY count DESC ,id DESC LIMIT 0,60", $condition);
 
         $model->getDB()->prepare($query);
 
