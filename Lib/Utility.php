@@ -241,7 +241,7 @@ class Lib_Utility {
             */
 
             $now = gmmktime();
-            echo round(abs($now - $appTime) / 60,2) . '<br/>';
+
             if (round(abs($now - $appTime) / 60,2) <= 5){
                 return true;
             }
