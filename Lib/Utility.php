@@ -232,6 +232,7 @@ class Lib_Utility {
             $appTime = date('Y-m-d H:i:s', $random);
             $now = gmmktime();
 
+            echo round(abs($now - $appTime) / 60,2) ;
             if (round(abs($now - $appTime) / 60,2) <= 5){
                 return true;
             }
