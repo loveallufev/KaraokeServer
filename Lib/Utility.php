@@ -230,11 +230,12 @@ class Lib_Utility {
             $random ^= Lib_Utility::$privateKey;
             $random = strrev($random);
             $dateString = date('Y-m-d\TH:i:s\Z', $random);
-            $appTime = new DateTime($dateString);
-            $appTime->setTimezone(new DateTimeZone('UTC'));
+            $appTime = new DateTime($dateString, new DateTimeZone('UTC'));
 
             echo $appTime->format("Y-m-d\TH:i:s\Z") . "<br/>";
-            $now = gmdate("Y-m-d\TH:i:s\Z");
+            date_default_timezone_set("UTC");
+            $now =  new DateTime(date("Y-m-d H:i:s", time()), new DateTimeZone('UTC'));
+            echo $now->format("Y-m-d\TH:i:s\Z") . "<br/>";
 
             echo round(abs($now - $appTime) / 60,2) ;
             if (round(abs($now - $appTime) / 60,2) <= 5){
