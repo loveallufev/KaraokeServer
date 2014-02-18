@@ -230,6 +230,7 @@ class Lib_Utility {
             $random ^= Lib_Utility::$privateKey;
             $random = strrev($random);
             $appTime = date('Y-m-d H:i:s', $random);
+            echo $appTime . "<br/>";
             $now = gmmktime();
 
             echo round(abs($now - $appTime) / 60,2) ;
