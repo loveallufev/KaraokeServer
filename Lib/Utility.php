@@ -239,7 +239,9 @@ class Lib_Utility {
             $now =  new DateTime(date("Y-m-d\TH:i:s\Z", time()), new DateTimeZone('UTC'));
             echo $now->format("Y-m-d\TH:i:s\Z") . "<br/>";
             */
+
             $now = gmmktime();
+            echo "AppTIme:" . $appTime . " Now:" . $now . "<br/>";
             echo ($now - $appTime) . '<br/>';
             echo round(abs($now - $appTime) / 60,2) . '<br/>';
             if (round(abs($now - $appTime) / 60,2) <= 5){
