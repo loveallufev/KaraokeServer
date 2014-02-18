@@ -222,8 +222,6 @@ class Lib_Utility {
                 $hash = floor($time / $temp) + 1;
             }
 
-            echo $hash;
-
             return ($hash == $random);
         }
 
