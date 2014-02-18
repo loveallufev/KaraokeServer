@@ -10,7 +10,7 @@
 
 class Lib_Utility {
 
-    static $privateKey="873@dakZOPfj+daKf!saf><%";
+    static $privateKey="1771541989";
 
     static public function wp_mktime($_timestamp = ''){
         if($_timestamp){
@@ -203,6 +203,7 @@ class Lib_Utility {
         if (isset(Core::$config) &&
             isset(Core::$config['checkRandomNumber'])
             && Core::$config['checkRandomNumber'] == true){
+            /*
             $now = gmdate("ymdHi");
             $minute = substr($now,8);
             $minuteZone = floor($minute/5);
@@ -225,6 +226,17 @@ class Lib_Utility {
             echo $hash;
 
             return ($hash == $random);
+            */
+            $random ^= Lib_Utility::$privateKey;
+            $random = strrev($random);
+            $appTime = date('Y-m-d H:i:s', $random);
+            $now = gmmktime();
+
+            if (round(abs($now - $appTime) / 60,2) <= 5){
+                return true;
+            }
+            return false;
+
         }
 
         return true;
