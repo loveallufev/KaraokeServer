@@ -228,15 +228,18 @@ class Lib_Utility {
             return ($hash == $random);
             */
             $random ^= Lib_Utility::$privateKey;
-            $random = strrev($random);
+            $appTime = strrev($random);
+            /*
             $dateString = date("Y-m-d\TH:i:s\Z", $random);
             $appTime = new DateTime($dateString, new DateTimeZone('UTC'));
 
             echo $appTime->format("Y-m-d\TH:i:s\Z") . "<br/>";
 
+
             $now =  new DateTime(date("Y-m-d\TH:i:s\Z", time()), new DateTimeZone('UTC'));
             echo $now->format("Y-m-d\TH:i:s\Z") . "<br/>";
-
+            */
+            $now = gmmktime();
             echo ($now - $appTime) . '<br/>';
             echo round(abs($now - $appTime) / 60,2) . '<br/>';
             if (round(abs($now - $appTime) / 60,2) <= 5){
