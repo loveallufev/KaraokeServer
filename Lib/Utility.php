@@ -10,7 +10,7 @@
 
 class Lib_Utility {
 
-    static $privateKey="1771541989";
+    static $privateKey=1771541989;
 
     static public function wp_mktime($_timestamp = ''){
         if($_timestamp){
