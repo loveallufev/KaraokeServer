@@ -11,15 +11,31 @@ class Controller_User extends Core_Controller{
 
 
     public function createAction($param){
-        $username = Lib_Utility::get_post_var('username');
-        $password = Lib_Utility::get_post_var('password');
-        if (!isset($username) || !isset($password)){
-            echo json_encode(array('status' => 'FAILED', 'message' => 'Missing username or password'));
-            return;
-        }
 
         header('Content-Type: application/json; charset=UTF-8');
         header('Cache-Control: no-cache, must-revalidate');
+
+        $username = Lib_Utility::get_post_var('username');
+        $password = Lib_Utility::get_post_var('password');
+
+        $randomNumber = Lib_Utility::get_post_var('r');
+        if (!Lib_Utility::checkRandomNumber($randomNumber)){
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'message' => 'Invalid random number',
+                'code' => CODE_ERROR_INVALID
+            ));
+            return;
+        }
+
+        if (!isset($username) || !isset($password)){
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'message' => 'Missing username or password',
+                'code' => CODE_ERROR_MISSING
+            ));
+            return;
+        }
 
         /* Sanity-check the username, don't rely on our use of prepared statements
         * alone to prevent attacks on the SQL server via malicious usernames. */
@@ -45,16 +61,32 @@ class Controller_User extends Core_Controller{
 
     // POST: username=xxx&password=yyy
     public function loginAction($param){
-        $username = Lib_Utility::get_post_var('username');
-        $password = Lib_Utility::get_post_var('password');
-
-        if (!isset($username) || !isset($password)){
-            echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING, 'message' => 'Missing username or password'));
-            return;
-        }
 
         header('Content-Type: application/json; charset=UTF-8');
         header('Cache-Control: no-cache, must-revalidate');
+
+        $username = Lib_Utility::get_post_var('username');
+        $password = Lib_Utility::get_post_var('password');
+
+
+        $randomNumber = Lib_Utility::get_post_var('r');
+        if (!Lib_Utility::checkRandomNumber($randomNumber)){
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'message' => 'Invalid random number',
+                'code' => CODE_ERROR_INVALID
+            ));
+            return;
+        }
+
+        if (!isset($username) || !isset($password)){
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'code' => CODE_ERROR_MISSING,
+                'message' => 'Missing username or password'
+            ));
+            return;
+        }
 
         /* Sanity-check the username, don't rely on our use of prepared statements
         * alone to prevent attacks on the SQL server via malicious usernames. */
@@ -70,21 +102,28 @@ class Controller_User extends Core_Controller{
     }
 
     public function testAction(){
-        //Model_LuckyVoiceAssistant::getLuckyToken();
-        //Model_LuckyVoiceAssistant::loginLuckyAction();
-        $t = new Lib_LanguageDetector_LanguageDetector();
-        //echo "testaction";
-        echo "Language:" . $t->predict("anh ba hung") . "<br/>";
-        echo "Language:" . $t->predict("proud of you") . "<br/>";
+        Lib_Utility::checkRandomNumber("dafadfads");
     }
 
     // only use this function for login with a social network
     public function createAndLoginAction($param){
-        $username = Lib_Utility::get_post_var('username');
-        $password = Lib_Utility::get_post_var('password');
 
         header('Content-Type: application/json; charset=UTF-8');
         header('Cache-Control: no-cache, must-revalidate');
+
+        $username = Lib_Utility::get_post_var('username');
+        $password = Lib_Utility::get_post_var('password');
+
+
+        $randomNumber = Lib_Utility::get_post_var('r');
+        if (!Lib_Utility::checkRandomNumber($randomNumber)){
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'message' => 'Invalid random number',
+                'code' => CODE_ERROR_INVALID
+            ));
+            return;
+        }
 
         if (strlen($username) < 4){
             echo json_encode(array(

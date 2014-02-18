@@ -13,6 +13,22 @@ class VideoInfo{
 class Controller_Helper {
 
     public function uploadAction($param){
+
+        header('Content-Type: application/json; charset=UTF-8');
+        header('Cache-Control: no-cache, must-revalidate');
+
+        /*
+        $randomNumber = Lib_Utility::get_post_var('r');
+        if (!Lib_Utility::checkRandomNumber($randomNumber)){
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'message' => 'Invalid random number',
+                'code' => CODE_ERROR_INVALID
+            ));
+            return;
+        }
+        */
+
         $title = Lib_Utility::get_post_var("title");
         $singer = Lib_Utility::get_post_var("singer");
         $author = Lib_Utility::get_post_var("author");
@@ -26,9 +42,6 @@ class Controller_Helper {
             $language = strtoupper($language);
         else
             $language = "VI";
-
-        header('Content-Type: application/json; charset=UTF-8');
-        header('Cache-Control: no-cache, must-revalidate');
 
         $allowedExts = array("wav", "mp3", "zip");
         $temp = explode(".", $_FILES["file"]["name"]);
@@ -132,6 +145,9 @@ class Controller_Helper {
 
     public function loginAction($param){
 
+        header('Content-Type: application/json; charset=UTF-8');
+        header('Cache-Control: no-cache, must-revalidate');
+
         $username = Lib_Utility::get_post_var("username");
         $password = Lib_Utility::get_post_var("password");
 
@@ -143,8 +159,17 @@ class Controller_Helper {
             ));
         }
 
-        header('Content-Type: application/json; charset=UTF-8');
-        header('Cache-Control: no-cache, must-revalidate');
+        /*
+        $randomNumber = Lib_Utility::get_post_var('r');
+        if (!Lib_Utility::checkRandomNumber($randomNumber)){
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'message' => 'Invalid random number',
+                'code' => CODE_ERROR_INVALID
+            ));
+            return;
+        }
+        */
 
         $authen = array(
           "ndtruyen" => "truyennguyen",
@@ -174,6 +199,18 @@ class Controller_Helper {
 
         header('Content-Type: application/json; charset=UTF-8');
         header('Cache-Control: no-cache, must-revalidate');
+
+        /*
+        $randomNumber = Lib_Utility::get_post_var('r');
+        if (!Lib_Utility::checkRandomNumber($randomNumber)){
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'message' => 'Invalid random number',
+                'code' => CODE_ERROR_INVALID
+            ));
+            return;
+        }
+        */
 
         if (isset($_POST["url"])){
             $youtubeURL = $_POST["url"];
@@ -240,7 +277,11 @@ class Controller_Helper {
 
         }
         else {
-            echo "Missing parameters";
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'code' => CODE_ERROR_MISSING,
+                'result' => 'Missing parameter'
+            ));
         }
     }
 

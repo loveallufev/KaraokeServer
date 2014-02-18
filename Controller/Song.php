@@ -5,8 +5,22 @@ class Controller_Song extends Core_Controller {
 
     // /song/search?s={0}   POST with token=xxx&r=xxx
     public function searchAction($param){
+
+        header('Content-Type: application/json; charset=UTF-8');
+        header('Cache-Control: no-cache, must-revalidate');
+
         if (!isset($param['s'])){
             echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING, 'message' => "Missing keyword"));
+            return;
+        }
+
+        $randomNumber = Lib_Utility::get_post_var('r');
+        if (!Lib_Utility::checkRandomNumber($randomNumber)){
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'message' => 'Invalid random number',
+                'code' => CODE_ERROR_INVALID
+            ));
             return;
         }
 
@@ -22,9 +36,6 @@ class Controller_Song extends Core_Controller {
                 return;
             }
         }
-
-        header('Content-Type: application/json; charset=UTF-8');
-        header('Cache-Control: no-cache, must-revalidate');
 
         $songName = $param['s'];
         //$tmp = urldecode($songName);
@@ -62,7 +73,20 @@ class Controller_Song extends Core_Controller {
     // /song/hotkaraoke?lang=xxx POST: token
     public function hotkaraokeAction($param){
 
+        header('Content-Type: application/json; charset=UTF-8');
+        header('Cache-Control: no-cache, must-revalidate');
+
         $token = Lib_Utility::get_post_var('token');
+
+        $randomNumber = Lib_Utility::get_post_var('r');
+        if (!Lib_Utility::checkRandomNumber($randomNumber)){
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'message' => 'Invalid random number',
+                'code' => CODE_ERROR_INVALID
+            ));
+            return;
+        }
 
         if (!isset($token)){
             echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING, 'message' => "Missing token"));
@@ -89,16 +113,27 @@ class Controller_Song extends Core_Controller {
         $result = $songAssistant->getHotKaraoke($lang);
 
         //$result = Model_Song::getHotKaraoke();
-        header('Content-Type: application/json; charset=UTF-8');
-        header('Cache-Control: no-cache, must-revalidate');
         echo json_encode(array('status' => 'OK', 'code' => CODE_SUCCESS, 'song_list' => $result));
     }
 
     // /song/getInfo?id=xxxx    POST: token=xxx&r=yyyy
     public function getInfoAction($param){
 
+        header('Content-Type: application/json; charset=UTF-8');
+        header('Cache-Control: no-cache, must-revalidate');
+
         if (!isset($param['id'])){
             echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING , 'message' => "Missing song ID"));
+            return;
+        }
+
+        $randomNumber = Lib_Utility::get_post_var('r');
+        if (!Lib_Utility::checkRandomNumber($randomNumber)){
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'message' => 'Invalid random number',
+                'code' => CODE_ERROR_INVALID
+            ));
             return;
         }
 
@@ -115,9 +150,6 @@ class Controller_Song extends Core_Controller {
                 return;
             }
         }
-
-        header('Content-Type: application/json; charset=UTF-8');
-        header('Cache-Control: no-cache, must-revalidate');
 
         $id = $param['id'];
         $song = Model_Song::getSongByID($id);
@@ -178,8 +210,21 @@ class Controller_Song extends Core_Controller {
     // /song/suggest?s=xxxx    POST: token=xxx&r=yyyy
     public function suggestAction($param){
 
+        header('Content-Type: application/json; charset=UTF-8');
+        header('Cache-Control: no-cache, must-revalidate');
+
         if (!isset($param['s'])){
             echo json_encode(array('status' => 'FAILED', 'code' => CODE_ERROR_MISSING, 'message' => "Missing keyword"));
+            return;
+        }
+
+        $randomNumber = Lib_Utility::get_post_var('r');
+        if (!Lib_Utility::checkRandomNumber($randomNumber)){
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'message' => 'Invalid random number',
+                'code' => CODE_ERROR_INVALID
+            ));
             return;
         }
 
@@ -197,8 +242,8 @@ class Controller_Song extends Core_Controller {
         }
 
         $s = str_replace('%20', ' ' , $param['s']);
-        if (strlen($s) <3){
-            return json_encode(array('status' => 'OK', 'code' => CODE_SUCCESS, 'results' => array()));
+        if (strlen($s) <2){
+            echo json_encode(array('status' => 'OK', 'code' => CODE_SUCCESS, 'results' => array()));
         }
 
 
@@ -207,8 +252,7 @@ class Controller_Song extends Core_Controller {
 
         $songAssistant = Model_SongAssistantManager::getSongAssistantByLanguage($lang);
 
-        header('Content-Type: application/json; charset=UTF-8');
-        header('Cache-Control: no-cache, must-revalidate');
+
 
         if (isset($songAssistant)){
             $result = $songAssistant->getSuggestionByKeyword($s);
@@ -224,6 +268,18 @@ class Controller_Song extends Core_Controller {
 
     public function saverecordAction($param){
 
+        header('Content-Type: application/json; charset=UTF-8');
+        header('Cache-Control: no-cache, must-revalidate');
+
+        $randomNumber = Lib_Utility::get_post_var('r');
+        if (!Lib_Utility::checkRandomNumber($randomNumber)){
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'message' => 'Invalid random number',
+                'code' => CODE_ERROR_INVALID
+            ));
+            return;
+        }
 
         $token = Lib_Utility::get_post_var('token');
         if (!isset($token)){
@@ -239,8 +295,6 @@ class Controller_Song extends Core_Controller {
 
         // check random number here
 
-        header('Content-Type: application/json; charset=UTF-8');
-        header('Cache-Control: no-cache, must-revalidate');
 
         $allowedExts = array("wav", "mp3", "zip");
         $temp = explode(".", $_FILES["file"]["name"]);
@@ -279,6 +333,20 @@ class Controller_Song extends Core_Controller {
 
     // /song/fixlink?link=xxxx&id=yyyy    POST: token=xxx&r=yyyy
     public function fixlinkAction($param){
+
+        header('Content-Type: application/json; charset=UTF-8');
+        header('Cache-Control: no-cache, must-revalidate');
+
+        $randomNumber = Lib_Utility::get_post_var('r');
+        if (!Lib_Utility::checkRandomNumber($randomNumber)){
+            echo json_encode(array(
+                'status' => 'FAILED',
+                'message' => 'Invalid random number',
+                'code' => CODE_ERROR_INVALID
+            ));
+            return;
+        }
+
         $link = $param['link'];
         $id = null;
         if (isset($param['id']))
@@ -309,8 +377,7 @@ class Controller_Song extends Core_Controller {
         /*
         $link = Lib_Utility::get_post_var('link');
         */
-        header('Content-Type: application/json; charset=UTF-8');
-        header('Cache-Control: no-cache, must-revalidate');
+
 
         //$zingAss = Model_SongFactory::getAssistant(Model_SongConstants::$ZING_PREFIX);
 

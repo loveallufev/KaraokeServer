@@ -10,6 +10,7 @@
 
 class Lib_Utility {
 
+    static $privateKey="873@dakZOPfj+daKf!saf><%";
 
     static public function wp_mktime($_timestamp = ''){
         if($_timestamp){
@@ -198,13 +199,32 @@ class Lib_Utility {
     }
 
     public static function checkRandomNumber($random){
-        $random = intval($random);
-        $random ^= 177154;
-        $date = date('d-m-Y', $random);
 
-        $now = gmdate("Y-m-d\TH:i:s\Z");
-        if (round(abs($now - $date) / 60,2) >= 5){
-            return false;
+        if (isset(Core::$config) &&
+            isset(Core::$config['checkRandomNumber'])
+            && Core::$config['checkRandomNumber'] == true){
+            $now = gmdate("ymdHi");
+            $minute = substr($now,8);
+            $minuteZone = floor($minute/5);
+
+            $time = substr($now,0,8);
+
+            if ($minuteZone <= 5)
+                $minuteZone = 2 << $minuteZone;
+
+            $temp = $minuteZone*$minuteZone + 1;
+            $hash='';
+
+            if ($minuteZone % 2 == 0){
+                $hash = $time * $temp - 1;
+            }
+            else{
+                $hash = floor($time / $temp) + 1;
+            }
+
+            echo $hash;
+
+            return ($hash == $random);
         }
 
         return true;
