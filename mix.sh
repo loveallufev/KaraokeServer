@@ -15,8 +15,8 @@ else
     #$numberChannels=$(sox --i  "${file1}" | grep "Channels" | grep -o "[0-9]*")
     samplerate=$(sox --i -r "${file1}")
     numberChannels=$(sox --i -c "${file1}")
-    sox $file2 -r ${samplerate} -c $numberChannels /tmp/$newname2.$extension
-    sox --buffer 128000 --combine mix $file1 /tmp/$newname2.$extension -C 64.0 $output
+    sox $file2 -r ${samplerate} -c $numberChannels /tmp/$newname2.$extension >> logs/mix_sound.log
+    sox --buffer 128000 --combine mix $file1 /tmp/$newname2.$extension -C 64.0 $output >> logs/mix_sound.log
     rm /tmp/$newname2.$extension
     echo "OK"
 fi
