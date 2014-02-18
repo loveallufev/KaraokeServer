@@ -229,9 +229,12 @@ class Lib_Utility {
             */
             $random ^= Lib_Utility::$privateKey;
             $random = strrev($random);
-            $appTime = date('Y-m-d H:i:s', $random);
-            echo $appTime . "<br/>";
-            $now = gmmktime();
+            $dateString = date('Ymd', $random);
+            $appTime = new DateTime($dateString);
+            $appTime->setTimezone(new DateTimeZone('UTC'));
+
+            echo $appTime->format("Y-m-d\TH:i:s\Z") . "<br/>";
+            $now = gmdate("Y-m-d\TH:i:s\Z");
 
             echo round(abs($now - $appTime) / 60,2) ;
             if (round(abs($now - $appTime) / 60,2) <= 5){
