@@ -237,7 +237,8 @@ class Lib_Utility {
             $now =  new DateTime(date("Y-m-d H:i:s", time()), new DateTimeZone('UTC'));
             echo $now->format("Y-m-d\TH:i:s\Z") . "<br/>";
 
-            echo round(abs($now - $appTime) / 60,2) ;
+            echo ($now - $appTime) . '<br/>';
+            echo round(abs($now - $appTime) / 60,2) . '<br/>';
             if (round(abs($now - $appTime) / 60,2) <= 5){
                 return true;
             }
