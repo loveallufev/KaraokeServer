@@ -229,12 +229,12 @@ class Lib_Utility {
             */
             $random ^= Lib_Utility::$privateKey;
             $random = strrev($random);
-            $dateString = date('Y-m-d\TH:i:s\Z', $random);
+            $dateString = date("Y-m-d\TH:i:s\Z", $random);
             $appTime = new DateTime($dateString, new DateTimeZone('UTC'));
 
             echo $appTime->format("Y-m-d\TH:i:s\Z") . "<br/>";
 
-            $now =  new DateTime(date("Y-m-d H:i:s", time()), new DateTimeZone('UTC'));
+            $now =  new DateTime(date("Y-m-d\TH:i:s\Z", time()), new DateTimeZone('UTC'));
             echo $now->format("Y-m-d\TH:i:s\Z") . "<br/>";
 
             echo ($now - $appTime) . '<br/>';
