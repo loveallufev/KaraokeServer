@@ -230,9 +230,12 @@ class Lib_Utility {
             $random ^= Lib_Utility::$privateKey;
             $random = strrev($random);
             $dateString = date('Y-m-d\TH:i:s\Z', $random);
+            echo "Date from app:" . $dateString . "<br/>";
             $appTime = new DateTime($dateString, new DateTimeZone('UTC'));
 
-            echo $appTime->format("Y-m-d\TH:i:s\Z") . "<br/>";
+            echo  "date after format" .  $appTime->format("Y-m-d\TH:i:s\Z") . "<br/>";
+
+
             date_default_timezone_set("UTC");
             $now =  new DateTime(date("Y-m-d H:i:s", time()), new DateTimeZone('UTC'));
             echo $now->format("Y-m-d\TH:i:s\Z") . "<br/>";
