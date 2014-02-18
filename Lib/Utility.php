@@ -229,7 +229,7 @@ class Lib_Utility {
             */
             $random ^= Lib_Utility::$privateKey;
             $random = strrev($random);
-            $dateString = date('Ymd', $random);
+            $dateString = date('Y-m-d\TH:i:s\Z', $random);
             $appTime = new DateTime($dateString);
             $appTime->setTimezone(new DateTimeZone('UTC'));
 
