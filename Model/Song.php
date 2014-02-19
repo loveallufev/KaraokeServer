@@ -216,6 +216,15 @@ class Model_Song extends Model_BasicSong{
             if(isset($output)){
                 $converted = true;
             }
+        }else{
+            // Logging class initialization
+            $log = new Lib_Logging();
+            // set path and name of log file (optional)
+            $log->lfile(SERVER_ROOT. DS . 'logs/logs.log');
+            // write message to the log file
+            $log->lwrite("No SOX was installed");
+            // close log file
+            $log->lclose();
         }
 
 
